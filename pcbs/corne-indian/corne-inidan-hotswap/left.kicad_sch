@@ -3,7 +3,7 @@
 	(generator "eeschema")
 	(generator_version "9.0")
 	(uuid "e39ab255-a7ae-4955-89dd-6f30660e68bf")
-	(paper "A4")
+	(paper "A3")
 	(lib_symbols
 		(symbol "Connector:TestPoint"
 			(pin_numbers
@@ -1085,6 +1085,142 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "LED_RGB:LED_SK6812MINI-E"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "D3"
+				(at 0 6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "SK6812MINI-E"
+				(at 0 -6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "User_Button_Switch_Keyboard:YS-SK6812MINI-E"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "LED_SK6812MINI-E_0_1"
+				(rectangle
+					(start -5.08 5.08)
+					(end 5.08 -5.08)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "LED_SK6812MINI-E_1_1"
+				(pin input line
+					(at -7.62 2.54 0)
+					(length 2.54)
+					(name "DIN"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at -7.62 -2.54 0)
+					(length 2.54)
+					(name "DOUT"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 7.62 2.54 180)
+					(length 2.54)
+					(name "VDD"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 7.62 -2.54 180)
+					(length 2.54)
+					(name "VSS"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Switch:SW_Push"
 			(pin_numbers
 				(hide yes)
@@ -1589,7 +1725,7 @@
 	)
 	(text "USB-C & Reverse Polarity"
 		(exclude_from_sim no)
-		(at 253.746 71.12 0)
+		(at 49.276 81.28 0)
 		(effects
 			(font
 				(size 1.905 1.905)
@@ -1600,40 +1736,60 @@
 		(uuid "e834f2e6-7e75-4970-ba97-2b3fcd930a30")
 	)
 	(junction
-		(at 261.62 44.45)
+		(at 57.15 54.61)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "6ba22056-9985-49e6-a897-27c2e13c64f2")
 	)
 	(junction
-		(at 261.62 26.67)
+		(at 57.15 36.83)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "7e8962ba-8234-4561-8dbd-48d1d950bdd2")
 	)
 	(junction
-		(at 242.57 67.31)
+		(at 38.1 77.47)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "7f794b4e-2917-4368-aa50-0540f233aad4")
 	)
 	(junction
-		(at 260.35 49.53)
+		(at 55.88 59.69)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "fb76f2f2-9298-4a97-bb8b-24e1b630bf07")
 	)
 	(no_connect
-		(at 257.81 59.69)
+		(at 53.34 69.85)
 		(uuid "31e3254b-1bee-4464-bc54-53bfad0fb4e1")
 	)
 	(no_connect
-		(at 257.81 57.15)
+		(at 53.34 67.31)
 		(uuid "33467ecd-4182-4d5c-b478-092660c0d598")
 	)
 	(wire
 		(pts
-			(xy 270.51 49.53) (xy 273.05 49.53)
+			(xy 25.4 182.88) (xy 33.02 182.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "03d69df9-233e-4bc0-bbc4-32c2625621da")
+	)
+	(wire
+		(pts
+			(xy 162.56 220.98) (xy 163.83 220.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0444aff3-2aa4-4d84-83dd-336f5cbd5f09")
+	)
+	(wire
+		(pts
+			(xy 66.04 59.69) (xy 68.58 59.69)
 		)
 		(stroke
 			(width 0)
@@ -1643,7 +1799,7 @@
 	)
 	(wire
 		(pts
-			(xy 257.81 41.91) (xy 261.62 41.91)
+			(xy 53.34 52.07) (xy 57.15 52.07)
 		)
 		(stroke
 			(width 0)
@@ -1653,7 +1809,7 @@
 	)
 	(wire
 		(pts
-			(xy 261.62 29.21) (xy 257.81 29.21)
+			(xy 57.15 39.37) (xy 53.34 39.37)
 		)
 		(stroke
 			(width 0)
@@ -1663,7 +1819,37 @@
 	)
 	(wire
 		(pts
-			(xy 271.78 33.02) (xy 270.51 33.02)
+			(xy 124.46 215.9) (xy 128.27 215.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0bf8c207-9120-4917-a205-586eac30bbbb")
+	)
+	(wire
+		(pts
+			(xy 215.9 139.7) (xy 222.25 139.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0d3eb8e6-f9b8-4ed0-b5fd-a6048e599a09")
+	)
+	(wire
+		(pts
+			(xy 278.13 241.3) (xy 278.13 242.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0d8b8d3c-d1c4-4e7f-bfb4-9d67296fdb5f")
+	)
+	(wire
+		(pts
+			(xy 67.31 43.18) (xy 66.04 43.18)
 		)
 		(stroke
 			(width 0)
@@ -1673,7 +1859,127 @@
 	)
 	(wire
 		(pts
-			(xy 261.62 41.91) (xy 261.62 44.45)
+			(xy 237.49 220.98) (xy 238.76 220.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "13db8564-a473-4fff-bd02-400bd00b279a")
+	)
+	(wire
+		(pts
+			(xy 238.76 144.78) (xy 238.76 146.05)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "15024aea-e9a5-4161-81fd-cf119f03668d")
+	)
+	(wire
+		(pts
+			(xy 48.26 220.98) (xy 49.53 220.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "17832da8-9386-4ff2-803c-d0585f3e17a8")
+	)
+	(wire
+		(pts
+			(xy 177.8 177.8) (xy 184.15 177.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1b2e635d-6ca0-4976-a5a7-f20299e0de9a")
+	)
+	(wire
+		(pts
+			(xy 177.8 144.78) (xy 184.15 144.78)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1bba5a99-a395-434c-8f7d-6d4486cf0fc6")
+	)
+	(wire
+		(pts
+			(xy 275.59 259.08) (xy 276.86 259.08)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1c556176-7679-4227-aff4-b5a2a96b6fd7")
+	)
+	(wire
+		(pts
+			(xy 86.36 177.8) (xy 90.17 177.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1eee810a-b0c1-413b-9c41-52c7d5e247f9")
+	)
+	(wire
+		(pts
+			(xy 176.53 241.3) (xy 177.8 241.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1f2cdde9-9dd8-4377-a87f-76c5130574c8")
+	)
+	(wire
+		(pts
+			(xy 63.5 220.98) (xy 71.12 220.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1f647bae-8903-410d-9ec4-68d76ccbeaad")
+	)
+	(wire
+		(pts
+			(xy 125.73 182.88) (xy 125.73 184.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1f9d24cd-bf03-4c27-b906-eb691a72af1a")
+	)
+	(wire
+		(pts
+			(xy 66.04 165.1) (xy 72.39 165.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "20b83177-c038-40eb-987d-fd6a5750623a")
+	)
+	(wire
+		(pts
+			(xy 27.94 203.2) (xy 34.29 203.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "21ace516-a1dc-49b7-a140-85ff22a14f4b")
+	)
+	(wire
+		(pts
+			(xy 57.15 52.07) (xy 57.15 54.61)
 		)
 		(stroke
 			(width 0)
@@ -1683,7 +1989,77 @@
 	)
 	(wire
 		(pts
-			(xy 261.62 25.4) (xy 261.62 26.67)
+			(xy 177.8 220.98) (xy 184.15 220.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "23e2ca3a-f338-4d94-b3a2-61c10b9336c2")
+	)
+	(wire
+		(pts
+			(xy 215.9 215.9) (xy 222.25 215.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "241d3e7f-6b7d-4c74-af84-31ccb0ad8e72")
+	)
+	(wire
+		(pts
+			(xy 234.95 127) (xy 234.95 128.27)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "250afc76-c0d0-46a0-93e8-578f100fdf33")
+	)
+	(wire
+		(pts
+			(xy 219.71 259.08) (xy 219.71 260.35)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2617074f-c761-4ee1-915b-47b7d1f81e50")
+	)
+	(wire
+		(pts
+			(xy 157.48 259.08) (xy 165.1 259.08)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2631c98e-d537-407e-91af-5591286a71ce")
+	)
+	(wire
+		(pts
+			(xy 196.85 127) (xy 196.85 128.27)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "29cb96c4-7884-438c-a2c2-40bc30049e63")
+	)
+	(wire
+		(pts
+			(xy 254 259.08) (xy 260.35 259.08)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2a2730b7-76da-4986-9e76-cddd37cb7cea")
+	)
+	(wire
+		(pts
+			(xy 57.15 35.56) (xy 57.15 36.83)
 		)
 		(stroke
 			(width 0)
@@ -1693,7 +2069,17 @@
 	)
 	(wire
 		(pts
-			(xy 241.3 20.32) (xy 243.84 20.32)
+			(xy 196.85 254) (xy 203.2 254)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2b22325e-a46b-4730-bcec-ff3cbf099668")
+	)
+	(wire
+		(pts
+			(xy 36.83 30.48) (xy 39.37 30.48)
 		)
 		(stroke
 			(width 0)
@@ -1701,9 +2087,19 @@
 		)
 		(uuid "2bc973ad-a0d8-405b-b983-571c247edb6e")
 	)
+	(wire
+		(pts
+			(xy 237.49 177.8) (xy 241.3 177.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2bf33ccb-403c-45ed-bc10-d287f68c9dbc")
+	)
 	(polyline
 		(pts
-			(xy 229.87 73.66) (xy 278.13 73.66)
+			(xy 25.4 83.82) (xy 73.66 83.82)
 		)
 		(stroke
 			(width 0)
@@ -1711,9 +2107,49 @@
 		)
 		(uuid "2d058600-256d-499a-82cc-7d9875657efe")
 	)
+	(wire
+		(pts
+			(xy 104.14 127) (xy 110.49 127)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2d67744e-e505-492b-b531-9d6d70db9d94")
+	)
+	(wire
+		(pts
+			(xy 234.95 165.1) (xy 234.95 166.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2db06e8c-f1c0-43a3-9c6b-021b5cae884b")
+	)
+	(wire
+		(pts
+			(xy 66.04 203.2) (xy 72.39 203.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2e5a0f59-2f34-405f-bd79-bb838f437476")
+	)
+	(wire
+		(pts
+			(xy 215.9 144.78) (xy 222.25 144.78)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2f4b52c8-1d27-44bb-a372-8077e75f6038")
+	)
 	(polyline
 		(pts
-			(xy 278.13 15.24) (xy 229.87 15.24)
+			(xy 73.66 25.4) (xy 25.4 25.4)
 		)
 		(stroke
 			(width 0)
@@ -1723,7 +2159,77 @@
 	)
 	(wire
 		(pts
-			(xy 260.35 33.02) (xy 260.35 34.29)
+			(xy 237.49 215.9) (xy 241.3 215.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "31781785-c9bc-4771-9cb6-79eb19464c1f")
+	)
+	(wire
+		(pts
+			(xy 218.44 259.08) (xy 219.71 259.08)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "33e8eaf8-04a7-4ecf-b901-c3bc53a5d18b")
+	)
+	(wire
+		(pts
+			(xy 101.6 220.98) (xy 109.22 220.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3417690b-5a54-4fed-88bf-0343d9211a19")
+	)
+	(wire
+		(pts
+			(xy 238.76 182.88) (xy 238.76 184.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3418d651-c0ee-40d8-891f-e425d4557f56")
+	)
+	(wire
+		(pts
+			(xy 234.95 203.2) (xy 234.95 204.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "341aa4ab-157f-426e-bea3-57387a0bea75")
+	)
+	(wire
+		(pts
+			(xy 195.58 165.1) (xy 196.85 165.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "34b0e1ce-8eed-4d72-971b-b2782b5c0eaa")
+	)
+	(wire
+		(pts
+			(xy 162.56 139.7) (xy 166.37 139.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "34f473f4-58b1-4e09-a9a8-4cba3d4d0d35")
+	)
+	(wire
+		(pts
+			(xy 55.88 43.18) (xy 55.88 44.45)
 		)
 		(stroke
 			(width 0)
@@ -1733,7 +2239,37 @@
 	)
 	(wire
 		(pts
-			(xy 270.51 44.45) (xy 273.05 44.45)
+			(xy 200.66 144.78) (xy 200.66 146.05)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3723507e-96b4-496b-9bff-cf803b79f257")
+	)
+	(wire
+		(pts
+			(xy 217.17 203.2) (xy 223.52 203.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "37e5639c-be62-435a-ba1a-85e4d4dc2c67")
+	)
+	(wire
+		(pts
+			(xy 162.56 182.88) (xy 163.83 182.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "39a95556-7556-4862-8edc-e30584c75161")
+	)
+	(wire
+		(pts
+			(xy 66.04 54.61) (xy 68.58 54.61)
 		)
 		(stroke
 			(width 0)
@@ -1743,7 +2279,7 @@
 	)
 	(wire
 		(pts
-			(xy 260.35 34.29) (xy 257.81 34.29)
+			(xy 55.88 44.45) (xy 53.34 44.45)
 		)
 		(stroke
 			(width 0)
@@ -1753,7 +2289,7 @@
 	)
 	(wire
 		(pts
-			(xy 261.62 44.45) (xy 262.89 44.45)
+			(xy 57.15 54.61) (xy 58.42 54.61)
 		)
 		(stroke
 			(width 0)
@@ -1763,7 +2299,47 @@
 	)
 	(wire
 		(pts
-			(xy 265.43 26.67) (xy 261.62 26.67)
+			(xy 215.9 177.8) (xy 222.25 177.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "40409bc9-f749-4dad-9051-3a5b5a3fd43c")
+	)
+	(wire
+		(pts
+			(xy 120.65 165.1) (xy 121.92 165.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "42703a4b-d900-4865-9214-6453bed6d77d")
+	)
+	(wire
+		(pts
+			(xy 233.68 203.2) (xy 234.95 203.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "43d99123-316f-474d-a94a-bc7b7879178e")
+	)
+	(wire
+		(pts
+			(xy 104.14 203.2) (xy 110.49 203.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "43dfb46d-4dbc-4ec2-b963-cf859f986c78")
+	)
+	(wire
+		(pts
+			(xy 60.96 36.83) (xy 57.15 36.83)
 		)
 		(stroke
 			(width 0)
@@ -1773,7 +2349,47 @@
 	)
 	(wire
 		(pts
-			(xy 242.57 67.31) (xy 234.95 67.31)
+			(xy 25.4 139.7) (xy 33.02 139.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "47515a72-ff6a-46cc-be03-d73bcaa4c86b")
+	)
+	(wire
+		(pts
+			(xy 45.72 203.2) (xy 45.72 204.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4887933d-183e-4cc2-b9de-01c059c25c50")
+	)
+	(wire
+		(pts
+			(xy 25.4 177.8) (xy 33.02 177.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "49e74d89-8cf7-4cee-a8b8-9312681c92a3")
+	)
+	(wire
+		(pts
+			(xy 86.36 220.98) (xy 87.63 220.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4aada829-c363-46f3-b860-3eec8d81c6c4")
+	)
+	(wire
+		(pts
+			(xy 38.1 77.47) (xy 30.48 77.47)
 		)
 		(stroke
 			(width 0)
@@ -1783,7 +2399,7 @@
 	)
 	(wire
 		(pts
-			(xy 262.89 38.1) (xy 260.35 38.1)
+			(xy 58.42 48.26) (xy 55.88 48.26)
 		)
 		(stroke
 			(width 0)
@@ -1793,7 +2409,117 @@
 	)
 	(wire
 		(pts
-			(xy 245.11 67.31) (xy 242.57 67.31)
+			(xy 87.63 182.88) (xy 87.63 184.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4cf73639-e847-4e3a-b5de-71f79d3a9c62")
+	)
+	(wire
+		(pts
+			(xy 276.86 259.08) (xy 276.86 260.35)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4d1374f1-bc39-407e-b29b-82648696492e")
+	)
+	(wire
+		(pts
+			(xy 63.5 182.88) (xy 71.12 182.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4e1e9d3c-6ed8-4626-a763-00c69588443f")
+	)
+	(wire
+		(pts
+			(xy 101.6 177.8) (xy 109.22 177.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4fb0a801-616d-4351-92b8-75e53159803b")
+	)
+	(wire
+		(pts
+			(xy 237.49 182.88) (xy 238.76 182.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "508313fb-a9d6-4581-951f-7aec0ff9dc55")
+	)
+	(wire
+		(pts
+			(xy 199.39 177.8) (xy 203.2 177.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5499f28b-ce39-4e86-a376-4e7371cc29c4")
+	)
+	(wire
+		(pts
+			(xy 195.58 203.2) (xy 196.85 203.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "55311566-6e0f-4578-94e0-e8df591602eb")
+	)
+	(wire
+		(pts
+			(xy 196.85 203.2) (xy 196.85 204.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5685f04f-2a52-4bb8-834a-eeca74e7fe97")
+	)
+	(wire
+		(pts
+			(xy 181.61 259.08) (xy 181.61 260.35)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5686dafc-16a5-4565-b5ab-f96f44f3b41d")
+	)
+	(wire
+		(pts
+			(xy 124.46 139.7) (xy 128.27 139.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "577915c8-be5d-4051-b83f-eee99299c16c")
+	)
+	(wire
+		(pts
+			(xy 63.5 215.9) (xy 71.12 215.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "57993290-3ec8-4e11-a38e-6ffac2849da0")
+	)
+	(wire
+		(pts
+			(xy 40.64 77.47) (xy 38.1 77.47)
 		)
 		(stroke
 			(width 0)
@@ -1801,9 +2527,139 @@
 		)
 		(uuid "580bbcce-0cd8-4d36-ab52-316eb03fb5e1")
 	)
+	(wire
+		(pts
+			(xy 215.9 241.3) (xy 215.9 242.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5935c255-5108-413a-9ba5-b55d8df3c249")
+	)
+	(wire
+		(pts
+			(xy 233.68 127) (xy 234.95 127)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5a27274e-591b-4ec1-af75-292381e06b70")
+	)
+	(wire
+		(pts
+			(xy 275.59 254) (xy 279.4 254)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5e7c5b6d-0668-4a49-b146-1ef457009a25")
+	)
+	(wire
+		(pts
+			(xy 163.83 182.88) (xy 163.83 184.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5ef87c4d-075d-442f-afd8-337ad1cc2577")
+	)
+	(wire
+		(pts
+			(xy 260.35 241.3) (xy 266.7 241.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "61e82f49-d160-4d22-ad65-f5b0294ff320")
+	)
+	(wire
+		(pts
+			(xy 200.66 220.98) (xy 200.66 222.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "63ddcc42-01a7-4b75-9d0d-7b7f5e97b826")
+	)
+	(wire
+		(pts
+			(xy 82.55 203.2) (xy 83.82 203.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "67fa8c67-c793-4ef1-be66-866fb1909fad")
+	)
+	(wire
+		(pts
+			(xy 104.14 165.1) (xy 110.49 165.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "69dd4c27-20ee-4731-a83d-5b758823e7ac")
+	)
+	(wire
+		(pts
+			(xy 49.53 144.78) (xy 49.53 146.05)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "69f498df-9d17-48e6-8a9f-cc0724453ce0")
+	)
+	(wire
+		(pts
+			(xy 162.56 144.78) (xy 163.83 144.78)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6db0b804-d9a0-436f-b8ec-3bf5ffb349cd")
+	)
+	(wire
+		(pts
+			(xy 66.04 127) (xy 72.39 127)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6e1df447-d02a-4d3e-92eb-62bdb2f8c6b1")
+	)
+	(wire
+		(pts
+			(xy 45.72 127) (xy 45.72 128.27)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6fc7d4c1-3956-44b3-8ef0-992004d451a2")
+	)
+	(wire
+		(pts
+			(xy 101.6 144.78) (xy 109.22 144.78)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "70e8071f-997d-443e-8ccb-21214ab2b22e")
+	)
 	(polyline
 		(pts
-			(xy 278.13 33.02) (xy 278.13 15.24)
+			(xy 73.66 43.18) (xy 73.66 25.4)
 		)
 		(stroke
 			(width 0)
@@ -1813,7 +2669,17 @@
 	)
 	(wire
 		(pts
-			(xy 260.35 46.99) (xy 260.35 49.53)
+			(xy 44.45 127) (xy 45.72 127)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "72a2de92-8de5-41b2-890f-ed2b5bd2185d")
+	)
+	(wire
+		(pts
+			(xy 55.88 57.15) (xy 55.88 59.69)
 		)
 		(stroke
 			(width 0)
@@ -1823,7 +2689,7 @@
 	)
 	(wire
 		(pts
-			(xy 260.35 38.1) (xy 260.35 36.83)
+			(xy 55.88 48.26) (xy 55.88 46.99)
 		)
 		(stroke
 			(width 0)
@@ -1831,9 +2697,69 @@
 		)
 		(uuid "749000df-04bb-4ae9-81fb-f1fa4e714566")
 	)
+	(wire
+		(pts
+			(xy 27.94 127) (xy 34.29 127)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "757bea4e-6434-4186-94e8-4367e3a141e1")
+	)
+	(wire
+		(pts
+			(xy 124.46 182.88) (xy 125.73 182.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "761ddbcc-1810-4469-a664-8e626aabae0c")
+	)
+	(wire
+		(pts
+			(xy 177.8 241.3) (xy 177.8 242.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "77262c8b-2caa-4ea5-a269-9c225a2ef91c")
+	)
+	(wire
+		(pts
+			(xy 27.94 165.1) (xy 34.29 165.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "780de096-dc96-4f4d-9864-c17ec683e559")
+	)
+	(wire
+		(pts
+			(xy 196.85 165.1) (xy 196.85 166.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "78e0ba71-5301-432c-8407-df913673e5ab")
+	)
+	(wire
+		(pts
+			(xy 25.4 220.98) (xy 33.02 220.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7a6a63eb-2ee6-4f36-a70b-573fedfb64ce")
+	)
 	(polyline
 		(pts
-			(xy 278.13 33.02) (xy 278.13 33.02)
+			(xy 73.66 43.18) (xy 73.66 43.18)
 		)
 		(stroke
 			(width 0)
@@ -1843,7 +2769,27 @@
 	)
 	(wire
 		(pts
-			(xy 262.89 33.02) (xy 260.35 33.02)
+			(xy 121.92 203.2) (xy 121.92 204.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7c032957-69d5-4dea-986d-cc6ae5020618")
+	)
+	(wire
+		(pts
+			(xy 162.56 177.8) (xy 166.37 177.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7f4c5088-e336-41e0-af83-f975544458f4")
+	)
+	(wire
+		(pts
+			(xy 58.42 43.18) (xy 55.88 43.18)
 		)
 		(stroke
 			(width 0)
@@ -1853,7 +2799,257 @@
 	)
 	(wire
 		(pts
-			(xy 271.78 38.1) (xy 270.51 38.1)
+			(xy 237.49 144.78) (xy 238.76 144.78)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "84b43541-a49b-46bc-b468-50580f607a5d")
+	)
+	(wire
+		(pts
+			(xy 101.6 215.9) (xy 109.22 215.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "852764ca-6538-4567-b7b8-229a7f312c17")
+	)
+	(wire
+		(pts
+			(xy 49.53 220.98) (xy 49.53 222.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "860bdd99-5925-482e-b512-1ef6271d377e")
+	)
+	(wire
+		(pts
+			(xy 48.26 144.78) (xy 49.53 144.78)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "869f0824-a97d-4095-81a6-555a6c24e725")
+	)
+	(wire
+		(pts
+			(xy 179.07 165.1) (xy 185.42 165.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "88214b94-88a8-42e0-85b0-7c8ad0cdee17")
+	)
+	(wire
+		(pts
+			(xy 83.82 127) (xy 83.82 128.27)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8a48746c-32d3-4764-9774-f526d76da852")
+	)
+	(wire
+		(pts
+			(xy 121.92 165.1) (xy 121.92 166.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8b6c1253-8d47-4834-b5e1-b58a30918fd3")
+	)
+	(wire
+		(pts
+			(xy 25.4 215.9) (xy 33.02 215.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9018bfaf-d45a-433a-b29f-269f54fa84ad")
+	)
+	(wire
+		(pts
+			(xy 158.75 203.2) (xy 160.02 203.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "901d53e2-f5f8-43fa-809f-05c7aef8a53a")
+	)
+	(wire
+		(pts
+			(xy 217.17 127) (xy 223.52 127)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "91ea0672-00a9-4838-8bea-caa6df34a7d5")
+	)
+	(wire
+		(pts
+			(xy 177.8 139.7) (xy 184.15 139.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "961bd3f6-eff5-4bb4-9bd3-baaec09075f7")
+	)
+	(wire
+		(pts
+			(xy 276.86 241.3) (xy 278.13 241.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "998063dd-5207-4b2a-a517-6839f96f5566")
+	)
+	(wire
+		(pts
+			(xy 139.7 177.8) (xy 147.32 177.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "99d6dab2-b31b-4b86-8178-600fa48b7cfd")
+	)
+	(wire
+		(pts
+			(xy 160.02 127) (xy 160.02 128.27)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9e56d777-9ea1-4066-bd3d-e307de92ed84")
+	)
+	(wire
+		(pts
+			(xy 86.36 182.88) (xy 87.63 182.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a13625f7-dba6-4d77-9ac7-600ab6155ada")
+	)
+	(wire
+		(pts
+			(xy 199.39 139.7) (xy 203.2 139.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a14eaaed-554b-45dc-9d31-10022e3b7cb2")
+	)
+	(wire
+		(pts
+			(xy 199.39 215.9) (xy 203.2 215.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a23a1e0a-6333-4417-91ef-29746d789205")
+	)
+	(wire
+		(pts
+			(xy 82.55 165.1) (xy 83.82 165.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a2719bdc-84f3-4a77-be8b-b3126b7d2916")
+	)
+	(wire
+		(pts
+			(xy 83.82 165.1) (xy 83.82 166.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a3385f54-a150-434a-98e7-c0b6b0295d7d")
+	)
+	(wire
+		(pts
+			(xy 82.55 127) (xy 83.82 127)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a3a46dc7-adf0-4008-91d9-ee338d16ac9c")
+	)
+	(wire
+		(pts
+			(xy 214.63 241.3) (xy 215.9 241.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a3ba553f-c41a-4558-b524-16620015be68")
+	)
+	(wire
+		(pts
+			(xy 44.45 203.2) (xy 45.72 203.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a4f1a809-4598-4812-96a3-674bf9871496")
+	)
+	(wire
+		(pts
+			(xy 139.7 220.98) (xy 147.32 220.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a572c9cc-4ec3-4498-ac31-e88008ea1968")
+	)
+	(wire
+		(pts
+			(xy 142.24 203.2) (xy 148.59 203.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a6f74de7-2e70-42f0-931c-6c962760feb1")
+	)
+	(wire
+		(pts
+			(xy 48.26 139.7) (xy 52.07 139.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a7a60b11-0fa5-44a1-8365-cd32f533ce79")
+	)
+	(wire
+		(pts
+			(xy 67.31 48.26) (xy 66.04 48.26)
 		)
 		(stroke
 			(width 0)
@@ -1863,7 +3059,117 @@
 	)
 	(wire
 		(pts
-			(xy 261.62 26.67) (xy 261.62 29.21)
+			(xy 125.73 144.78) (xy 125.73 146.05)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a9eb2184-6e7b-4bfe-833b-1b62d5674bb4")
+	)
+	(wire
+		(pts
+			(xy 180.34 254) (xy 184.15 254)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "aa8205c9-da8a-4629-98a0-e3d9f3ede9bf")
+	)
+	(wire
+		(pts
+			(xy 158.75 165.1) (xy 160.02 165.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ae785579-b5ca-4cf7-9653-4712bcecc74c")
+	)
+	(wire
+		(pts
+			(xy 83.82 203.2) (xy 83.82 204.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ae943caa-a672-482d-90ba-e9dfa4d4f8fe")
+	)
+	(wire
+		(pts
+			(xy 163.83 220.98) (xy 163.83 222.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "aec99b3c-ebd0-48b5-9b13-b4125db537c5")
+	)
+	(wire
+		(pts
+			(xy 139.7 144.78) (xy 147.32 144.78)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b2cc201e-a490-4514-b471-4bde5c2a403c")
+	)
+	(wire
+		(pts
+			(xy 124.46 177.8) (xy 128.27 177.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b31f3279-f5f1-4f82-98b6-dd138cb2b2db")
+	)
+	(wire
+		(pts
+			(xy 199.39 220.98) (xy 200.66 220.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b3315ceb-1171-417c-94b4-a5620f3b1bfc")
+	)
+	(wire
+		(pts
+			(xy 125.73 220.98) (xy 125.73 222.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b5b8319e-7aee-43ea-9f10-f281c0a5caf4")
+	)
+	(wire
+		(pts
+			(xy 139.7 139.7) (xy 147.32 139.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b5eb3f01-a9d7-459a-bfc0-665774fa4f29")
+	)
+	(wire
+		(pts
+			(xy 63.5 139.7) (xy 71.12 139.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b6b2cdec-c1f5-4770-9d61-860002ec2280")
+	)
+	(wire
+		(pts
+			(xy 57.15 36.83) (xy 57.15 39.37)
 		)
 		(stroke
 			(width 0)
@@ -1871,9 +3177,19 @@
 		)
 		(uuid "b6f18d1e-1b94-4521-8867-10feaa0418cb")
 	)
+	(wire
+		(pts
+			(xy 86.36 139.7) (xy 90.17 139.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b771919b-c2f0-434a-bc41-bf7adc34dcd8")
+	)
 	(polyline
 		(pts
-			(xy 229.87 15.24) (xy 229.87 73.66)
+			(xy 25.4 25.4) (xy 25.4 83.82)
 		)
 		(stroke
 			(width 0)
@@ -1883,7 +3199,17 @@
 	)
 	(wire
 		(pts
-			(xy 248.92 20.32) (xy 251.46 20.32)
+			(xy 215.9 182.88) (xy 222.25 182.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bb7a93fe-34e6-4156-be9b-011ea9d2a395")
+	)
+	(wire
+		(pts
+			(xy 44.45 30.48) (xy 46.99 30.48)
 		)
 		(stroke
 			(width 0)
@@ -1891,9 +3217,79 @@
 		)
 		(uuid "bc29db13-52c1-4af2-a829-4ae157da7f03")
 	)
+	(wire
+		(pts
+			(xy 48.26 215.9) (xy 52.07 215.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bc8aa82d-84e3-441e-931b-b2e8e6107568")
+	)
+	(wire
+		(pts
+			(xy 158.75 127) (xy 160.02 127)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "beb1ebb4-6c75-4197-95d0-8b5fbd05b41c")
+	)
+	(wire
+		(pts
+			(xy 63.5 177.8) (xy 71.12 177.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c1dd7962-b9ef-4926-a203-7266325fdc3a")
+	)
+	(wire
+		(pts
+			(xy 179.07 127) (xy 185.42 127)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c45ba1cf-f1a3-4882-9339-962e5f0a0075")
+	)
+	(wire
+		(pts
+			(xy 87.63 220.98) (xy 87.63 222.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c466fb91-c4bc-433d-a8a0-49f5783299e3")
+	)
+	(wire
+		(pts
+			(xy 218.44 254) (xy 222.25 254)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c4baecd0-926e-431f-9961-4c10f1f324d2")
+	)
+	(wire
+		(pts
+			(xy 45.72 165.1) (xy 45.72 166.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c505da06-d8b6-4608-aa66-53f251166268")
+	)
 	(polyline
 		(pts
-			(xy 278.13 73.66) (xy 278.13 33.02)
+			(xy 73.66 83.82) (xy 73.66 43.18)
 		)
 		(stroke
 			(width 0)
@@ -1903,7 +3299,27 @@
 	)
 	(wire
 		(pts
-			(xy 257.81 44.45) (xy 261.62 44.45)
+			(xy 237.49 139.7) (xy 241.3 139.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c92aaffb-0b3a-43f3-9ac3-347eacce074c")
+	)
+	(wire
+		(pts
+			(xy 142.24 165.1) (xy 148.59 165.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ca3ecda8-4093-4b81-8e57-9451fa3232de")
+	)
+	(wire
+		(pts
+			(xy 53.34 54.61) (xy 57.15 54.61)
 		)
 		(stroke
 			(width 0)
@@ -1913,7 +3329,27 @@
 	)
 	(wire
 		(pts
-			(xy 257.81 49.53) (xy 260.35 49.53)
+			(xy 160.02 241.3) (xy 166.37 241.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cc0a4dcc-5c18-45bc-a139-9a6d2119e445")
+	)
+	(wire
+		(pts
+			(xy 86.36 144.78) (xy 87.63 144.78)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cd6ca0c3-1bd4-4824-b565-a33526d2958e")
+	)
+	(wire
+		(pts
+			(xy 53.34 59.69) (xy 55.88 59.69)
 		)
 		(stroke
 			(width 0)
@@ -1923,7 +3359,47 @@
 	)
 	(wire
 		(pts
-			(xy 257.81 46.99) (xy 260.35 46.99)
+			(xy 25.4 144.78) (xy 33.02 144.78)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d0a37352-0dee-4643-835d-5e8a4f105e86")
+	)
+	(wire
+		(pts
+			(xy 200.66 182.88) (xy 200.66 184.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d37e3825-5b96-48b4-ac94-4faf04918edd")
+	)
+	(wire
+		(pts
+			(xy 101.6 182.88) (xy 109.22 182.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d464d380-f8dd-4465-b5d2-9945abef068e")
+	)
+	(wire
+		(pts
+			(xy 160.02 165.1) (xy 160.02 166.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d53f2894-bb57-4342-9910-690bc03d5ed3")
+	)
+	(wire
+		(pts
+			(xy 53.34 57.15) (xy 55.88 57.15)
 		)
 		(stroke
 			(width 0)
@@ -1933,7 +3409,57 @@
 	)
 	(wire
 		(pts
-			(xy 260.35 36.83) (xy 257.81 36.83)
+			(xy 49.53 182.88) (xy 49.53 184.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d722d6b6-fa69-436c-9350-f1945797e677")
+	)
+	(wire
+		(pts
+			(xy 177.8 182.88) (xy 184.15 182.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d761930e-cf7d-406e-a080-1052da03758c")
+	)
+	(wire
+		(pts
+			(xy 101.6 139.7) (xy 109.22 139.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d820ce15-1d0f-4568-939b-98f45f359840")
+	)
+	(wire
+		(pts
+			(xy 162.56 215.9) (xy 166.37 215.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d8e25ab6-2931-4c4f-8245-543d0df5c0c4")
+	)
+	(wire
+		(pts
+			(xy 196.85 259.08) (xy 203.2 259.08)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "da112252-1c01-40bb-8788-7cefa02a9a89")
+	)
+	(wire
+		(pts
+			(xy 55.88 46.99) (xy 53.34 46.99)
 		)
 		(stroke
 			(width 0)
@@ -1943,7 +3469,157 @@
 	)
 	(wire
 		(pts
-			(xy 260.35 49.53) (xy 262.89 49.53)
+			(xy 48.26 182.88) (xy 49.53 182.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dbd2eca5-daad-494c-ad2d-2e880de35a67")
+	)
+	(wire
+		(pts
+			(xy 199.39 182.88) (xy 200.66 182.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dd8ebf98-ad03-4158-aada-a17eea1a25c9")
+	)
+	(wire
+		(pts
+			(xy 121.92 127) (xy 121.92 128.27)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "de0d0f9e-e246-4679-96cc-ae652b6cffa9")
+	)
+	(wire
+		(pts
+			(xy 233.68 165.1) (xy 234.95 165.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "de7cf8e2-c5ee-4e5b-901b-ee200b5fffc0")
+	)
+	(wire
+		(pts
+			(xy 180.34 259.08) (xy 181.61 259.08)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e18cd010-e3dd-4aec-8dc4-e568e5fe17f8")
+	)
+	(wire
+		(pts
+			(xy 177.8 215.9) (xy 184.15 215.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e1e96a0b-ec1b-4601-b07c-1cb72feaa8a3")
+	)
+	(wire
+		(pts
+			(xy 120.65 203.2) (xy 121.92 203.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e264f09c-38bb-4f79-982e-5ffeee526d6e")
+	)
+	(wire
+		(pts
+			(xy 217.17 165.1) (xy 223.52 165.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e3d13d34-59f2-4c4e-b625-b84bd3392128")
+	)
+	(wire
+		(pts
+			(xy 254 254) (xy 260.35 254)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e47356ab-88cc-4f38-b4cb-105c3a153cef")
+	)
+	(wire
+		(pts
+			(xy 195.58 127) (xy 196.85 127)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e483485e-17c4-4b58-9a2b-f570458835e3")
+	)
+	(wire
+		(pts
+			(xy 120.65 127) (xy 121.92 127)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e528ed8a-717b-4dba-8686-3178675c21cd")
+	)
+	(wire
+		(pts
+			(xy 199.39 144.78) (xy 200.66 144.78)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e5531598-0fdf-4639-8aea-8aac76d29bdd")
+	)
+	(wire
+		(pts
+			(xy 157.48 254) (xy 165.1 254)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e63f5074-a5d5-4bff-9459-75250eb0ea28")
+	)
+	(wire
+		(pts
+			(xy 160.02 203.2) (xy 160.02 204.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e92a784c-26ee-4f9b-90b2-487312cde4e1")
+	)
+	(wire
+		(pts
+			(xy 198.12 241.3) (xy 204.47 241.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "eb396051-1c0b-4c8f-9491-725f0ef8c576")
+	)
+	(wire
+		(pts
+			(xy 55.88 59.69) (xy 58.42 59.69)
 		)
 		(stroke
 			(width 0)
@@ -1951,9 +3627,119 @@
 		)
 		(uuid "ecd24fbf-3e1e-48d3-91a4-144e45ea1df2")
 	)
+	(wire
+		(pts
+			(xy 215.9 220.98) (xy 222.25 220.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "eeb9e2dc-0cf0-4dcc-bb55-64f3847d8eba")
+	)
+	(wire
+		(pts
+			(xy 63.5 144.78) (xy 71.12 144.78)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "eefa9155-5752-4ef6-8783-763723fff45c")
+	)
+	(wire
+		(pts
+			(xy 179.07 203.2) (xy 185.42 203.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "efe77155-5f3c-4a78-95ee-efefc64fe7df")
+	)
+	(wire
+		(pts
+			(xy 86.36 215.9) (xy 90.17 215.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f053f875-4ae3-4ebe-a527-9ed20f872e2a")
+	)
+	(wire
+		(pts
+			(xy 124.46 144.78) (xy 125.73 144.78)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f104fcd1-1dc9-48af-8f9f-ed90aecbdbbf")
+	)
+	(wire
+		(pts
+			(xy 142.24 127) (xy 148.59 127)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f1c65cb0-c991-4176-b1a2-d012b61ae559")
+	)
+	(wire
+		(pts
+			(xy 48.26 177.8) (xy 52.07 177.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f23e094a-a3bb-4753-8db1-c897f7d10c22")
+	)
+	(wire
+		(pts
+			(xy 139.7 182.88) (xy 147.32 182.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f709cfd8-1f89-4472-8924-556e13a3acb2")
+	)
+	(wire
+		(pts
+			(xy 44.45 165.1) (xy 45.72 165.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f9085fa5-aef8-4171-b1d8-1dc6e3b9527c")
+	)
+	(wire
+		(pts
+			(xy 124.46 220.98) (xy 125.73 220.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fadff335-45b4-41e8-8191-de37e2ca8917")
+	)
+	(wire
+		(pts
+			(xy 139.7 215.9) (xy 147.32 215.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "faee1f88-b49d-40b0-bdf2-7bf583ca2200")
+	)
 	(polyline
 		(pts
-			(xy 278.13 15.24) (xy 278.13 33.02)
+			(xy 73.66 25.4) (xy 73.66 43.18)
 		)
 		(stroke
 			(width 0)
@@ -1961,8 +3747,148 @@
 		)
 		(uuid "fafd332d-826d-4413-bcc1-f4e66672772b")
 	)
+	(wire
+		(pts
+			(xy 87.63 144.78) (xy 87.63 146.05)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fcb30397-c9d1-4d19-a663-cf8597c2126a")
+	)
+	(wire
+		(pts
+			(xy 238.76 220.98) (xy 238.76 222.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fcf8c178-bf0a-42d0-a1d7-1deb0685594a")
+	)
+	(wire
+		(pts
+			(xy 163.83 144.78) (xy 163.83 146.05)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fd454e9f-23e0-48d2-aade-8c2be3fbaf8e")
+	)
+	(label "KEY_13"
+		(at 104.14 127 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "003a56ea-01b7-47c8-a32a-2841b9602837")
+	)
+	(label "L_KEY20"
+		(at 25.4 177.8 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "00e4ef9a-ee86-40f5-98a5-e7d1beceba7e")
+	)
+	(label "L_KEY7"
+		(at 177.8 182.88 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "02274eeb-4be1-4fa0-8aaf-931e0430d2cd")
+	)
+	(label "5V_L"
+		(at 90.17 177.8 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "054014f4-ba86-4ea6-a95a-700e104cf5d9")
+	)
+	(label "5V_L"
+		(at 241.3 177.8 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "0b53f392-5c4c-4d53-9195-98c070929e1c")
+	)
+	(label "L_KEY5"
+		(at 215.9 144.78 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "0c644e5d-3c86-4ad6-9472-cca0d653aa61")
+	)
+	(label "KEY_1"
+		(at 260.35 241.3 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "0cd76dd5-b556-4538-9eae-dc427a879546")
+	)
+	(label "L_KEY2"
+		(at 215.9 215.9 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "10647619-5b28-4b4c-95a1-0b81bfbc308f")
+	)
+	(label "KEY_8"
+		(at 198.12 241.3 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "1300b418-6210-4247-99e3-951a75f73ac0")
+	)
+	(label "L_KEY14"
+		(at 101.6 177.8 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "182fa53e-bff1-4b1b-8888-47cf7c1a4474")
+	)
+	(label "KEY_11"
+		(at 142.24 165.1 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "1ab47272-3177-4213-824d-69a368317b22")
+	)
 	(label "D-"
-		(at 273.05 44.45 180)
+		(at 68.58 54.61 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1971,8 +3897,418 @@
 		)
 		(uuid "1be6db52-0ba0-4083-bf4c-b4d214aa63a0")
 	)
+	(label "L_KEY15"
+		(at 101.6 215.9 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "1e1ea569-f873-42cf-999a-b156420045e0")
+	)
+	(label "L_KEY9"
+		(at 157.48 254 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "1e877fbe-ac0a-4c73-89f4-0622b056b394")
+	)
+	(label "L_KEY11"
+		(at 139.7 220.98 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "2065665b-8ca3-4a5b-ba4e-2628b55c71e5")
+	)
+	(label "L_KEY10"
+		(at 139.7 215.9 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "222b8362-eb51-4935-ac2a-3bebf53d9f84")
+	)
+	(label "L_KEY17"
+		(at 63.5 220.98 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "25b93d57-bc2b-4782-93a6-0653800cc588")
+	)
+	(label "L_KEY4"
+		(at 215.9 182.88 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "25ce728b-0e96-405b-8e10-a05186456b79")
+	)
+	(label "L_KEY17"
+		(at 63.5 177.8 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "2c1c5b4f-8964-4fc9-8225-95ff4afa417d")
+	)
+	(label "KEY_19"
+		(at 27.94 127 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "2e6ff3bc-1f8a-47f5-bd6c-299bd45e20a2")
+	)
+	(label "5V_L"
+		(at 166.37 177.8 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "333f0537-31fa-4520-b81b-13cf15856677")
+	)
+	(label "L_KEY11"
+		(at 139.7 177.8 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "350981c9-2173-495b-b475-e7688794cb90")
+	)
+	(label "5V_L"
+		(at 90.17 215.9 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "36abf612-42a5-4179-b092-c75eac8521ad")
+	)
+	(label "5V_L"
+		(at 52.07 177.8 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "395271ee-2eb4-4af5-8ae0-a3174fe4c0a1")
+	)
+	(label "L_KEY19"
+		(at 25.4 139.7 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "3d8472e8-d2a7-4a95-895b-72b6774fc210")
+	)
+	(label "L_KEY16"
+		(at 101.6 220.98 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "4088ab95-2a0f-42c4-bb2c-c4fb79656d65")
+	)
+	(label "KEY_9"
+		(at 160.02 241.3 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "46cac178-e646-4e58-a85d-7f6ee636b190")
+	)
+	(label "L_KEY3"
+		(at 215.9 220.98 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "480f3ef3-9ea4-4ea8-9095-6c2d2e4a6a82")
+	)
+	(label "L_KEY6"
+		(at 177.8 177.8 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "4b8e15f8-7382-42c9-91c2-c2fce772fe94")
+	)
+	(label "5V_L"
+		(at 52.07 139.7 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "4be4676f-a1ae-4e0f-9df1-40e3c5a85709")
+	)
+	(label "KEY_6"
+		(at 179.07 165.1 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "4bf57269-9270-480b-ab93-d86fdb94daaa")
+	)
+	(label "L_KEY13"
+		(at 101.6 139.7 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "4c14181e-5658-4a03-982a-38f7c73e4371")
+	)
+	(label "5V_L"
+		(at 222.25 254 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "4c8dd1b2-e8c2-4c0c-9d2f-d78d3b8c6484")
+	)
+	(label "KEY_15"
+		(at 104.14 203.2 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "4d362979-ba3c-4762-884b-9104f713f487")
+	)
+	(label "L_KEY4"
+		(at 215.9 139.7 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "53df854f-dbf7-461b-9ccf-11b5c9a9d7bf")
+	)
+	(label "L_KEY6"
+		(at 177.8 144.78 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "596d7502-c843-4ffb-9c85-40190cc11123")
+	)
+	(label "5V_L"
+		(at 128.27 215.9 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "5a5e443e-4214-4c7a-936a-e2dd71045d62")
+	)
+	(label "5V_L"
+		(at 203.2 139.7 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "6111a6fb-3ac6-4f81-a22a-6c40a0a9ff80")
+	)
+	(label "KEY_12"
+		(at 142.24 127 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "6213248f-7099-4314-b4ac-3221814d655f")
+	)
+	(label "5V_L"
+		(at 166.37 139.7 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "6287d630-6429-435e-aad4-16269f60b275")
+	)
+	(label "L_KEY10"
+		(at 157.48 259.08 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "67d69c7f-1983-4e9d-96a8-9af5ce8a4c66")
+	)
+	(label "5V_L"
+		(at 166.37 215.9 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "6a7e7234-5ee9-4384-94dd-8d012f89b3ee")
+	)
+	(label "KEY_20"
+		(at 27.94 165.1 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "6cb84ba8-1c72-4cbd-8735-befdeda9694e")
+	)
+	(label "5V_L"
+		(at 128.27 139.7 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "6e18b8a4-3911-4b25-a3b7-4112b9737b7f")
+	)
+	(label "5V_L"
+		(at 203.2 215.9 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "6fd66a69-d257-4fc5-a708-29d1c0dafc4b")
+	)
+	(label "L_KEY9"
+		(at 196.85 259.08 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "7123ed34-db5b-4e0f-8c5c-07abe47f15c3")
+	)
+	(label "KEY_18"
+		(at 66.04 127 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "71a7beae-c141-44fd-ac07-ff8a819dd3ed")
+	)
+	(label "L_KEY12"
+		(at 139.7 139.7 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "7e2f322b-92f9-42b4-aa30-fbc40cb43b18")
+	)
+	(label "KEY_21"
+		(at 27.94 203.2 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "801054cf-515e-4694-a583-1fac9cc493ac")
+	)
+	(label "5V_L"
+		(at 279.4 254 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "86b6f44e-6359-4cfd-b959-b9de18c71efe")
+	)
+	(label "L_KEY7"
+		(at 177.8 215.9 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "87247c17-e072-4f8a-9336-a3fda4f97d80")
+	)
+	(label "KEY_17"
+		(at 66.04 165.1 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "885cd219-927f-452a-b735-55e692c9ae42")
+	)
+	(label "L_KEY8"
+		(at 196.85 254 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "8b5596d0-5b53-4bb0-843b-97890a6ae20a")
+	)
 	(label "D+"
-		(at 273.05 49.53 180)
+		(at 68.58 59.69 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1981,8 +4317,48 @@
 		)
 		(uuid "90471f8f-bcd5-482e-9356-3bf7ad9774c5")
 	)
+	(label "L_KEY20"
+		(at 25.4 144.78 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "9331c25f-c315-4484-920e-4be46fbb7827")
+	)
+	(label "5V_L"
+		(at 241.3 215.9 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "94ad2400-c914-449f-b3e4-8fba022bad40")
+	)
+	(label "KEY_16"
+		(at 66.04 203.2 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "959c24d8-ee0f-4559-8a98-08dbe3628bf9")
+	)
+	(label "5V_L"
+		(at 90.17 139.7 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "95f4d50f-b750-4465-a767-1ab03d063348")
+	)
 	(label "U_+"
-		(at 257.81 46.99 0)
+		(at 53.34 57.15 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1991,8 +4367,258 @@
 		)
 		(uuid "9668d66c-9517-4cbb-9d70-f534752dd559")
 	)
+	(label "L_KEY13"
+		(at 139.7 144.78 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "99cfc25a-7af5-4583-978d-fa155fe2dea5")
+	)
+	(label "5V_L"
+		(at 128.27 177.8 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "abe6b48a-2e00-49ed-8df4-8a96b0133a58")
+	)
+	(label "5V_L"
+		(at 184.15 254 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "abecf3e5-bb6b-47f5-bda0-b1290486328b")
+	)
+	(label "L_KEY3"
+		(at 215.9 177.8 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "ac2020d3-edd7-4e2c-aa02-0e5a8e2da790")
+	)
+	(label "L_KEY18"
+		(at 63.5 139.7 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "b17a3393-7b0b-4b68-94a5-38b046aa2d85")
+	)
+	(label "KEY_3"
+		(at 217.17 165.1 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "b519e1f2-48ae-423c-a5fb-f2a62e551822")
+	)
+	(label "L_KEY18"
+		(at 63.5 182.88 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "b72d3deb-568d-4dc7-9c3a-4d4fd56b91ca")
+	)
+	(label "L_KEY2"
+		(at 254 259.08 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "b7c5f12e-9fad-4d69-8e02-dfa2ee03781d")
+	)
+	(label "L_KEY16"
+		(at 63.5 215.9 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "bbae7d0c-2280-46c6-92b2-44e5d3692002")
+	)
+	(label "L_KEY22"
+		(at 25.4 220.98 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "bc5c5471-309a-4a48-ba75-1de12aef0b62")
+	)
+	(label "L_KEY"
+		(at 254 254 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "bc7d1933-3636-46b3-9e62-fe91b379cb23")
+	)
+	(label "L_KEY5"
+		(at 177.8 139.7 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "c541a8e4-11a4-43ca-86cc-8fa5c95efa61")
+	)
+	(label "KEY_7"
+		(at 179.07 203.2 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "c9b9c608-5302-464b-a2b6-fab787b05001")
+	)
+	(label "L_KEY21"
+		(at 25.4 215.9 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "cab8b45a-f448-4ea7-98d8-84e545aff3d1")
+	)
+	(label "KEY_2"
+		(at 217.17 203.2 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "cb34666e-8f8d-4186-8435-b10091bc9e2c")
+	)
+	(label "KEY_4"
+		(at 217.17 127 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "cc8162df-4113-4adf-8c3e-33875ee9c5a1")
+	)
+	(label "L_KEY12"
+		(at 139.7 182.88 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "d2fcee8b-2717-4339-9bcf-4f2293099077")
+	)
+	(label "5V_L"
+		(at 203.2 177.8 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "d8b68821-05a7-4c52-a5cf-09cc67b148a9")
+	)
+	(label "KEY_10"
+		(at 142.24 203.2 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "d981c885-733f-4d5d-983b-cd5de03b1971")
+	)
+	(label "5V_L"
+		(at 52.07 215.9 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "e10a714a-b979-4e67-b858-bff4812a776e")
+	)
+	(label "L_KEY15"
+		(at 101.6 182.88 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "e5b5b0b1-a654-4246-afb3-0ad4b3477a47")
+	)
+	(label "5V_L"
+		(at 241.3 139.7 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "f3a82943-8f49-48a0-924c-aa106f31b7f2")
+	)
+	(label "KEY_5"
+		(at 179.07 127 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "f52d82b9-6f6c-4c1f-a365-0b1ae6afc57f")
+	)
+	(label "KEY_14"
+		(at 104.14 165.1 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "f63b88a5-b30a-4367-b785-7dc0fa5dd727")
+	)
+	(label "L_KEY8"
+		(at 177.8 220.98 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "f79de2f3-cd86-4c05-a316-0ef6495537c8")
+	)
 	(label "U_-"
-		(at 257.81 41.91 0)
+		(at 53.34 52.07 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2001,33 +4627,63 @@
 		)
 		(uuid "f7c0d37d-2cdf-4891-89e1-e4cfdb897346")
 	)
+	(label "L_KEY19"
+		(at 63.5 144.78 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "fdc681e2-bc81-4a2f-9968-c6e28a9870e7")
+	)
+	(label "L_KEY14"
+		(at 101.6 144.78 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "fdd92be1-ec9f-4f33-9801-f87e01a689b8")
+	)
+	(label "L_KEY21"
+		(at 25.4 182.88 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "fde72d61-a5cd-4143-9a82-15e5cf65dbda")
+	)
 	(symbol
-		(lib_id "Device:R")
-		(at 266.7 33.02 90)
+		(lib_id "Switch:SW_Push")
+		(at 115.57 127 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "1225d14d-c4b8-418d-a8a6-b825ab99a6f4")
-		(property "Reference" "R1"
-			(at 264.16 30.48 90)
+		(uuid "008cabde-d6c5-42d0-b74b-a8bd4b11efda")
+		(property "Reference" "SW13"
+			(at 119.38 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "5K1"
-			(at 267.97 30.48 90)
+		(property "Value" "SW_Push"
+			(at 115.57 129.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 266.7 34.798 90)
+		(property "Footprint" "User_Button_Switch_Keyboard:SW_Cherry_MX_1.00u_Hotswap"
+			(at 115.57 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2036,7 +4692,275 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 266.7 33.02 0)
+			(at 115.57 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 115.57 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "209c2073-2d4a-4e07-8655-51e40b3e525d")
+		)
+		(pin "1"
+			(uuid "9c4084cb-1568-4bec-a6e1-22329e3bf83e")
+		)
+		(instances
+			(project "corne-inidan-hotswap"
+				(path "/c90c0725-f1d3-4c5d-9757-c1f2f2a5449f/f4940f7d-bc6d-4495-a44d-e8b9a3eadf42"
+					(reference "SW13")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 121.92 128.27 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "03ea0060-2fa5-49fb-9e9a-9f56312f2627")
+		(property "Reference" "#PWR031"
+			(at 121.92 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 121.92 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 121.92 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 121.92 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 121.92 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "daa879ba-6a0a-417c-94c5-87a395b21b21")
+		)
+		(instances
+			(project "corne-inidan-hotswap"
+				(path "/c90c0725-f1d3-4c5d-9757-c1f2f2a5449f/f4940f7d-bc6d-4495-a44d-e8b9a3eadf42"
+					(reference "#PWR031")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 219.71 260.35 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "0478c835-8b9a-45a4-b3c0-7e7606536625")
+		(property "Reference" "#PWR022"
+			(at 219.71 266.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 219.71 265.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 219.71 260.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 219.71 260.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 219.71 260.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "0a185a47-8d32-4bb6-bac0-66e7cbe2dfe8")
+		)
+		(instances
+			(project "corne-inidan-hotswap"
+				(path "/c90c0725-f1d3-4c5d-9757-c1f2f2a5449f/f4940f7d-bc6d-4495-a44d-e8b9a3eadf42"
+					(reference "#PWR022")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 83.82 128.27 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "06fb3ff7-2161-4f36-9555-9b2e025899b7")
+		(property "Reference" "#PWR037"
+			(at 83.82 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 83.82 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 83.82 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 83.82 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 83.82 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "40afccf3-3f05-42e7-afa4-b0ec026cc1a8")
+		)
+		(instances
+			(project "corne-inidan-hotswap"
+				(path "/c90c0725-f1d3-4c5d-9757-c1f2f2a5449f/f4940f7d-bc6d-4495-a44d-e8b9a3eadf42"
+					(reference "#PWR037")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 62.23 43.18 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "1225d14d-c4b8-418d-a8a6-b825ab99a6f4")
+		(property "Reference" "R1"
+			(at 59.69 40.64 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "5K1"
+			(at 63.5 40.64 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 62.23 44.958 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 62.23 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2045,7 +4969,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 266.7 33.02 0)
+			(at 62.23 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2054,7 +4978,7 @@
 			)
 		)
 		(property "LCSC_Part" "C23186"
-			(at 266.7 33.02 90)
+			(at 62.23 43.18 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2063,7 +4987,7 @@
 			)
 		)
 		(property "Manufacturer_Name" "MULTICOMP PRO"
-			(at 266.7 33.02 90)
+			(at 62.23 43.18 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2072,7 +4996,7 @@
 			)
 		)
 		(property "Manufacturer_Name_1" ""
-			(at 266.7 33.02 90)
+			(at 62.23 43.18 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2081,7 +5005,7 @@
 			)
 		)
 		(property "Manufacturer_Name_2" "UNI-ROYAL(Uniroyal Elec)"
-			(at 266.7 33.02 90)
+			(at 62.23 43.18 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2090,7 +5014,7 @@
 			)
 		)
 		(property "Manufacturer_Part_Number" "MCWR06X5101FTL"
-			(at 266.7 33.02 90)
+			(at 62.23 43.18 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2099,7 +5023,7 @@
 			)
 		)
 		(property "Manufacturer_Part_Number_1" ""
-			(at 266.7 33.02 90)
+			(at 62.23 43.18 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2108,7 +5032,7 @@
 			)
 		)
 		(property "Manufacturer_Part_Number_2" "0603WAF5101T5E"
-			(at 266.7 33.02 90)
+			(at 62.23 43.18 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2132,8 +5056,355 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 234.95 128.27 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "2208233d-1e37-42d9-bb9f-9e0d10ac8a73")
+		(property "Reference" "#PWR013"
+			(at 234.95 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 234.95 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 234.95 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 234.95 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 234.95 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "6164be6b-d80a-4082-9ba9-6113c8c75ad4")
+		)
+		(instances
+			(project "corne-inidan-hotswap"
+				(path "/c90c0725-f1d3-4c5d-9757-c1f2f2a5449f/f4940f7d-bc6d-4495-a44d-e8b9a3eadf42"
+					(reference "#PWR013")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 49.53 184.15 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "295d5f6c-976a-47e1-8da8-bedbc7770a10")
+		(property "Reference" "#PWR047"
+			(at 49.53 190.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 49.53 189.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 49.53 184.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 49.53 184.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 49.53 184.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "3e85edb2-242c-4dd1-8cce-25958b4834e0")
+		)
+		(instances
+			(project "corne-inidan-hotswap"
+				(path "/c90c0725-f1d3-4c5d-9757-c1f2f2a5449f/f4940f7d-bc6d-4495-a44d-e8b9a3eadf42"
+					(reference "#PWR047")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 228.6 165.1 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "2a9db0e9-04ff-4f82-b33d-85da44e9b303")
+		(property "Reference" "SW3"
+			(at 232.41 162.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_Push"
+			(at 228.6 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "User_Button_Switch_Keyboard:SW_Cherry_MX_1.00u_Hotswap"
+			(at 228.6 160.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 228.6 160.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 228.6 165.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "359d09fd-f628-482a-a721-49a515113ba6")
+		)
+		(pin "1"
+			(uuid "e5d70243-e3b3-479f-85fa-3c753d79c0e7")
+		)
+		(instances
+			(project "corne-inidan-hotswap"
+				(path "/c90c0725-f1d3-4c5d-9757-c1f2f2a5449f/f4940f7d-bc6d-4495-a44d-e8b9a3eadf42"
+					(reference "SW3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "LED_RGB:LED_SK6812MINI-E")
+		(at 116.84 180.34 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "2c0fdc55-fbc3-4c52-9960-b48766a0190a")
+		(property "Reference" "LED14"
+			(at 116.84 173.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SK6812MINI-E"
+			(at 116.84 186.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "User_Button_Switch_Keyboard:YS-SK6812MINI-E"
+			(at 116.84 180.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 116.84 180.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 116.84 180.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "b44ba735-25fd-4abf-8766-2973d4c53bd1")
+		)
+		(pin "3"
+			(uuid "453d1008-f7db-4fe2-a84a-e18e82893f90")
+		)
+		(pin "4"
+			(uuid "862fb3dc-aad8-49c1-97fd-2b3089ce11bf")
+		)
+		(pin "1"
+			(uuid "d4e884e9-1b3d-4931-9998-f08a8ef3d9e9")
+		)
+		(instances
+			(project "corne-inidan-hotswap"
+				(path "/c90c0725-f1d3-4c5d-9757-c1f2f2a5449f/f4940f7d-bc6d-4495-a44d-e8b9a3eadf42"
+					(reference "LED14")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "LED_RGB:LED_SK6812MINI-E")
+		(at 78.74 180.34 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "300d9192-a259-41b6-b343-3fb0e8efe035")
+		(property "Reference" "LED17"
+			(at 78.74 173.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SK6812MINI-E"
+			(at 78.74 186.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "User_Button_Switch_Keyboard:YS-SK6812MINI-E"
+			(at 78.74 180.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 78.74 180.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 78.74 180.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "53b989ca-59e4-481b-9fa0-17174c1de171")
+		)
+		(pin "3"
+			(uuid "accf2533-e5b5-4992-a728-4dac97eb9bce")
+		)
+		(pin "4"
+			(uuid "f9f5b06f-a6c9-4057-b343-a3ec722d0f08")
+		)
+		(pin "1"
+			(uuid "7f69443d-f4cf-4111-8b52-ae62cec47e23")
+		)
+		(instances
+			(project "corne-inidan-hotswap"
+				(path "/c90c0725-f1d3-4c5d-9757-c1f2f2a5449f/f4940f7d-bc6d-4495-a44d-e8b9a3eadf42"
+					(reference "LED17")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Connector:TestPoint")
-		(at 273.05 49.53 270)
+		(at 68.58 59.69 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
@@ -2141,7 +5412,7 @@
 		(dnp no)
 		(uuid "325d1189-68e1-47d2-90ee-d01857e667c5")
 		(property "Reference" "TP10"
-			(at 273.05 46.99 90)
+			(at 68.58 57.15 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2150,7 +5421,7 @@
 			)
 		)
 		(property "Value" "TestPoint"
-			(at 275.0821 52.07 0)
+			(at 70.6121 62.23 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2160,7 +5431,7 @@
 			)
 		)
 		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
-			(at 273.05 54.61 0)
+			(at 68.58 64.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2169,7 +5440,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 273.05 54.61 0)
+			(at 68.58 64.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2178,7 +5449,7 @@
 			)
 		)
 		(property "Description" "test point"
-			(at 273.05 49.53 0)
+			(at 68.58 59.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2187,7 +5458,7 @@
 			)
 		)
 		(property "LCSC_Part" ""
-			(at 273.05 49.53 0)
+			(at 68.58 59.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2208,8 +5479,221 @@
 		)
 	)
 	(symbol
+		(lib_id "LED_RGB:LED_SK6812MINI-E")
+		(at 229.87 142.24 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "331c6a94-4f06-4be0-a9e6-e177cf9c5a71")
+		(property "Reference" "LED4"
+			(at 229.87 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SK6812MINI-E"
+			(at 229.87 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "User_Button_Switch_Keyboard:YS-SK6812MINI-E"
+			(at 229.87 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 229.87 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 229.87 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "84995fca-6b63-4e15-9b48-1dfa2c466dcb")
+		)
+		(pin "3"
+			(uuid "aa1a7072-a620-4619-a472-e6497092cdda")
+		)
+		(pin "4"
+			(uuid "d4d51e66-74d5-425b-bb7c-bd7f0573a364")
+		)
+		(pin "1"
+			(uuid "9d6da1d5-2244-430e-a7f9-3724555cbaf6")
+		)
+		(instances
+			(project "corne-inidan-hotswap"
+				(path "/c90c0725-f1d3-4c5d-9757-c1f2f2a5449f/f4940f7d-bc6d-4495-a44d-e8b9a3eadf42"
+					(reference "LED4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 39.37 203.2 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "37c67bc5-57e7-4965-a5e1-e446f664f4d9")
+		(property "Reference" "SW21"
+			(at 43.18 200.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_Push"
+			(at 39.37 205.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "User_Button_Switch_Keyboard:SW_Cherry_MX_1.00u_Hotswap"
+			(at 39.37 198.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 39.37 198.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 39.37 203.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "ba5f1bf9-b9ab-4770-bc80-97d16122a477")
+		)
+		(pin "1"
+			(uuid "5db3c213-9a16-4dd2-b51d-9d7126e655f9")
+		)
+		(instances
+			(project "corne-inidan-hotswap"
+				(path "/c90c0725-f1d3-4c5d-9757-c1f2f2a5449f/f4940f7d-bc6d-4495-a44d-e8b9a3eadf42"
+					(reference "SW21")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "LED_RGB:LED_SK6812MINI-E")
+		(at 116.84 218.44 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "37fae7b0-5d74-4c75-a433-e548f0ae0901")
+		(property "Reference" "LED15"
+			(at 116.84 212.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SK6812MINI-E"
+			(at 116.84 224.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "User_Button_Switch_Keyboard:YS-SK6812MINI-E"
+			(at 116.84 218.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 116.84 218.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 116.84 218.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "7ea16012-7678-44b0-aa9b-16770e2e9142")
+		)
+		(pin "3"
+			(uuid "7a820072-7786-4ddb-a640-0272cab7ced6")
+		)
+		(pin "4"
+			(uuid "8e41524c-0a62-4329-9545-9b0a2491f526")
+		)
+		(pin "1"
+			(uuid "f846f78a-403e-4da2-86ad-c5d0b0094bee")
+		)
+		(instances
+			(project "corne-inidan-hotswap"
+				(path "/c90c0725-f1d3-4c5d-9757-c1f2f2a5449f/f4940f7d-bc6d-4495-a44d-e8b9a3eadf42"
+					(reference "LED15")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Connector:TestPoint")
-		(at 273.05 44.45 270)
+		(at 68.58 54.61 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
@@ -2217,7 +5701,7 @@
 		(dnp no)
 		(uuid "39af9865-56c2-481e-8b0c-e8f8296746d8")
 		(property "Reference" "TP9"
-			(at 274.32 41.91 90)
+			(at 69.85 52.07 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2226,7 +5710,7 @@
 			)
 		)
 		(property "Value" "TestPoint"
-			(at 275.0821 46.99 0)
+			(at 70.6121 57.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2236,7 +5720,7 @@
 			)
 		)
 		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
-			(at 273.05 49.53 0)
+			(at 68.58 59.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2245,7 +5729,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 273.05 49.53 0)
+			(at 68.58 59.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2254,7 +5738,7 @@
 			)
 		)
 		(property "Description" "test point"
-			(at 273.05 44.45 0)
+			(at 68.58 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2263,7 +5747,7 @@
 			)
 		)
 		(property "LCSC_Part" ""
-			(at 273.05 44.45 0)
+			(at 68.58 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2285,7 +5769,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 266.7 49.53 90)
+		(at 62.23 59.69 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2293,7 +5777,7 @@
 		(dnp no)
 		(uuid "3c77394f-7fc6-4c1b-b635-f9f560e9f042")
 		(property "Reference" "R5"
-			(at 266.7 46.99 90)
+			(at 62.23 57.15 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2301,7 +5785,7 @@
 			)
 		)
 		(property "Value" "0R"
-			(at 266.7 52.07 90)
+			(at 62.23 62.23 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2309,7 +5793,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 266.7 51.308 90)
+			(at 62.23 61.468 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2318,7 +5802,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 266.7 49.53 0)
+			(at 62.23 59.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2327,7 +5811,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 266.7 49.53 0)
+			(at 62.23 59.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2336,7 +5820,7 @@
 			)
 		)
 		(property "LCSC_Part" "C21189"
-			(at 266.7 49.53 90)
+			(at 62.23 59.69 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2345,7 +5829,7 @@
 			)
 		)
 		(property "Manufacturer_Name" "MULTICOMP PRO"
-			(at 266.7 49.53 90)
+			(at 62.23 59.69 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2354,7 +5838,7 @@
 			)
 		)
 		(property "Manufacturer_Name_1" ""
-			(at 266.7 49.53 90)
+			(at 62.23 59.69 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2363,7 +5847,7 @@
 			)
 		)
 		(property "Manufacturer_Name_2" "UNI-ROYAL(Uniroyal Elec)"
-			(at 266.7 49.53 90)
+			(at 62.23 59.69 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2372,7 +5856,7 @@
 			)
 		)
 		(property "Manufacturer_Part_Number" "MCWR06X000 PTL"
-			(at 266.7 49.53 90)
+			(at 62.23 59.69 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2381,7 +5865,7 @@
 			)
 		)
 		(property "Manufacturer_Part_Number_1" ""
-			(at 266.7 49.53 90)
+			(at 62.23 59.69 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2390,7 +5874,7 @@
 			)
 		)
 		(property "Manufacturer_Part_Number_2" "0603WAF0000T5E"
-			(at 266.7 49.53 90)
+			(at 62.23 59.69 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2414,8 +5898,282 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 238.76 184.15 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3db245ab-330b-490f-be71-8084c5917eca")
+		(property "Reference" "#PWR07"
+			(at 238.76 190.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 238.76 189.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 238.76 184.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 238.76 184.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 238.76 184.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "cd74f798-e454-4ee1-9d7c-2a3f2179e9e4")
+		)
+		(instances
+			(project "corne-inidan-hotswap"
+				(path "/c90c0725-f1d3-4c5d-9757-c1f2f2a5449f/f4940f7d-bc6d-4495-a44d-e8b9a3eadf42"
+					(reference "#PWR07")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "LED_RGB:LED_SK6812MINI-E")
+		(at 154.94 218.44 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "40a652dc-b21c-42b3-80b3-90fad4e3ce3d")
+		(property "Reference" "LED10"
+			(at 154.94 212.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SK6812MINI-E"
+			(at 154.94 224.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "User_Button_Switch_Keyboard:YS-SK6812MINI-E"
+			(at 154.94 218.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 154.94 218.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 154.94 218.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "4f06c6f2-ebd3-41ff-a628-afa31be7f134")
+		)
+		(pin "3"
+			(uuid "d565bbe5-abd6-4310-b9b7-dfb6ad346498")
+		)
+		(pin "4"
+			(uuid "182aba66-d902-4370-ab32-b8d1a30c65f9")
+		)
+		(pin "1"
+			(uuid "33af9a15-b81a-452a-9184-1025b39bbd26")
+		)
+		(instances
+			(project "corne-inidan-hotswap"
+				(path "/c90c0725-f1d3-4c5d-9757-c1f2f2a5449f/f4940f7d-bc6d-4495-a44d-e8b9a3eadf42"
+					(reference "LED10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 196.85 128.27 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "40eef555-b5a4-4e91-be81-ffc1c861e6e7")
+		(property "Reference" "#PWR015"
+			(at 196.85 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 196.85 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 196.85 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 196.85 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 196.85 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "2280b6cd-001b-421a-aceb-2845e16db89a")
+		)
+		(instances
+			(project "corne-inidan-hotswap"
+				(path "/c90c0725-f1d3-4c5d-9757-c1f2f2a5449f/f4940f7d-bc6d-4495-a44d-e8b9a3eadf42"
+					(reference "#PWR015")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 160.02 204.47 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "41fa5408-9ee8-44e5-914c-925decd63293")
+		(property "Reference" "#PWR027"
+			(at 160.02 210.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 160.02 209.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 160.02 204.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 160.02 204.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 160.02 204.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "00f80260-5756-4f1c-80cb-dd2d5e4613d4")
+		)
+		(instances
+			(project "corne-inidan-hotswap"
+				(path "/c90c0725-f1d3-4c5d-9757-c1f2f2a5449f/f4940f7d-bc6d-4495-a44d-e8b9a3eadf42"
+					(reference "#PWR027")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R")
-		(at 266.7 44.45 90)
+		(at 62.23 54.61 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2423,7 +6181,7 @@
 		(dnp no)
 		(uuid "428cce69-1f23-44ba-8c24-8ea15110e57e")
 		(property "Reference" "R3"
-			(at 265.43 41.91 90)
+			(at 60.96 52.07 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2431,7 +6189,7 @@
 			)
 		)
 		(property "Value" "0R"
-			(at 269.24 41.91 90)
+			(at 64.77 52.07 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2439,7 +6197,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 266.7 46.228 90)
+			(at 62.23 56.388 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2448,7 +6206,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 266.7 44.45 0)
+			(at 62.23 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2457,7 +6215,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 266.7 44.45 0)
+			(at 62.23 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2466,7 +6224,7 @@
 			)
 		)
 		(property "LCSC_Part" "C21189"
-			(at 266.7 44.45 90)
+			(at 62.23 54.61 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2475,7 +6233,7 @@
 			)
 		)
 		(property "Manufacturer_Name" "MULTICOMP PRO"
-			(at 266.7 44.45 90)
+			(at 62.23 54.61 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2484,7 +6242,7 @@
 			)
 		)
 		(property "Manufacturer_Name_1" ""
-			(at 266.7 44.45 90)
+			(at 62.23 54.61 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2493,7 +6251,7 @@
 			)
 		)
 		(property "Manufacturer_Name_2" "UNI-ROYAL(Uniroyal Elec)"
-			(at 266.7 44.45 90)
+			(at 62.23 54.61 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2502,7 +6260,7 @@
 			)
 		)
 		(property "Manufacturer_Part_Number" "MCWR06X000 PTL"
-			(at 266.7 44.45 90)
+			(at 62.23 54.61 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2511,7 +6269,7 @@
 			)
 		)
 		(property "Manufacturer_Part_Number_1" ""
-			(at 266.7 44.45 90)
+			(at 62.23 54.61 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2520,7 +6278,7 @@
 			)
 		)
 		(property "Manufacturer_Part_Number_2" "0603WAF0000T5E"
-			(at 266.7 44.45 90)
+			(at 62.23 54.61 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2544,8 +6302,215 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 125.73 146.05 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4601e43c-7ab9-49bf-89b1-6ffb4437f73b")
+		(property "Reference" "#PWR034"
+			(at 125.73 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 125.73 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 125.73 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 125.73 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 125.73 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ec1fe278-bd8a-4909-ba76-c60e74508a30")
+		)
+		(instances
+			(project "corne-inidan-hotswap"
+				(path "/c90c0725-f1d3-4c5d-9757-c1f2f2a5449f/f4940f7d-bc6d-4495-a44d-e8b9a3eadf42"
+					(reference "#PWR034")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 125.73 222.25 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "462685bd-7c77-4003-b86d-aad63d2c5e60")
+		(property "Reference" "#PWR036"
+			(at 125.73 228.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 125.73 227.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 125.73 222.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 125.73 222.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 125.73 222.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "08cdb912-a4f3-4e3b-8816-f96d163caf5c")
+		)
+		(instances
+			(project "corne-inidan-hotswap"
+				(path "/c90c0725-f1d3-4c5d-9757-c1f2f2a5449f/f4940f7d-bc6d-4495-a44d-e8b9a3eadf42"
+					(reference "#PWR036")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "LED_RGB:LED_SK6812MINI-E")
+		(at 191.77 180.34 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "46ef5b77-b03c-4c91-b9b7-e1472aa21f80")
+		(property "Reference" "LED6"
+			(at 191.77 173.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SK6812MINI-E"
+			(at 191.77 186.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "User_Button_Switch_Keyboard:YS-SK6812MINI-E"
+			(at 191.77 180.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 191.77 180.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 191.77 180.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "a13a6a30-6193-4216-85e2-28750c6d1c5b")
+		)
+		(pin "3"
+			(uuid "c5ee4d1a-08a1-4f28-8327-30a216ca0daa")
+		)
+		(pin "4"
+			(uuid "1d5c8159-e851-4442-8168-2508b65bedc7")
+		)
+		(pin "1"
+			(uuid "f5bc9d66-f513-470d-95e0-c495901db2a3")
+		)
+		(instances
+			(project "corne-inidan-hotswap"
+				(path "/c90c0725-f1d3-4c5d-9757-c1f2f2a5449f/f4940f7d-bc6d-4495-a44d-e8b9a3eadf42"
+					(reference "LED6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:D_Schottky_Small_Filled")
-		(at 246.38 20.32 180)
+		(at 41.91 30.48 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2553,7 +6518,7 @@
 		(dnp no)
 		(uuid "488a4cd2-5e5b-4760-9c17-c6f906968a07")
 		(property "Reference" "D1"
-			(at 246.38 17.78 0)
+			(at 41.91 27.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2561,7 +6526,7 @@
 			)
 		)
 		(property "Value" "DSK34"
-			(at 246.38 22.86 0)
+			(at 41.91 33.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2569,7 +6534,7 @@
 			)
 		)
 		(property "Footprint" "Diode_SMD:D_SOD-123F"
-			(at 246.38 20.32 90)
+			(at 41.91 30.48 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2578,7 +6543,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 246.38 20.32 90)
+			(at 41.91 30.48 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2587,7 +6552,7 @@
 			)
 		)
 		(property "Description" "Schottky diode, small symbol, filled shape"
-			(at 246.38 20.32 0)
+			(at 41.91 30.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2596,7 +6561,7 @@
 			)
 		)
 		(property "LCSC_Part" "C727076"
-			(at 246.38 20.32 0)
+			(at 41.91 30.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2605,7 +6570,7 @@
 			)
 		)
 		(property "Manufacturer_Name_2" "TWGMC"
-			(at 246.38 20.32 0)
+			(at 41.91 30.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2614,7 +6579,7 @@
 			)
 		)
 		(property "Manufacturer_Part_Number_2" "DSK34"
-			(at 246.38 20.32 0)
+			(at 41.91 30.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2639,7 +6604,7 @@
 	)
 	(symbol
 		(lib_id "power:VCC")
-		(at 251.46 20.32 270)
+		(at 46.99 30.48 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2647,7 +6612,7 @@
 		(dnp no)
 		(uuid "48e67733-a543-45e9-a22c-eea134c5094c")
 		(property "Reference" "#PWR06"
-			(at 247.65 20.32 0)
+			(at 43.18 30.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2656,7 +6621,7 @@
 			)
 		)
 		(property "Value" "VCC"
-			(at 251.46 17.78 90)
+			(at 46.99 27.94 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2665,7 +6630,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 251.46 20.32 0)
+			(at 46.99 30.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2674,7 +6639,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 251.46 20.32 0)
+			(at 46.99 30.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2683,7 +6648,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"VCC\""
-			(at 251.46 20.32 0)
+			(at 46.99 30.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2704,8 +6669,1238 @@
 		)
 	)
 	(symbol
+		(lib_id "LED_RGB:LED_SK6812MINI-E")
+		(at 172.72 256.54 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "4a82fec7-856f-4d20-9776-c0a0c12a4a7b")
+		(property "Reference" "LED9"
+			(at 172.72 250.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SK6812MINI-E"
+			(at 172.72 262.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "User_Button_Switch_Keyboard:YS-SK6812MINI-E"
+			(at 172.72 256.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 172.72 256.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 172.72 256.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "03d67de3-e11e-421a-aa17-7073998079f3")
+		)
+		(pin "3"
+			(uuid "15cea291-d931-4a2e-a73c-9dc92585a23b")
+		)
+		(pin "4"
+			(uuid "16d56e0c-9313-4551-a255-956eaf97b8f5")
+		)
+		(pin "1"
+			(uuid "cce9d064-b233-4b0a-94ee-0781f15143e2")
+		)
+		(instances
+			(project "corne-inidan-hotswap"
+				(path "/c90c0725-f1d3-4c5d-9757-c1f2f2a5449f/f4940f7d-bc6d-4495-a44d-e8b9a3eadf42"
+					(reference "LED9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 209.55 241.3 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "4be688ed-1d10-4e17-a302-d8b9bdd514fc")
+		(property "Reference" "SW8"
+			(at 213.36 237.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_Push"
+			(at 209.55 243.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "User_Button_Switch_Keyboard:SW_Cherry_MX_1.00u_Hotswap"
+			(at 209.55 236.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 209.55 236.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 209.55 241.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "6b937ba2-9e99-44c3-b209-7f636414c4a9")
+		)
+		(pin "1"
+			(uuid "291c5820-3430-46aa-bb1c-12b0adcc2ed4")
+		)
+		(instances
+			(project "corne-inidan-hotswap"
+				(path "/c90c0725-f1d3-4c5d-9757-c1f2f2a5449f/f4940f7d-bc6d-4495-a44d-e8b9a3eadf42"
+					(reference "SW8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 196.85 166.37 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4f0752ee-4c69-48e0-88e6-03c153b42e1a")
+		(property "Reference" "#PWR016"
+			(at 196.85 172.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 196.85 171.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 196.85 166.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 196.85 166.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 196.85 166.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "92262178-c82c-40de-9049-1ac0dbf75afd")
+		)
+		(instances
+			(project "corne-inidan-hotswap"
+				(path "/c90c0725-f1d3-4c5d-9757-c1f2f2a5449f/f4940f7d-bc6d-4495-a44d-e8b9a3eadf42"
+					(reference "#PWR016")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "LED_RGB:LED_SK6812MINI-E")
+		(at 78.74 142.24 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "4f44cc5e-4f3e-4fe7-b192-ea77c9fe7ac8")
+		(property "Reference" "LED18"
+			(at 78.74 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SK6812MINI-E"
+			(at 78.74 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "User_Button_Switch_Keyboard:YS-SK6812MINI-E"
+			(at 78.74 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 78.74 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 78.74 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "494c56d5-f9bc-4943-a55b-465395e63f38")
+		)
+		(pin "3"
+			(uuid "862dee92-198a-4df5-9917-17633c69498f")
+		)
+		(pin "4"
+			(uuid "45e6f258-3b15-451f-a2ac-3fd2c9f84a64")
+		)
+		(pin "1"
+			(uuid "6290b3a4-19a9-4e0d-b809-052fcb7fe8c1")
+		)
+		(instances
+			(project "corne-inidan-hotswap"
+				(path "/c90c0725-f1d3-4c5d-9757-c1f2f2a5449f/f4940f7d-bc6d-4495-a44d-e8b9a3eadf42"
+					(reference "LED18")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "LED_RGB:LED_SK6812MINI-E")
+		(at 40.64 180.34 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "51f29d8c-a6ce-4d02-8118-b25609333f79")
+		(property "Reference" "LED20"
+			(at 40.64 173.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SK6812MINI-E"
+			(at 40.64 186.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "User_Button_Switch_Keyboard:YS-SK6812MINI-E"
+			(at 40.64 180.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 40.64 180.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 40.64 180.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "aae17267-9cdc-4046-ba32-9b7d33340504")
+		)
+		(pin "3"
+			(uuid "eca140c0-a99a-4a43-bde1-ca622cd55d10")
+		)
+		(pin "4"
+			(uuid "c065b15c-d48f-4b80-a8f5-6d3b9716fdd6")
+		)
+		(pin "1"
+			(uuid "bcb2cf09-ddfa-492c-8821-87a946be9f78")
+		)
+		(instances
+			(project "corne-inidan-hotswap"
+				(path "/c90c0725-f1d3-4c5d-9757-c1f2f2a5449f/f4940f7d-bc6d-4495-a44d-e8b9a3eadf42"
+					(reference "LED20")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 171.45 241.3 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "53ffb800-6e81-4b34-a1c5-97cf58ac24a1")
+		(property "Reference" "SW9"
+			(at 175.26 237.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_Push"
+			(at 171.45 243.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "User_Button_Switch_Keyboard:SW_Cherry_MX_1.00u_Hotswap"
+			(at 171.45 236.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 171.45 236.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 171.45 241.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "5387936f-55d3-4f23-965e-7fa45b862206")
+		)
+		(pin "1"
+			(uuid "92a5ac33-1938-4092-aef6-f7d68358ca26")
+		)
+		(instances
+			(project "corne-inidan-hotswap"
+				(path "/c90c0725-f1d3-4c5d-9757-c1f2f2a5449f/f4940f7d-bc6d-4495-a44d-e8b9a3eadf42"
+					(reference "SW9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 77.47 165.1 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "5482067f-af9b-49f9-96b8-e8bac29708ba")
+		(property "Reference" "SW17"
+			(at 81.28 162.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_Push"
+			(at 77.47 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "User_Button_Switch_Keyboard:SW_Cherry_MX_1.00u_Hotswap"
+			(at 77.47 160.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 77.47 160.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 77.47 165.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "e88d34f9-a5bb-46e6-8634-97fcdb0fe700")
+		)
+		(pin "1"
+			(uuid "775fba06-682c-4503-a05c-7d12de5a1ef7")
+		)
+		(instances
+			(project "corne-inidan-hotswap"
+				(path "/c90c0725-f1d3-4c5d-9757-c1f2f2a5449f/f4940f7d-bc6d-4495-a44d-e8b9a3eadf42"
+					(reference "SW17")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 200.66 184.15 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "56a53129-8f6d-413d-8088-162b06038424")
+		(property "Reference" "#PWR019"
+			(at 200.66 190.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 200.66 189.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 200.66 184.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 200.66 184.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 200.66 184.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "03259e6f-6a4d-47f8-9bfa-01c24d6d120c")
+		)
+		(instances
+			(project "corne-inidan-hotswap"
+				(path "/c90c0725-f1d3-4c5d-9757-c1f2f2a5449f/f4940f7d-bc6d-4495-a44d-e8b9a3eadf42"
+					(reference "#PWR019")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 200.66 222.25 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "596c2363-2101-4260-8c60-77fb9875363b")
+		(property "Reference" "#PWR020"
+			(at 200.66 228.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 200.66 227.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 200.66 222.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 200.66 222.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 200.66 222.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "0d99b571-0e79-4d57-a5d8-68c2762c6d5d")
+		)
+		(instances
+			(project "corne-inidan-hotswap"
+				(path "/c90c0725-f1d3-4c5d-9757-c1f2f2a5449f/f4940f7d-bc6d-4495-a44d-e8b9a3eadf42"
+					(reference "#PWR020")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 160.02 128.27 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "5a2a1bf7-4502-4f8c-a93b-2c0fc5a37dd2")
+		(property "Reference" "#PWR025"
+			(at 160.02 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 160.02 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 160.02 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 160.02 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 160.02 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "8f56fad8-34d1-44b2-89cb-0c9dbabe8f06")
+		)
+		(instances
+			(project "corne-inidan-hotswap"
+				(path "/c90c0725-f1d3-4c5d-9757-c1f2f2a5449f/f4940f7d-bc6d-4495-a44d-e8b9a3eadf42"
+					(reference "#PWR025")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 163.83 184.15 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "5af2353c-a612-4d80-b975-ff8612e057cf")
+		(property "Reference" "#PWR029"
+			(at 163.83 190.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 163.83 189.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 163.83 184.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 163.83 184.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 163.83 184.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "572dfad1-2644-490a-ac4d-768df742cfd1")
+		)
+		(instances
+			(project "corne-inidan-hotswap"
+				(path "/c90c0725-f1d3-4c5d-9757-c1f2f2a5449f/f4940f7d-bc6d-4495-a44d-e8b9a3eadf42"
+					(reference "#PWR029")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 228.6 127 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "68fc7f66-560d-42ad-91d5-7c85a8d53c30")
+		(property "Reference" "SW4"
+			(at 232.41 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_Push"
+			(at 228.6 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "User_Button_Switch_Keyboard:SW_Cherry_MX_1.00u_Hotswap"
+			(at 228.6 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 228.6 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 228.6 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "21f94f18-777a-4bc8-84bd-a8aae3f9c66a")
+		)
+		(pin "1"
+			(uuid "c2d68d06-219f-4db0-a405-14664238a6fe")
+		)
+		(instances
+			(project "corne-inidan-hotswap"
+				(path "/c90c0725-f1d3-4c5d-9757-c1f2f2a5449f/f4940f7d-bc6d-4495-a44d-e8b9a3eadf42"
+					(reference "SW4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 276.86 260.35 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "69a90802-57a8-4b27-902b-ac340339f08c")
+		(property "Reference" "#PWR09"
+			(at 276.86 266.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 276.86 265.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 276.86 260.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 276.86 260.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 276.86 260.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b6d17bba-5a89-4a3a-ae38-2633aa4f4b9c")
+		)
+		(instances
+			(project "corne-inidan-hotswap"
+				(path "/c90c0725-f1d3-4c5d-9757-c1f2f2a5449f/f4940f7d-bc6d-4495-a44d-e8b9a3eadf42"
+					(reference "#PWR09")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 200.66 146.05 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "6e5841c2-0020-4f24-bc4b-f631d9aae42f")
+		(property "Reference" "#PWR018"
+			(at 200.66 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 200.66 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 200.66 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 200.66 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 200.66 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "a3a9998b-7983-435b-8021-0ba18142f7da")
+		)
+		(instances
+			(project "corne-inidan-hotswap"
+				(path "/c90c0725-f1d3-4c5d-9757-c1f2f2a5449f/f4940f7d-bc6d-4495-a44d-e8b9a3eadf42"
+					(reference "#PWR018")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 45.72 166.37 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7020bbce-ff4a-4a16-97a2-3487c9fc82aa")
+		(property "Reference" "#PWR044"
+			(at 45.72 172.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 45.72 171.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 45.72 166.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 45.72 166.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 45.72 166.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "80955922-fc1a-4d43-ac39-8c239d654d27")
+		)
+		(instances
+			(project "corne-inidan-hotswap"
+				(path "/c90c0725-f1d3-4c5d-9757-c1f2f2a5449f/f4940f7d-bc6d-4495-a44d-e8b9a3eadf42"
+					(reference "#PWR044")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 121.92 204.47 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7258638d-18b7-46df-bf6e-e934f698dfde")
+		(property "Reference" "#PWR033"
+			(at 121.92 210.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 121.92 209.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 121.92 204.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 121.92 204.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 121.92 204.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "83bb1bb4-8bbd-419a-841f-9082e10a2ec6")
+		)
+		(instances
+			(project "corne-inidan-hotswap"
+				(path "/c90c0725-f1d3-4c5d-9757-c1f2f2a5449f/f4940f7d-bc6d-4495-a44d-e8b9a3eadf42"
+					(reference "#PWR033")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "LED_RGB:LED_SK6812MINI-E")
+		(at 40.64 218.44 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "7338bf22-61c2-469b-8a5a-629fdd617303")
+		(property "Reference" "LED21"
+			(at 40.64 212.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SK6812MINI-E"
+			(at 40.64 224.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "User_Button_Switch_Keyboard:YS-SK6812MINI-E"
+			(at 40.64 218.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 40.64 218.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 40.64 218.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "52426497-ef6c-4d93-824c-1b0f08058ad9")
+		)
+		(pin "3"
+			(uuid "1a1e5f46-c3a0-418a-81cb-2a90956d2816")
+		)
+		(pin "4"
+			(uuid "1cf306ab-6e09-4a1e-ab5f-2a585aa0d31f")
+		)
+		(pin "1"
+			(uuid "86db8a81-4530-430b-a8a0-e618b770a222")
+		)
+		(instances
+			(project "corne-inidan-hotswap"
+				(path "/c90c0725-f1d3-4c5d-9757-c1f2f2a5449f/f4940f7d-bc6d-4495-a44d-e8b9a3eadf42"
+					(reference "LED21")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 234.95 166.37 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "73fb8f47-5677-409c-97ad-c6c2053e011d")
+		(property "Reference" "#PWR05"
+			(at 234.95 172.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 234.95 171.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 234.95 166.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 234.95 166.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 234.95 166.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c4aaa91a-6f76-493c-af23-4949057687c0")
+		)
+		(instances
+			(project "corne-inidan-hotswap"
+				(path "/c90c0725-f1d3-4c5d-9757-c1f2f2a5449f/f4940f7d-bc6d-4495-a44d-e8b9a3eadf42"
+					(reference "#PWR05")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Connector:TestPoint")
-		(at 261.62 25.4 0)
+		(at 57.15 35.56 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
@@ -2713,7 +7908,7 @@
 		(dnp no)
 		(uuid "7797d4df-366b-4221-9903-55a44fde9f67")
 		(property "Reference" "TP3"
-			(at 260.35 20.32 0)
+			(at 55.88 30.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2722,7 +7917,7 @@
 			)
 		)
 		(property "Value" "TestPoint"
-			(at 264.16 23.3679 0)
+			(at 59.69 33.5279 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2732,7 +7927,7 @@
 			)
 		)
 		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
-			(at 266.7 25.4 0)
+			(at 62.23 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2741,7 +7936,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 266.7 25.4 0)
+			(at 62.23 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2750,7 +7945,7 @@
 			)
 		)
 		(property "Description" "test point"
-			(at 261.62 25.4 0)
+			(at 57.15 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2759,7 +7954,7 @@
 			)
 		)
 		(property "LCSC_Part" ""
-			(at 261.62 25.4 0)
+			(at 57.15 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2780,34 +7975,32 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+5V")
-		(at 241.3 20.32 90)
+		(lib_id "LED_RGB:LED_SK6812MINI-E")
+		(at 116.84 142.24 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "819000e2-16d6-4765-bfdf-7cb92b611492")
-		(property "Reference" "#PWR01"
-			(at 245.11 20.32 0)
+		(uuid "789fceb4-12a1-4ef1-b585-c463b90a6bdd")
+		(property "Reference" "LED13"
+			(at 116.84 135.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Value" "+5V"
-			(at 242.57 18.542 90)
+		(property "Value" "SK6812MINI-E"
+			(at 116.84 148.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Footprint" ""
-			(at 241.3 20.32 0)
+		(property "Footprint" "User_Button_Switch_Keyboard:YS-SK6812MINI-E"
+			(at 116.84 142.24 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2816,7 +8009,283 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 241.3 20.32 0)
+			(at 116.84 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 116.84 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "e4266694-e32f-4876-8305-6eb3c10c8a92")
+		)
+		(pin "3"
+			(uuid "09bcce6d-1b98-4965-8fe4-02301ad30d96")
+		)
+		(pin "4"
+			(uuid "d81f83e6-dc32-4f9d-9ed2-be26090fe551")
+		)
+		(pin "1"
+			(uuid "59037364-6a1f-4109-ad12-04b22f90d5fe")
+		)
+		(instances
+			(project "corne-inidan-hotswap"
+				(path "/c90c0725-f1d3-4c5d-9757-c1f2f2a5449f/f4940f7d-bc6d-4495-a44d-e8b9a3eadf42"
+					(reference "LED13")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 115.57 165.1 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "7ce4d100-075b-4015-8fc0-698277a97dec")
+		(property "Reference" "SW14"
+			(at 119.38 162.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_Push"
+			(at 115.57 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "User_Button_Switch_Keyboard:SW_Cherry_MX_1.00u_Hotswap"
+			(at 115.57 160.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 115.57 160.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 115.57 165.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "7ac94def-4f55-4d71-b2e6-b571f549cc53")
+		)
+		(pin "1"
+			(uuid "ae816357-264a-48ec-b83b-ddc65d685b26")
+		)
+		(instances
+			(project "corne-inidan-hotswap"
+				(path "/c90c0725-f1d3-4c5d-9757-c1f2f2a5449f/f4940f7d-bc6d-4495-a44d-e8b9a3eadf42"
+					(reference "SW14")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 238.76 146.05 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7cf243eb-757e-4c99-83db-e169a42c82ac")
+		(property "Reference" "#PWR014"
+			(at 238.76 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 238.76 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 238.76 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 238.76 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 238.76 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "0581f9a2-4783-459c-8bab-5cb9e4eeb1ea")
+		)
+		(instances
+			(project "corne-inidan-hotswap"
+				(path "/c90c0725-f1d3-4c5d-9757-c1f2f2a5449f/f4940f7d-bc6d-4495-a44d-e8b9a3eadf42"
+					(reference "#PWR014")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 49.53 146.05 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7fa88d06-fd06-46fd-9fb5-bc50a9916155")
+		(property "Reference" "#PWR046"
+			(at 49.53 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 49.53 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 49.53 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 49.53 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 49.53 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "cec7ce94-e805-4daa-8878-f0844433896c")
+		)
+		(instances
+			(project "corne-inidan-hotswap"
+				(path "/c90c0725-f1d3-4c5d-9757-c1f2f2a5449f/f4940f7d-bc6d-4495-a44d-e8b9a3eadf42"
+					(reference "#PWR046")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 36.83 30.48 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "819000e2-16d6-4765-bfdf-7cb92b611492")
+		(property "Reference" "#PWR01"
+			(at 40.64 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 38.1 28.702 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 36.83 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 36.83 30.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2825,7 +8294,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 241.3 20.32 0)
+			(at 36.83 30.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2846,35 +8315,32 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 245.11 67.31 90)
+		(lib_id "LED_RGB:LED_SK6812MINI-E")
+		(at 267.97 256.54 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "8cc8be76-09e3-43dc-89e2-1a48f5d616a5")
-		(property "Reference" "#PWR03"
-			(at 251.46 67.31 0)
+		(uuid "848dff9a-ef8b-4c00-81d2-beaab79c12ad")
+		(property "Reference" "LED1"
+			(at 267.97 250.19 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Value" "GND"
-			(at 250.19 67.31 0)
+		(property "Value" "SK6812MINI-E"
+			(at 267.97 262.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Footprint" ""
-			(at 245.11 67.31 0)
+		(property "Footprint" "User_Button_Switch_Keyboard:YS-SK6812MINI-E"
+			(at 267.97 256.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2883,7 +8349,150 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 245.11 67.31 0)
+			(at 267.97 256.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 267.97 256.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "5777c761-cf2d-4ea2-a81c-37d4fda20079")
+		)
+		(pin "3"
+			(uuid "2a129b1d-83b2-4753-b1b0-4a1435d4bffe")
+		)
+		(pin "4"
+			(uuid "e3434856-b779-4ff4-bbd8-3a11568ff11f")
+		)
+		(pin "1"
+			(uuid "7dd767df-bc90-4fa1-8c7b-5f43610f9ac6")
+		)
+		(instances
+			(project ""
+				(path "/c90c0725-f1d3-4c5d-9757-c1f2f2a5449f/f4940f7d-bc6d-4495-a44d-e8b9a3eadf42"
+					(reference "LED1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 190.5 127 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "86544dfa-4ef6-475d-9de4-c818a340dc02")
+		(property "Reference" "SW5"
+			(at 194.31 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_Push"
+			(at 190.5 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "User_Button_Switch_Keyboard:SW_Cherry_MX_1.00u_Hotswap"
+			(at 190.5 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 190.5 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 190.5 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "0247a18e-9ac2-4070-8f60-96bfa0d2d842")
+		)
+		(pin "1"
+			(uuid "be8f6e1f-f180-4c10-b25d-972352523076")
+		)
+		(instances
+			(project "corne-inidan-hotswap"
+				(path "/c90c0725-f1d3-4c5d-9757-c1f2f2a5449f/f4940f7d-bc6d-4495-a44d-e8b9a3eadf42"
+					(reference "SW5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 163.83 222.25 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "866a038a-8f25-4444-a970-41ceeed6e67d")
+		(property "Reference" "#PWR030"
+			(at 163.83 228.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 163.83 227.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 163.83 222.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 163.83 222.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2892,7 +8501,348 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 245.11 67.31 0)
+			(at 163.83 222.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "43b63243-c11d-4450-8bf0-44687ecb52d9")
+		)
+		(instances
+			(project "corne-inidan-hotswap"
+				(path "/c90c0725-f1d3-4c5d-9757-c1f2f2a5449f/f4940f7d-bc6d-4495-a44d-e8b9a3eadf42"
+					(reference "#PWR030")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 215.9 242.57 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "86863403-951f-4900-8bee-df4cedec83ee")
+		(property "Reference" "#PWR021"
+			(at 215.9 248.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 215.9 247.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 215.9 242.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 215.9 242.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 215.9 242.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "0a15d72c-8549-4a1d-980a-8c4d28f70193")
+		)
+		(instances
+			(project "corne-inidan-hotswap"
+				(path "/c90c0725-f1d3-4c5d-9757-c1f2f2a5449f/f4940f7d-bc6d-4495-a44d-e8b9a3eadf42"
+					(reference "#PWR021")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "LED_RGB:LED_SK6812MINI-E")
+		(at 78.74 218.44 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "87fb0349-5be4-4910-9567-2ed452c5729f")
+		(property "Reference" "LED16"
+			(at 78.74 212.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SK6812MINI-E"
+			(at 78.74 224.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "User_Button_Switch_Keyboard:YS-SK6812MINI-E"
+			(at 78.74 218.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 78.74 218.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 78.74 218.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "55149b92-4ae5-42e2-a0ff-3da035ed0139")
+		)
+		(pin "3"
+			(uuid "509752fa-b9b3-4032-b234-1b98c9e2bd23")
+		)
+		(pin "4"
+			(uuid "d2f8f3dd-f223-4447-9384-6444b8c77a0e")
+		)
+		(pin "1"
+			(uuid "c61626b7-a70f-48dc-802a-a056f38a0d79")
+		)
+		(instances
+			(project "corne-inidan-hotswap"
+				(path "/c90c0725-f1d3-4c5d-9757-c1f2f2a5449f/f4940f7d-bc6d-4495-a44d-e8b9a3eadf42"
+					(reference "LED16")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 87.63 146.05 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8a042f05-9a65-45e6-8368-263328d82a47")
+		(property "Reference" "#PWR040"
+			(at 87.63 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 87.63 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 87.63 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 87.63 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 87.63 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "6a8cbb1f-a63b-4335-b8d9-e8dd4ece074e")
+		)
+		(instances
+			(project "corne-inidan-hotswap"
+				(path "/c90c0725-f1d3-4c5d-9757-c1f2f2a5449f/f4940f7d-bc6d-4495-a44d-e8b9a3eadf42"
+					(reference "#PWR040")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 181.61 260.35 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8b2c807f-fb1b-4e41-bc4e-9563e22b6246")
+		(property "Reference" "#PWR024"
+			(at 181.61 266.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 181.61 265.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 181.61 260.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 181.61 260.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 181.61 260.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "98772599-4f17-4a16-9370-c262bcfa27ca")
+		)
+		(instances
+			(project "corne-inidan-hotswap"
+				(path "/c90c0725-f1d3-4c5d-9757-c1f2f2a5449f/f4940f7d-bc6d-4495-a44d-e8b9a3eadf42"
+					(reference "#PWR024")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 40.64 77.47 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8cc8be76-09e3-43dc-89e2-1a48f5d616a5")
+		(property "Reference" "#PWR03"
+			(at 46.99 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 45.72 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 40.64 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 40.64 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 40.64 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2913,16 +8863,905 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 45.72 204.47 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9222d2b8-4972-40b0-a2da-21d52d4216a3")
+		(property "Reference" "#PWR045"
+			(at 45.72 210.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 45.72 209.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 45.72 204.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 45.72 204.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 45.72 204.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ab96c7d9-0434-4ec7-8958-d3318b00a8a9")
+		)
+		(instances
+			(project "corne-inidan-hotswap"
+				(path "/c90c0725-f1d3-4c5d-9757-c1f2f2a5449f/f4940f7d-bc6d-4495-a44d-e8b9a3eadf42"
+					(reference "#PWR045")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 77.47 203.2 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "9b2f8036-5966-4936-bae0-029eb18f03d2")
+		(property "Reference" "SW16"
+			(at 81.28 200.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_Push"
+			(at 77.47 205.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "User_Button_Switch_Keyboard:SW_Cherry_MX_1.00u_Hotswap"
+			(at 77.47 198.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 77.47 198.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 77.47 203.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "365765ff-247f-41a0-9853-639b8740dbfd")
+		)
+		(pin "1"
+			(uuid "f793c6b0-ad60-421c-9c0d-d1090d0a3e7a")
+		)
+		(instances
+			(project "corne-inidan-hotswap"
+				(path "/c90c0725-f1d3-4c5d-9757-c1f2f2a5449f/f4940f7d-bc6d-4495-a44d-e8b9a3eadf42"
+					(reference "SW16")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 39.37 127 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "9c14557c-54ec-40ad-8460-f2cf8b8b0722")
+		(property "Reference" "SW19"
+			(at 43.18 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_Push"
+			(at 39.37 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "User_Button_Switch_Keyboard:SW_Cherry_MX_1.00u_Hotswap"
+			(at 39.37 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 39.37 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 39.37 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "0dc5d76e-e503-4a1a-aace-70398553a8e6")
+		)
+		(pin "1"
+			(uuid "bbc9db23-73a1-40a1-82e9-3aa0400947ce")
+		)
+		(instances
+			(project "corne-inidan-hotswap"
+				(path "/c90c0725-f1d3-4c5d-9757-c1f2f2a5449f/f4940f7d-bc6d-4495-a44d-e8b9a3eadf42"
+					(reference "SW19")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "LED_RGB:LED_SK6812MINI-E")
+		(at 229.87 218.44 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "9d81a77b-7075-4f7c-99c3-fb21677a24c5")
+		(property "Reference" "LED2"
+			(at 229.87 212.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SK6812MINI-E"
+			(at 229.87 224.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "User_Button_Switch_Keyboard:YS-SK6812MINI-E"
+			(at 229.87 218.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 229.87 218.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 229.87 218.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "25a4bdc8-21b6-4b04-86a4-f5f16f6222c1")
+		)
+		(pin "3"
+			(uuid "7b84ccfd-a2f0-4ff7-acd1-e8bf5798bb37")
+		)
+		(pin "4"
+			(uuid "0d873e7f-89c9-4d8e-ab87-7446232c750a")
+		)
+		(pin "1"
+			(uuid "2ce3d482-aa23-47f1-a880-0b6081a56387")
+		)
+		(instances
+			(project "corne-inidan-hotswap"
+				(path "/c90c0725-f1d3-4c5d-9757-c1f2f2a5449f/f4940f7d-bc6d-4495-a44d-e8b9a3eadf42"
+					(reference "LED2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 49.53 222.25 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9f1313a3-ebbe-4fdb-8652-51bca2956ae8")
+		(property "Reference" "#PWR048"
+			(at 49.53 228.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 49.53 227.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 49.53 222.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 49.53 222.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 49.53 222.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c39166b9-916f-4dc4-aa7e-4d09dda12f03")
+		)
+		(instances
+			(project "corne-inidan-hotswap"
+				(path "/c90c0725-f1d3-4c5d-9757-c1f2f2a5449f/f4940f7d-bc6d-4495-a44d-e8b9a3eadf42"
+					(reference "#PWR048")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 153.67 203.2 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "9ffe9721-620e-4aa4-a12f-3d9583f35f52")
+		(property "Reference" "SW10"
+			(at 157.48 200.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_Push"
+			(at 153.67 205.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "User_Button_Switch_Keyboard:SW_Cherry_MX_1.00u_Hotswap"
+			(at 153.67 198.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 153.67 198.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 153.67 203.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "b824fff2-83f0-4079-9a94-2857d1c243c9")
+		)
+		(pin "1"
+			(uuid "dbf0da57-abaa-49d0-b7aa-38b03d172742")
+		)
+		(instances
+			(project "corne-inidan-hotswap"
+				(path "/c90c0725-f1d3-4c5d-9757-c1f2f2a5449f/f4940f7d-bc6d-4495-a44d-e8b9a3eadf42"
+					(reference "SW10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 228.6 203.2 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "a2e8e1be-6e12-40ba-923e-c2ce89952179")
+		(property "Reference" "SW2"
+			(at 232.41 200.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_Push"
+			(at 228.6 205.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "User_Button_Switch_Keyboard:SW_Cherry_MX_1.00u_Hotswap"
+			(at 228.6 198.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 228.6 198.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 228.6 203.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "c3658258-8977-4573-917a-084e6849da70")
+		)
+		(pin "1"
+			(uuid "1af3f8f4-f59c-451f-8ec8-5251472e2bbe")
+		)
+		(instances
+			(project "corne-inidan-hotswap"
+				(path "/c90c0725-f1d3-4c5d-9757-c1f2f2a5449f/f4940f7d-bc6d-4495-a44d-e8b9a3eadf42"
+					(reference "SW2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 87.63 184.15 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a3a05e1d-5e03-4e3a-aaff-be5ab375d03c")
+		(property "Reference" "#PWR041"
+			(at 87.63 190.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 87.63 189.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 87.63 184.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 87.63 184.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 87.63 184.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "3d2aa302-a106-4727-b2ac-dcba3b570791")
+		)
+		(instances
+			(project "corne-inidan-hotswap"
+				(path "/c90c0725-f1d3-4c5d-9757-c1f2f2a5449f/f4940f7d-bc6d-4495-a44d-e8b9a3eadf42"
+					(reference "#PWR041")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 153.67 127 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "a8d040c7-da2c-474e-a718-34e6609bf7f5")
+		(property "Reference" "SW12"
+			(at 157.48 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_Push"
+			(at 153.67 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "User_Button_Switch_Keyboard:SW_Cherry_MX_1.00u_Hotswap"
+			(at 153.67 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 153.67 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 153.67 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "69053de9-0a2f-4ec1-828c-3d6b3b4de323")
+		)
+		(pin "1"
+			(uuid "026f4b29-3856-4658-b6e7-1fd7dcda0212")
+		)
+		(instances
+			(project "corne-inidan-hotswap"
+				(path "/c90c0725-f1d3-4c5d-9757-c1f2f2a5449f/f4940f7d-bc6d-4495-a44d-e8b9a3eadf42"
+					(reference "SW12")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "LED_RGB:LED_SK6812MINI-E")
+		(at 154.94 142.24 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "aae21d83-cdeb-46e8-b111-d38fe8828abb")
+		(property "Reference" "LED12"
+			(at 154.94 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SK6812MINI-E"
+			(at 154.94 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "User_Button_Switch_Keyboard:YS-SK6812MINI-E"
+			(at 154.94 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 154.94 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 154.94 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "8a44ce35-5f3b-41cc-ba81-d94b9cd45553")
+		)
+		(pin "3"
+			(uuid "ae2ee9f0-9e86-48d9-bf3a-071c39031df4")
+		)
+		(pin "4"
+			(uuid "02c0ec16-013b-4fe7-b3da-caa5cf9304fc")
+		)
+		(pin "1"
+			(uuid "433ae3a4-a10d-4f63-bda7-e391878935e0")
+		)
+		(instances
+			(project "corne-inidan-hotswap"
+				(path "/c90c0725-f1d3-4c5d-9757-c1f2f2a5449f/f4940f7d-bc6d-4495-a44d-e8b9a3eadf42"
+					(reference "LED12")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 190.5 165.1 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "af690466-54bf-4e79-9687-715912b080da")
+		(property "Reference" "SW6"
+			(at 194.31 162.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_Push"
+			(at 190.5 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "User_Button_Switch_Keyboard:SW_Cherry_MX_1.00u_Hotswap"
+			(at 190.5 160.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 190.5 160.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 190.5 165.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "93de48f2-4c3f-406a-b721-91496729b339")
+		)
+		(pin "1"
+			(uuid "52391908-3a3c-4d6a-a291-b1c005b6b08d")
+		)
+		(instances
+			(project "corne-inidan-hotswap"
+				(path "/c90c0725-f1d3-4c5d-9757-c1f2f2a5449f/f4940f7d-bc6d-4495-a44d-e8b9a3eadf42"
+					(reference "SW6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 39.37 165.1 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "b31c5688-ff88-4cea-b1e6-5b627c213b73")
+		(property "Reference" "SW20"
+			(at 43.18 162.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_Push"
+			(at 39.37 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "User_Button_Switch_Keyboard:SW_Cherry_MX_1.00u_Hotswap"
+			(at 39.37 160.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 39.37 160.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 39.37 165.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "fcd0a857-e0a0-446b-9de1-bb7e72bd300e")
+		)
+		(pin "1"
+			(uuid "1f9b81da-611b-41ec-920a-bc07fe0dd622")
+		)
+		(instances
+			(project "corne-inidan-hotswap"
+				(path "/c90c0725-f1d3-4c5d-9757-c1f2f2a5449f/f4940f7d-bc6d-4495-a44d-e8b9a3eadf42"
+					(reference "SW20")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "LED_RGB:LED_SK6812MINI-E")
+		(at 40.64 142.24 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "b3a4c38b-20de-41b4-9635-cea5c2f4f2df")
+		(property "Reference" "LED19"
+			(at 40.64 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SK6812MINI-E"
+			(at 40.64 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "User_Button_Switch_Keyboard:YS-SK6812MINI-E"
+			(at 40.64 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 40.64 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 40.64 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "92b5ca4a-6d12-45eb-be91-582c10aba260")
+		)
+		(pin "3"
+			(uuid "8759d7b2-2a74-40ae-a1e8-8103acf46b26")
+		)
+		(pin "4"
+			(uuid "ab210f16-c9f4-4fad-9941-fee249b1a3f9")
+		)
+		(pin "1"
+			(uuid "5ae707e9-c5a3-4262-81b5-dabec7130ca8")
+		)
+		(instances
+			(project "corne-inidan-hotswap"
+				(path "/c90c0725-f1d3-4c5d-9757-c1f2f2a5449f/f4940f7d-bc6d-4495-a44d-e8b9a3eadf42"
+					(reference "LED19")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Connector:USB_C_Receptacle_USB2.0_16P")
-		(at 242.57 44.45 0)
+		(at 38.1 54.61 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "b956b5e7-a074-4154-9264-8bea26ba4283")
-		(property "Reference" "GSM1"
-			(at 242.57 25.4 0)
+		(property "Reference" "MCU1"
+			(at 38.1 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2930,7 +9769,7 @@
 			)
 		)
 		(property "Value" "USB4105 - Type C USB 2.0 Connector"
-			(at 231.14 44.45 90)
+			(at 26.67 54.61 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2938,7 +9777,7 @@
 			)
 		)
 		(property "Footprint" "Connector_USB:USB_C_Receptacle_GCT_USB4105-xx-A_16P_TopMnt_Horizontal"
-			(at 246.38 44.45 0)
+			(at 41.91 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2947,7 +9786,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.usb.org/sites/default/files/documents/usb_type-c.zip"
-			(at 246.38 44.45 0)
+			(at 41.91 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2956,7 +9795,7 @@
 			)
 		)
 		(property "Description" "USB 2.0-only 16P Type-C Receptacle connector"
-			(at 242.57 44.45 0)
+			(at 38.1 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2965,7 +9804,7 @@
 			)
 		)
 		(property "Manufacturer_Name" "GCT"
-			(at 242.57 44.45 0)
+			(at 38.1 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2974,7 +9813,7 @@
 			)
 		)
 		(property "Manufacturer_Part_Number" "USB4105-15-A-120"
-			(at 242.57 44.45 0)
+			(at 38.1 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2983,7 +9822,7 @@
 			)
 		)
 		(property "LCSC_Part" "C2988369"
-			(at 242.57 44.45 0)
+			(at 38.1 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2992,7 +9831,7 @@
 			)
 		)
 		(property "Manufacturer_Name_2" "G-Switch"
-			(at 242.57 44.45 0)
+			(at 38.1 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3001,7 +9840,7 @@
 			)
 		)
 		(property "Manufacturer_Part_Number_2" "GT-USB-7010ASV"
-			(at 242.57 44.45 0)
+			(at 38.1 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3063,7 +9902,141 @@
 		(instances
 			(project "corne-inidan-hotswap"
 				(path "/c90c0725-f1d3-4c5d-9757-c1f2f2a5449f/f4940f7d-bc6d-4495-a44d-e8b9a3eadf42"
-					(reference "GSM1")
+					(reference "MCU1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 177.8 242.57 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ba4a6656-74d1-462f-92ff-d1c273823a1f")
+		(property "Reference" "#PWR023"
+			(at 177.8 248.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 177.8 247.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 177.8 242.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 177.8 242.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 177.8 242.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "3e6aa081-91af-4646-948c-91d8018f74cf")
+		)
+		(instances
+			(project "corne-inidan-hotswap"
+				(path "/c90c0725-f1d3-4c5d-9757-c1f2f2a5449f/f4940f7d-bc6d-4495-a44d-e8b9a3eadf42"
+					(reference "#PWR023")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 83.82 166.37 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "bccca5fb-d00d-4fcf-81a0-da8f6b43f0a3")
+		(property "Reference" "#PWR038"
+			(at 83.82 172.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 83.82 171.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 83.82 166.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 83.82 166.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 83.82 166.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "eba4ca49-2678-4c25-b39b-791be2d72dd2")
+		)
+		(instances
+			(project "corne-inidan-hotswap"
+				(path "/c90c0725-f1d3-4c5d-9757-c1f2f2a5449f/f4940f7d-bc6d-4495-a44d-e8b9a3eadf42"
+					(reference "#PWR038")
 					(unit 1)
 				)
 			)
@@ -3071,16 +10044,15 @@
 	)
 	(symbol
 		(lib_id "Switch:SW_Push")
-		(at 95.25 88.9 0)
+		(at 271.78 241.3 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "be5ace0b-70ed-46ff-a736-24abdc9be74b")
 		(property "Reference" "SW1"
-			(at 95.25 81.28 0)
+			(at 275.59 238.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3088,15 +10060,15 @@
 			)
 		)
 		(property "Value" "SW_Push"
-			(at 95.25 83.82 0)
+			(at 271.78 243.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_1.50u_PCB"
-			(at 95.25 83.82 0)
+		(property "Footprint" "User_Button_Switch_Keyboard:SW_Cherry_MX_1.50u_Hotswap"
+			(at 271.78 236.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3105,7 +10077,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 95.25 83.82 0)
+			(at 271.78 236.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3114,7 +10086,7 @@
 			)
 		)
 		(property "Description" "Push button switch, generic, two pins"
-			(at 95.25 88.9 0)
+			(at 271.78 241.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3138,17 +10110,17 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+5V")
-		(at 265.43 26.67 270)
-		(mirror x)
+		(lib_id "power:GND")
+		(at 125.73 184.15 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "d2f5a3f6-9a7f-491d-8b4e-e0af1640a800")
-		(property "Reference" "#PWR08"
-			(at 261.62 26.67 0)
+		(fields_autoplaced yes)
+		(uuid "c00b1c2c-c9d0-442d-9ac3-ec2069b3439f")
+		(property "Reference" "#PWR035"
+			(at 125.73 190.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3156,17 +10128,17 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "+5V"
-			(at 264.16 24.892 90)
+		(property "Value" "GND"
+			(at 125.73 189.23 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(hide yes)
 			)
 		)
 		(property "Footprint" ""
-			(at 265.43 26.67 0)
+			(at 125.73 184.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3175,7 +10147,549 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 265.43 26.67 0)
+			(at 125.73 184.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 125.73 184.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ca96f97d-caf5-4a71-94a2-eb877826682a")
+		)
+		(instances
+			(project "corne-inidan-hotswap"
+				(path "/c90c0725-f1d3-4c5d-9757-c1f2f2a5449f/f4940f7d-bc6d-4495-a44d-e8b9a3eadf42"
+					(reference "#PWR035")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 238.76 222.25 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c382a380-c483-49a5-bcfd-a7648b11a755")
+		(property "Reference" "#PWR012"
+			(at 238.76 228.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 238.76 227.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 238.76 222.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 238.76 222.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 238.76 222.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "6108db3a-f815-4b7c-90c3-a4ee36765e0d")
+		)
+		(instances
+			(project "corne-inidan-hotswap"
+				(path "/c90c0725-f1d3-4c5d-9757-c1f2f2a5449f/f4940f7d-bc6d-4495-a44d-e8b9a3eadf42"
+					(reference "#PWR012")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 45.72 128.27 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c482561a-23a8-4a68-a838-45447647fe99")
+		(property "Reference" "#PWR043"
+			(at 45.72 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 45.72 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 45.72 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 45.72 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 45.72 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b4ac4a45-3944-4d66-ab58-8b860d86920f")
+		)
+		(instances
+			(project "corne-inidan-hotswap"
+				(path "/c90c0725-f1d3-4c5d-9757-c1f2f2a5449f/f4940f7d-bc6d-4495-a44d-e8b9a3eadf42"
+					(reference "#PWR043")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 234.95 204.47 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c5facdc3-ca8a-450b-bbf7-ba38f3b474b5")
+		(property "Reference" "#PWR04"
+			(at 234.95 210.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 234.95 209.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 234.95 204.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 234.95 204.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 234.95 204.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c10942de-2286-4431-8c6a-febbdaff9e64")
+		)
+		(instances
+			(project "corne-inidan-hotswap"
+				(path "/c90c0725-f1d3-4c5d-9757-c1f2f2a5449f/f4940f7d-bc6d-4495-a44d-e8b9a3eadf42"
+					(reference "#PWR04")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 77.47 127 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "c7164d9e-dc1e-4993-a302-556335d92465")
+		(property "Reference" "SW18"
+			(at 81.28 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_Push"
+			(at 77.47 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "User_Button_Switch_Keyboard:SW_Cherry_MX_1.00u_Hotswap"
+			(at 77.47 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 77.47 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 77.47 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "4c7f070a-8cce-45b0-8947-30dfbcc8de42")
+		)
+		(pin "1"
+			(uuid "7599c103-b3b6-43e0-b00b-15fe3aa673c3")
+		)
+		(instances
+			(project "corne-inidan-hotswap"
+				(path "/c90c0725-f1d3-4c5d-9757-c1f2f2a5449f/f4940f7d-bc6d-4495-a44d-e8b9a3eadf42"
+					(reference "SW18")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 278.13 242.57 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c84b198e-c60c-4347-9e53-2d2a4bd05ff1")
+		(property "Reference" "#PWR02"
+			(at 278.13 248.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 278.13 247.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 278.13 242.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 278.13 242.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 278.13 242.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "76410068-3fe2-44b8-b67b-c47db836f1a7")
+		)
+		(instances
+			(project "corne-inidan-hotswap"
+				(path "/c90c0725-f1d3-4c5d-9757-c1f2f2a5449f/f4940f7d-bc6d-4495-a44d-e8b9a3eadf42"
+					(reference "#PWR02")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "LED_RGB:LED_SK6812MINI-E")
+		(at 191.77 218.44 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "cbafc844-6982-46f3-97f7-27eb5b1b2bef")
+		(property "Reference" "LED7"
+			(at 191.77 212.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SK6812MINI-E"
+			(at 191.77 224.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "User_Button_Switch_Keyboard:YS-SK6812MINI-E"
+			(at 191.77 218.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 191.77 218.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 191.77 218.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "52d05f51-9802-4a2a-8b4c-a1a7bf52a831")
+		)
+		(pin "3"
+			(uuid "d58e7e4b-5c92-4111-8fd1-11bf9a9e38e6")
+		)
+		(pin "4"
+			(uuid "c3dbf6c9-d86e-4dd0-a666-60938e3ca7ed")
+		)
+		(pin "1"
+			(uuid "6bc5c3ac-4766-4b8a-98cc-8800ab2e3a72")
+		)
+		(instances
+			(project "corne-inidan-hotswap"
+				(path "/c90c0725-f1d3-4c5d-9757-c1f2f2a5449f/f4940f7d-bc6d-4495-a44d-e8b9a3eadf42"
+					(reference "LED7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 153.67 165.1 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "d2ae8c3c-582b-465e-8bc1-f725efe4a753")
+		(property "Reference" "SW11"
+			(at 157.48 162.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_Push"
+			(at 153.67 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "User_Button_Switch_Keyboard:SW_Cherry_MX_1.00u_Hotswap"
+			(at 153.67 160.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 153.67 160.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 153.67 165.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "481acb78-c0f6-4e82-a557-220770e37d0e")
+		)
+		(pin "1"
+			(uuid "a2b73739-5bd6-4ebb-a0f8-8084653e54a9")
+		)
+		(instances
+			(project "corne-inidan-hotswap"
+				(path "/c90c0725-f1d3-4c5d-9757-c1f2f2a5449f/f4940f7d-bc6d-4495-a44d-e8b9a3eadf42"
+					(reference "SW11")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 60.96 36.83 270)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "d2f5a3f6-9a7f-491d-8b4e-e0af1640a800")
+		(property "Reference" "#PWR08"
+			(at 57.15 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 59.69 35.052 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 60.96 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 60.96 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3184,7 +10698,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 265.43 26.67 0)
+			(at 60.96 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3205,32 +10719,172 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
-		(at 266.7 38.1 90)
+		(lib_id "LED_RGB:LED_SK6812MINI-E")
+		(at 191.77 142.24 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "e234036f-4762-4892-b7d0-4190eec23ffa")
-		(property "Reference" "R2"
-			(at 264.16 35.56 90)
+		(uuid "d30b6f8a-f9b5-4865-8115-2865865beae2")
+		(property "Reference" "LED5"
+			(at 191.77 135.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "5K1"
-			(at 267.97 35.56 90)
+		(property "Value" "SK6812MINI-E"
+			(at 191.77 148.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 266.7 39.878 90)
+		(property "Footprint" "User_Button_Switch_Keyboard:YS-SK6812MINI-E"
+			(at 191.77 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 191.77 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 191.77 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "a00c7cdd-aadb-4aad-bd45-8ef80a013937")
+		)
+		(pin "3"
+			(uuid "0762d0e0-0611-4881-8ef9-6666b227d793")
+		)
+		(pin "4"
+			(uuid "a1b52ae9-13ac-4983-826a-304e65e834e2")
+		)
+		(pin "1"
+			(uuid "0cf6475c-72e9-4c0c-ad72-46b64f982dcf")
+		)
+		(instances
+			(project "corne-inidan-hotswap"
+				(path "/c90c0725-f1d3-4c5d-9757-c1f2f2a5449f/f4940f7d-bc6d-4495-a44d-e8b9a3eadf42"
+					(reference "LED5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 160.02 166.37 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "dcaab4dc-0e04-4878-8588-d6c3bcc62ec0")
+		(property "Reference" "#PWR026"
+			(at 160.02 172.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 160.02 171.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 160.02 166.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 160.02 166.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 160.02 166.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "9542b072-ac6f-4491-a74b-2625926651af")
+		)
+		(instances
+			(project "corne-inidan-hotswap"
+				(path "/c90c0725-f1d3-4c5d-9757-c1f2f2a5449f/f4940f7d-bc6d-4495-a44d-e8b9a3eadf42"
+					(reference "#PWR026")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 115.57 203.2 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "ddc74509-3652-4c50-8ddb-6e3a439e9db1")
+		(property "Reference" "SW15"
+			(at 119.38 200.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_Push"
+			(at 115.57 205.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "User_Button_Switch_Keyboard:SW_Cherry_MX_1.00u_Hotswap"
+			(at 115.57 198.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3239,7 +10893,141 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 266.7 38.1 0)
+			(at 115.57 198.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 115.57 203.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "61d0b2c9-9b9b-4732-88f7-5ba28fbd9fd5")
+		)
+		(pin "1"
+			(uuid "6a0816c1-beb0-446c-b343-c23808bf025c")
+		)
+		(instances
+			(project "corne-inidan-hotswap"
+				(path "/c90c0725-f1d3-4c5d-9757-c1f2f2a5449f/f4940f7d-bc6d-4495-a44d-e8b9a3eadf42"
+					(reference "SW15")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 121.92 166.37 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e07b4d01-8c33-4946-8d0f-bf65e8a6e4c0")
+		(property "Reference" "#PWR032"
+			(at 121.92 172.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 121.92 171.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 121.92 166.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 121.92 166.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 121.92 166.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "760c1712-c109-4f3b-af52-bb24d66dafdd")
+		)
+		(instances
+			(project "corne-inidan-hotswap"
+				(path "/c90c0725-f1d3-4c5d-9757-c1f2f2a5449f/f4940f7d-bc6d-4495-a44d-e8b9a3eadf42"
+					(reference "#PWR032")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 62.23 48.26 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "e234036f-4762-4892-b7d0-4190eec23ffa")
+		(property "Reference" "R2"
+			(at 59.69 45.72 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "5K1"
+			(at 63.5 45.72 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 62.23 50.038 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 62.23 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3248,7 +11036,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 266.7 38.1 0)
+			(at 62.23 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3257,7 +11045,7 @@
 			)
 		)
 		(property "LCSC_Part" "C23186"
-			(at 266.7 38.1 90)
+			(at 62.23 48.26 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3266,7 +11054,7 @@
 			)
 		)
 		(property "Manufacturer_Name" "MULTICOMP PRO"
-			(at 266.7 38.1 90)
+			(at 62.23 48.26 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3275,7 +11063,7 @@
 			)
 		)
 		(property "Manufacturer_Name_1" ""
-			(at 266.7 38.1 90)
+			(at 62.23 48.26 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3284,7 +11072,7 @@
 			)
 		)
 		(property "Manufacturer_Name_2" "UNI-ROYAL(Uniroyal Elec)"
-			(at 266.7 38.1 90)
+			(at 62.23 48.26 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3293,7 +11081,7 @@
 			)
 		)
 		(property "Manufacturer_Part_Number" "MCWR06X5101FTL"
-			(at 266.7 38.1 90)
+			(at 62.23 48.26 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3302,7 +11090,7 @@
 			)
 		)
 		(property "Manufacturer_Part_Number_1" ""
-			(at 266.7 38.1 90)
+			(at 62.23 48.26 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3311,7 +11099,7 @@
 			)
 		)
 		(property "Manufacturer_Part_Number_2" "0603WAF5101T5E"
-			(at 266.7 38.1 90)
+			(at 62.23 48.26 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3336,16 +11124,16 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 271.78 33.02 90)
+		(at 196.85 204.47 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "fb8556ce-7812-4b7b-910a-024413066b80")
-		(property "Reference" "#PWR010"
-			(at 278.13 33.02 0)
+		(uuid "e5a16887-1858-4d57-9a2d-b9b16cf68cd4")
+		(property "Reference" "#PWR017"
+			(at 196.85 210.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3354,7 +11142,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 276.86 33.02 0)
+			(at 196.85 209.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3363,7 +11151,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 271.78 33.02 0)
+			(at 196.85 204.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3372,7 +11160,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 271.78 33.02 0)
+			(at 196.85 204.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3381,7 +11169,293 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 271.78 33.02 0)
+			(at 196.85 204.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "09f85d56-2aeb-4cd6-b6fc-597187981b83")
+		)
+		(instances
+			(project "corne-inidan-hotswap"
+				(path "/c90c0725-f1d3-4c5d-9757-c1f2f2a5449f/f4940f7d-bc6d-4495-a44d-e8b9a3eadf42"
+					(reference "#PWR017")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "LED_RGB:LED_SK6812MINI-E")
+		(at 154.94 180.34 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "ee92d731-caeb-4af8-878d-7079fb6661d3")
+		(property "Reference" "LED11"
+			(at 154.94 173.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SK6812MINI-E"
+			(at 154.94 186.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "User_Button_Switch_Keyboard:YS-SK6812MINI-E"
+			(at 154.94 180.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 154.94 180.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 154.94 180.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "6b2ee593-7f95-4e24-adf2-72c7384d5e27")
+		)
+		(pin "3"
+			(uuid "0ea9c844-f576-471a-a401-1d8d02db3c36")
+		)
+		(pin "4"
+			(uuid "ac719610-0abe-48aa-82cf-31379fb478c0")
+		)
+		(pin "1"
+			(uuid "d5f3af31-f162-4934-88f0-5fe7b693f87f")
+		)
+		(instances
+			(project "corne-inidan-hotswap"
+				(path "/c90c0725-f1d3-4c5d-9757-c1f2f2a5449f/f4940f7d-bc6d-4495-a44d-e8b9a3eadf42"
+					(reference "LED11")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "LED_RGB:LED_SK6812MINI-E")
+		(at 229.87 180.34 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "ef9e1df6-826a-4fbf-a82f-785f9c474a10")
+		(property "Reference" "LED3"
+			(at 229.87 173.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SK6812MINI-E"
+			(at 229.87 186.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "User_Button_Switch_Keyboard:YS-SK6812MINI-E"
+			(at 229.87 180.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 229.87 180.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 229.87 180.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "4a54fc0c-667f-4f79-b6e3-123cc8a95a27")
+		)
+		(pin "3"
+			(uuid "085b864a-3e87-4c65-a198-fedd4ac505b7")
+		)
+		(pin "4"
+			(uuid "41402a47-415d-4192-8790-8232e443e9ea")
+		)
+		(pin "1"
+			(uuid "ea9122c4-ee30-48e2-8a90-b7e9841ae273")
+		)
+		(instances
+			(project "corne-inidan-hotswap"
+				(path "/c90c0725-f1d3-4c5d-9757-c1f2f2a5449f/f4940f7d-bc6d-4495-a44d-e8b9a3eadf42"
+					(reference "LED3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "LED_RGB:LED_SK6812MINI-E")
+		(at 210.82 256.54 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "f37fb238-3a7e-4da3-aad6-1768bf66efe6")
+		(property "Reference" "LED8"
+			(at 210.82 250.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SK6812MINI-E"
+			(at 210.82 262.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "User_Button_Switch_Keyboard:YS-SK6812MINI-E"
+			(at 210.82 256.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 210.82 256.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 210.82 256.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "b14af659-59bf-44b4-a8ad-01d232f06b4b")
+		)
+		(pin "3"
+			(uuid "b0ff04d6-dd10-4757-9cd5-b3af5ad128ab")
+		)
+		(pin "4"
+			(uuid "1473dd3c-7be2-4e2c-b17a-79180a1e3e29")
+		)
+		(pin "1"
+			(uuid "6e2a5477-e110-4dc4-99c7-2d723c410ad2")
+		)
+		(instances
+			(project "corne-inidan-hotswap"
+				(path "/c90c0725-f1d3-4c5d-9757-c1f2f2a5449f/f4940f7d-bc6d-4495-a44d-e8b9a3eadf42"
+					(reference "LED8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 67.31 43.18 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "fb8556ce-7812-4b7b-910a-024413066b80")
+		(property "Reference" "#PWR010"
+			(at 73.66 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 72.39 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 67.31 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 67.31 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 67.31 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3402,17 +11476,84 @@
 		)
 	)
 	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 190.5 203.2 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "fc3e36df-0880-426d-b8d8-e9a8e7957b5e")
+		(property "Reference" "SW7"
+			(at 194.31 200.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_Push"
+			(at 190.5 205.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "User_Button_Switch_Keyboard:SW_Cherry_MX_1.00u_Hotswap"
+			(at 190.5 198.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 190.5 198.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 190.5 203.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "765630ca-b486-448c-8255-591624543daa")
+		)
+		(pin "1"
+			(uuid "6f926b0a-5178-497f-827e-0833438dd809")
+		)
+		(instances
+			(project "corne-inidan-hotswap"
+				(path "/c90c0725-f1d3-4c5d-9757-c1f2f2a5449f/f4940f7d-bc6d-4495-a44d-e8b9a3eadf42"
+					(reference "SW7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
-		(at 271.78 38.1 90)
+		(at 83.82 204.47 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "fcf8cb03-0a71-449f-8ca2-87d955d7bce6")
-		(property "Reference" "#PWR011"
-			(at 278.13 38.1 0)
+		(uuid "fc446e28-7d55-42a5-9dd7-4a977e227dba")
+		(property "Reference" "#PWR039"
+			(at 83.82 210.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3421,7 +11562,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 276.86 38.1 0)
+			(at 83.82 209.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3430,7 +11571,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 271.78 38.1 0)
+			(at 83.82 204.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3439,7 +11580,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 271.78 38.1 0)
+			(at 83.82 204.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3448,7 +11589,74 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 271.78 38.1 0)
+			(at 83.82 204.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "2e88b90b-e686-4ff8-b0c6-4a2cff83f4ab")
+		)
+		(instances
+			(project "corne-inidan-hotswap"
+				(path "/c90c0725-f1d3-4c5d-9757-c1f2f2a5449f/f4940f7d-bc6d-4495-a44d-e8b9a3eadf42"
+					(reference "#PWR039")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 67.31 48.26 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "fcf8cb03-0a71-449f-8ca2-87d955d7bce6")
+		(property "Reference" "#PWR011"
+			(at 73.66 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 72.39 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 67.31 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 67.31 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 67.31 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3463,6 +11671,140 @@
 			(project "corne-inidan-hotswap"
 				(path "/c90c0725-f1d3-4c5d-9757-c1f2f2a5449f/f4940f7d-bc6d-4495-a44d-e8b9a3eadf42"
 					(reference "#PWR011")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 87.63 222.25 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ffb140ba-fc46-46ec-969e-05a7b0e17bc9")
+		(property "Reference" "#PWR042"
+			(at 87.63 228.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 87.63 227.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 87.63 222.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 87.63 222.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 87.63 222.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "eba2c648-78a8-4b34-9dc5-bb4ab2268ced")
+		)
+		(instances
+			(project "corne-inidan-hotswap"
+				(path "/c90c0725-f1d3-4c5d-9757-c1f2f2a5449f/f4940f7d-bc6d-4495-a44d-e8b9a3eadf42"
+					(reference "#PWR042")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 163.83 146.05 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "fffaf41e-f6ee-4fd8-8248-aa07d8a1693e")
+		(property "Reference" "#PWR028"
+			(at 163.83 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 163.83 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 163.83 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 163.83 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 163.83 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "7be3d91c-f24f-4d69-9da5-a98ab749420f")
+		)
+		(instances
+			(project "corne-inidan-hotswap"
+				(path "/c90c0725-f1d3-4c5d-9757-c1f2f2a5449f/f4940f7d-bc6d-4495-a44d-e8b9a3eadf42"
+					(reference "#PWR028")
 					(unit 1)
 				)
 			)
