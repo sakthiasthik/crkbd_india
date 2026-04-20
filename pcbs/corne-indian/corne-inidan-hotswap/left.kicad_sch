@@ -2113,6 +2113,394 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Device:RotaryEncoder_Switch"
+			(pin_names
+				(offset 0.254)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "SW"
+				(at 0 6.604 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "RotaryEncoder_Switch"
+				(at 0 -6.604 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at -3.81 4.064 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 6.604 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Rotary encoder, dual channel, incremental quadrate outputs, with switch"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "rotary switch encoder switch push button"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "RotaryEncoder*Switch*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "RotaryEncoder_Switch_0_1"
+				(rectangle
+					(start -5.08 5.08)
+					(end 5.08 -5.08)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(polyline
+					(pts
+						(xy -5.08 2.54) (xy -3.81 2.54) (xy -3.81 2.032)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -5.08 0) (xy -3.81 0) (xy -3.81 -1.016) (xy -3.302 -2.032)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -5.08 -2.54) (xy -3.81 -2.54) (xy -3.81 -2.032)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -4.318 0) (xy -3.81 0) (xy -3.81 1.016) (xy -3.302 2.032)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center -3.81 0)
+					(radius 0.254)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.635 -1.778) (xy -0.635 1.778)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center -0.381 0)
+					(radius 1.905)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.381 -1.778) (xy -0.381 1.778)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start -0.381 -2.794)
+					(mid -3.0988 -0.0635)
+					(end -0.381 2.667)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.127 1.778) (xy -0.127 -1.778)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.254 2.921) (xy -0.508 2.667) (xy 0.127 2.286)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.254 -3.048) (xy -0.508 -2.794) (xy 0.127 -2.413)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 3.81 1.016) (xy 3.81 -1.016)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 3.81 0) (xy 3.429 0)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 4.318 1.016)
+					(radius 0.127)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 4.318 -1.016)
+					(radius 0.127)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 5.08 2.54) (xy 4.318 2.54) (xy 4.318 1.016)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 5.08 -2.54) (xy 4.318 -2.54) (xy 4.318 -1.016)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "RotaryEncoder_Switch_1_1"
+				(pin passive line
+					(at -7.62 2.54 0)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -7.62 0 0)
+					(length 2.54)
+					(name "C"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "C"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -7.62 -2.54 0)
+					(length 2.54)
+					(name "B"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "B"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 7.62 2.54 180)
+					(length 2.54)
+					(name "S1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "S1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 7.62 -2.54 180)
+					(length 2.54)
+					(name "S2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "S2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "LED_RGB:LED_SK6812MINI-E"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -4759,6 +5147,10 @@
 		(at 53.34 67.31)
 		(uuid "33467ecd-4182-4d5c-b478-092660c0d598")
 	)
+	(no_connect
+		(at 278.13 186.69)
+		(uuid "96e1716d-0e19-48db-8a03-a49110ff7850")
+	)
 	(wire
 		(pts
 			(xy 209.55 29.21) (xy 218.44 29.21)
@@ -4911,6 +5303,16 @@
 	)
 	(wire
 		(pts
+			(xy 293.37 181.61) (xy 297.18 181.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0dcfa9bb-cebc-4a0b-a6b6-1b0292fb60fa")
+	)
+	(wire
+		(pts
 			(xy 368.3 128.27) (xy 377.19 128.27)
 		)
 		(stroke
@@ -4928,6 +5330,16 @@
 			(type default)
 		)
 		(uuid "0e7eca9c-6dd9-472b-bcac-b657704040ac")
+	)
+	(wire
+		(pts
+			(xy 262.89 120.65) (xy 262.89 125.73)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0e9658d2-19ac-4cef-8f82-9d1000fb60a0")
 	)
 	(wire
 		(pts
@@ -4958,6 +5370,16 @@
 			(type default)
 		)
 		(uuid "0fc08d25-c694-4176-9b33-07fef2d7a07d")
+	)
+	(wire
+		(pts
+			(xy 262.89 171.45) (xy 262.89 176.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "119d123b-9266-4098-bbc1-70111a2ba60a")
 	)
 	(wire
 		(pts
@@ -5061,6 +5483,16 @@
 	)
 	(wire
 		(pts
+			(xy 293.37 130.81) (xy 297.18 130.81)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "163a9904-daf8-493c-85d0-2a93e3cf3cf2")
+	)
+	(wire
+		(pts
 			(xy 177.8 127) (xy 184.15 127)
 		)
 		(stroke
@@ -5158,6 +5590,16 @@
 			(type default)
 		)
 		(uuid "1bfbd15d-abb8-458b-bbea-a9e9d34807f6")
+	)
+	(wire
+		(pts
+			(xy 293.37 186.69) (xy 294.64 186.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1d13417a-d4c1-403b-b6a0-12ed3b634739")
 	)
 	(wire
 		(pts
@@ -5601,6 +6043,16 @@
 	)
 	(wire
 		(pts
+			(xy 257.81 140.97) (xy 257.81 149.86)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "428a9d8a-5e77-4895-bb7f-3822fe6ed1b6")
+	)
+	(wire
+		(pts
 			(xy 368.3 80.01) (xy 377.19 80.01)
 		)
 		(stroke
@@ -5731,6 +6183,16 @@
 	)
 	(wire
 		(pts
+			(xy 262.89 140.97) (xy 262.89 143.51)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4a0f7292-77eb-4d0c-abe7-e03a535c0dc0")
+	)
+	(wire
+		(pts
 			(xy 132.08 30.48) (xy 127 30.48)
 		)
 		(stroke
@@ -5778,6 +6240,16 @@
 			(type default)
 		)
 		(uuid "4eb96532-61c3-4fcd-a9d2-d45a8d0c8c66")
+	)
+	(wire
+		(pts
+			(xy 293.37 135.89) (xy 294.64 135.89)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4f091259-8016-4770-8195-5564a4d4572c")
 	)
 	(wire
 		(pts
@@ -5901,6 +6373,16 @@
 	)
 	(wire
 		(pts
+			(xy 270.51 181.61) (xy 278.13 181.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "586fad2b-ed09-413c-8701-2f00286544e6")
+	)
+	(wire
+		(pts
 			(xy 353.06 175.26) (xy 359.41 175.26)
 		)
 		(stroke
@@ -5928,6 +6410,16 @@
 			(type default)
 		)
 		(uuid "5d37956a-e685-421a-946e-c7e3b72925c1")
+	)
+	(wire
+		(pts
+			(xy 270.51 130.81) (xy 278.13 130.81)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5d92d4da-193a-48d7-a493-676c1f5bd609")
 	)
 	(wire
 		(pts
@@ -5998,6 +6490,16 @@
 			(type default)
 		)
 		(uuid "62a1779f-78a1-4d6d-aa63-83c1ea53878d")
+	)
+	(wire
+		(pts
+			(xy 260.35 173.99) (xy 260.35 176.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "62bf204d-86b1-4f69-881f-8f3f13d9cf50")
 	)
 	(wire
 		(pts
@@ -6521,6 +7023,16 @@
 	)
 	(wire
 		(pts
+			(xy 270.51 135.89) (xy 278.13 135.89)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8b544505-4775-4016-a320-8ee78ae92039")
+	)
+	(wire
+		(pts
 			(xy 389.89 105.41) (xy 389.89 107.95)
 		)
 		(stroke
@@ -6631,6 +7143,16 @@
 	)
 	(wire
 		(pts
+			(xy 257.81 191.77) (xy 257.81 200.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "92397d90-94c7-4df4-9469-3b51cfa57514")
+	)
+	(wire
+		(pts
 			(xy 176.53 228.6) (xy 177.8 228.6)
 		)
 		(stroke
@@ -6658,6 +7180,16 @@
 			(type default)
 		)
 		(uuid "9525b0d7-06e8-44db-9ca3-7b29028a74fe")
+	)
+	(wire
+		(pts
+			(xy 257.81 120.65) (xy 257.81 125.73)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "95b2c6a3-fe31-4fee-9549-fec490bffff3")
 	)
 	(wire
 		(pts
@@ -6698,6 +7230,16 @@
 			(type default)
 		)
 		(uuid "9720b8e4-1e1a-4fab-91e1-85ef23cde96b")
+	)
+	(wire
+		(pts
+			(xy 294.64 135.89) (xy 294.64 137.16)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "97634631-af85-4e73-950a-dd9b731af340")
 	)
 	(wire
 		(pts
@@ -7118,6 +7660,16 @@
 			(type default)
 		)
 		(uuid "bb217b17-2100-467d-a9e9-08cf231c4096")
+	)
+	(wire
+		(pts
+			(xy 260.35 123.19) (xy 260.35 125.73)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bcb84ce8-1ea4-42b0-9b92-8031110e80e0")
 	)
 	(wire
 		(pts
@@ -7611,6 +8163,16 @@
 	)
 	(wire
 		(pts
+			(xy 257.81 171.45) (xy 257.81 176.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "de386aa9-6f1e-4ecc-9374-65b855b0967c")
+	)
+	(wire
+		(pts
 			(xy 311.15 77.47) (xy 317.5 77.47)
 		)
 		(stroke
@@ -7891,6 +8453,16 @@
 	)
 	(wire
 		(pts
+			(xy 294.64 186.69) (xy 294.64 187.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f20fd2ec-a12a-4168-b7ce-b5135948e047")
+	)
+	(wire
+		(pts
 			(xy 340.36 46.99) (xy 340.36 44.45)
 		)
 		(stroke
@@ -7958,6 +8530,16 @@
 			(type default)
 		)
 		(uuid "f6881601-f1b0-4d4f-8b73-25fd916e75ca")
+	)
+	(wire
+		(pts
+			(xy 262.89 191.77) (xy 262.89 194.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f6c384fb-2f80-454a-b8ca-12183a555204")
 	)
 	(wire
 		(pts
@@ -8249,6 +8831,16 @@
 		)
 		(uuid "154f3d5b-dbd4-42e5-9adf-a939c60f1bdb")
 	)
+	(label "L_KEY23"
+		(at 270.51 181.61 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "1650965b-66fe-49e3-8585-20951e23ab55")
+	)
 	(label "L_KEY8"
 		(at 196.85 241.3 0)
 		(effects
@@ -8398,6 +8990,16 @@
 			(justify right bottom)
 		)
 		(uuid "25ef05b1-3cdc-4239-b807-894ef722da7d")
+	)
+	(label "RE1A"
+		(at 262.89 171.45 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "26e8d57b-e450-488a-958f-465d65b7f6e6")
 	)
 	(label "L_KEY3"
 		(at 215.9 208.28 0)
@@ -8689,6 +9291,16 @@
 		)
 		(uuid "57364703-18df-4458-a4fc-5f5e3594ec95")
 	)
+	(label "L_KEY23"
+		(at 270.51 135.89 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "57e1d247-f503-4a9b-a449-5d179581e668")
+	)
 	(label "KEY_18"
 		(at 377.19 105.41 180)
 		(effects
@@ -8768,6 +9380,26 @@
 			(justify right bottom)
 		)
 		(uuid "640943f6-0a18-4faa-a402-ba13f5eac8c9")
+	)
+	(label "5V_L"
+		(at 297.18 181.61 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "6714f7e0-8438-44f5-b833-7e7df1e61431")
+	)
+	(label "REB"
+		(at 257.81 171.45 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "67fef284-9473-4f4e-b652-1cc38b2b2007")
 	)
 	(label "SD0"
 		(at 311.15 77.47 0)
@@ -8929,6 +9561,16 @@
 		)
 		(uuid "8cd604d0-6893-4a5c-84e6-68a3ad7702aa")
 	)
+	(label "L_KEY22"
+		(at 270.51 130.81 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "8e2e1ddb-d729-443b-b12e-4d5232e9e703")
+	)
 	(label "5V_L"
 		(at 184.15 241.3 180)
 		(effects
@@ -9069,6 +9711,16 @@
 		)
 		(uuid "a3e2bd4b-c31f-4551-a0f5-6754ee12f5fa")
 	)
+	(label "RE0A"
+		(at 262.89 120.65 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "a4b889f4-0274-453f-971f-2582a11a4377")
+	)
 	(label "L_KEY18"
 		(at 63.5 127 0)
 		(effects
@@ -9088,6 +9740,16 @@
 			(justify left bottom)
 		)
 		(uuid "a6a1e792-75e1-492e-ab70-739078afee74")
+	)
+	(label "KEY_EX2"
+		(at 257.81 200.66 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "a6cbcfa9-3d41-4939-9992-23457167adeb")
 	)
 	(label "5V_L"
 		(at 128.27 127 180)
@@ -9128,6 +9790,16 @@
 			(justify left bottom)
 		)
 		(uuid "b150ad64-a1d7-49bd-934c-92a37d72e476")
+	)
+	(label "KEY_EX1"
+		(at 257.81 149.86 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "b2b3e352-4f3d-419b-adcc-ae6d30cde582")
 	)
 	(label "5V_L"
 		(at 166.37 165.1 180)
@@ -9228,6 +9900,16 @@
 			(justify right bottom)
 		)
 		(uuid "bff0fe65-47ef-4493-8e85-73583a71c5f8")
+	)
+	(label "REB"
+		(at 257.81 120.65 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "c0ae8106-4da2-4921-9951-27350dbe5e38")
 	)
 	(label "KEY_14"
 		(at 377.19 115.57 180)
@@ -9478,6 +10160,16 @@
 			(justify right bottom)
 		)
 		(uuid "e2a928e0-ad51-488a-9d30-179c61780254")
+	)
+	(label "5V_L"
+		(at 297.18 130.81 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "eb091384-3491-4686-b529-093f211bb962")
 	)
 	(label "5V_L"
 		(at 203.2 165.1 180)
@@ -11069,6 +11761,79 @@
 			(project "corne-inidan-hotswap"
 				(path "/c90c0725-f1d3-4c5d-9757-c1f2f2a5449f/f4940f7d-bc6d-4495-a44d-e8b9a3eadf42"
 					(reference "SW3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "LED_RGB:LED_SK6812MINI-E")
+		(at 285.75 133.35 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "2ab99092-2fac-4ee3-8ad0-62ff7b1cbc43")
+		(property "Reference" "EXLED1"
+			(at 285.75 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SK6812MINI-E"
+			(at 285.75 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "User_Button_Switch_Keyboard:YS-SK6812MINI-E"
+			(at 285.75 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 285.75 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 285.75 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "e8253ffe-461b-4564-8edd-e11e65319c3d")
+		)
+		(pin "3"
+			(uuid "5a3e46e5-2ee9-464c-9e94-a999acf99e0e")
+		)
+		(pin "4"
+			(uuid "096740a4-767c-4fe6-a631-314bf40f6060")
+		)
+		(pin "1"
+			(uuid "adcb02ad-3a22-4ec8-9156-dee85943688e")
+		)
+		(instances
+			(project "corne-inidan-hotswap"
+				(path "/c90c0725-f1d3-4c5d-9757-c1f2f2a5449f/f4940f7d-bc6d-4495-a44d-e8b9a3eadf42"
+					(reference "EXLED1")
 					(unit 1)
 				)
 			)
@@ -14828,6 +15593,73 @@
 	)
 	(symbol
 		(lib_id "power:GND")
+		(at 262.89 194.31 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "63daba0e-7d1e-4d1b-b668-1615bac4e621")
+		(property "Reference" "#PWR0207"
+			(at 262.89 200.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 262.89 199.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 262.89 194.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 262.89 194.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 262.89 194.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "eeb45279-058d-45ae-951d-d2cd6acf6e97")
+		)
+		(instances
+			(project "corne-inidan-hotswap"
+				(path "/c90c0725-f1d3-4c5d-9757-c1f2f2a5449f/f4940f7d-bc6d-4495-a44d-e8b9a3eadf42"
+					(reference "#PWR0207")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
 		(at 87.63 133.35 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -14955,6 +15787,84 @@
 			(project "corne-inidan-hotswap"
 				(path "/c90c0725-f1d3-4c5d-9757-c1f2f2a5449f/f4940f7d-bc6d-4495-a44d-e8b9a3eadf42"
 					(reference "#PWR098")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:RotaryEncoder_Switch")
+		(at 260.35 133.35 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "677dae06-9e61-46d9-96b3-7e7d5e884e82")
+		(property "Reference" "EXSW1"
+			(at 256.54 118.11 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "RotaryEncoder_Switch"
+			(at 266.7 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "User_Button_Switch_Keyboard:keyswitch_cherrymx_hotswap_1u_rotary_encoder_ec12"
+			(at 264.414 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 266.954 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Rotary encoder, dual channel, incremental quadrate outputs, with switch"
+			(at 260.35 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "C"
+			(uuid "7a7baae4-c2a4-4ca8-bf12-61ba51ad3ae1")
+		)
+		(pin "B"
+			(uuid "cdaffa1a-2972-4ab4-b2c2-17dfe7a133af")
+		)
+		(pin "A"
+			(uuid "0ec8e629-0105-4860-aa1f-e784e890b5a2")
+		)
+		(pin "S2"
+			(uuid "c897d201-738f-4b06-b068-d361663efca2")
+		)
+		(pin "S1"
+			(uuid "b9c87b0c-ba88-4a9f-b5d9-544c2f438075")
+		)
+		(instances
+			(project "corne-inidan-hotswap"
+				(path "/c90c0725-f1d3-4c5d-9757-c1f2f2a5449f/f4940f7d-bc6d-4495-a44d-e8b9a3eadf42"
+					(reference "EXSW1")
 					(unit 1)
 				)
 			)
@@ -17723,6 +18633,84 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:RotaryEncoder_Switch")
+		(at 260.35 184.15 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "8d61aed8-da53-4d7f-8a5c-f69b6ddfabfe")
+		(property "Reference" "EXSW2"
+			(at 256.54 168.91 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "RotaryEncoder_Switch"
+			(at 266.7 172.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "User_Button_Switch_Keyboard:keyswitch_cherrymx_hotswap_1u_rotary_encoder_ec12"
+			(at 264.414 180.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 266.954 184.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Rotary encoder, dual channel, incremental quadrate outputs, with switch"
+			(at 260.35 184.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "C"
+			(uuid "6120e7fa-4651-4797-8d7a-5af912308986")
+		)
+		(pin "B"
+			(uuid "6aade2af-9fe3-489a-a035-b8d07704a395")
+		)
+		(pin "A"
+			(uuid "b4fb5df9-1f5d-4978-b4b5-856be6119935")
+		)
+		(pin "S2"
+			(uuid "ff1986f4-20c8-4070-8897-54cbdd9b8443")
+		)
+		(pin "S1"
+			(uuid "a857bbd1-0396-4270-bdce-818805bb7c46")
+		)
+		(instances
+			(project "corne-inidan-hotswap"
+				(path "/c90c0725-f1d3-4c5d-9757-c1f2f2a5449f/f4940f7d-bc6d-4495-a44d-e8b9a3eadf42"
+					(reference "EXSW2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C_Small")
 		(at 304.8 100.33 90)
 		(unit 1)
@@ -18393,6 +19381,73 @@
 			(project "corne-inidan-hotswap"
 				(path "/c90c0725-f1d3-4c5d-9757-c1f2f2a5449f/f4940f7d-bc6d-4495-a44d-e8b9a3eadf42"
 					(reference "#PWR07")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 262.89 143.51 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9e98001e-ba27-4ba5-9bca-374f80aa2598")
+		(property "Reference" "#PWR0209"
+			(at 262.89 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 262.89 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 262.89 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 262.89 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 262.89 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ab52adea-5880-408e-b367-679989dc13ed")
+		)
+		(instances
+			(project "corne-inidan-hotswap"
+				(path "/c90c0725-f1d3-4c5d-9757-c1f2f2a5449f/f4940f7d-bc6d-4495-a44d-e8b9a3eadf42"
+					(reference "#PWR0209")
 					(unit 1)
 				)
 			)
@@ -19622,6 +20677,79 @@
 	)
 	(symbol
 		(lib_id "LED_RGB:LED_SK6812MINI-E")
+		(at 285.75 184.15 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "b31f415a-5d12-4c40-bdff-1fdb64835755")
+		(property "Reference" "EXLED2"
+			(at 285.75 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SK6812MINI-E"
+			(at 285.75 190.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "User_Button_Switch_Keyboard:YS-SK6812MINI-E"
+			(at 285.75 184.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 285.75 184.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 285.75 184.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "1faa76a0-05cd-4527-ad70-13cb37104ece")
+		)
+		(pin "3"
+			(uuid "816f29c5-80d9-44aa-a14a-3d046d65a251")
+		)
+		(pin "4"
+			(uuid "0f53e878-6cda-4c8d-85e0-79d957430067")
+		)
+		(pin "1"
+			(uuid "2b4ae8ca-a3e5-4cdc-be91-73b65433ead0")
+		)
+		(instances
+			(project "corne-inidan-hotswap"
+				(path "/c90c0725-f1d3-4c5d-9757-c1f2f2a5449f/f4940f7d-bc6d-4495-a44d-e8b9a3eadf42"
+					(reference "EXLED2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "LED_RGB:LED_SK6812MINI-E")
 		(at 40.64 129.54 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -19845,6 +20973,73 @@
 			(project "corne-inidan-hotswap"
 				(path "/c90c0725-f1d3-4c5d-9757-c1f2f2a5449f/f4940f7d-bc6d-4495-a44d-e8b9a3eadf42"
 					(reference "MCU1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 294.64 137.16 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ba311f7e-6ef5-47e7-9a3b-c7eb425bd062")
+		(property "Reference" "#PWR0214"
+			(at 294.64 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 294.64 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 294.64 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 294.64 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 294.64 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "61b9a5c4-2307-4edd-a695-c67d455ef488")
+		)
+		(instances
+			(project "corne-inidan-hotswap"
+				(path "/c90c0725-f1d3-4c5d-9757-c1f2f2a5449f/f4940f7d-bc6d-4495-a44d-e8b9a3eadf42"
+					(reference "#PWR0214")
 					(unit 1)
 				)
 			)
@@ -21316,6 +22511,73 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 260.35 173.99 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d4b32420-d1a2-4f0c-9a8a-ba8a6b6d134c")
+		(property "Reference" "#PWR0206"
+			(at 260.35 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 260.35 168.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 260.35 173.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 260.35 173.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 260.35 173.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "8278a939-848c-42b9-8502-9b4e0ac1425c")
+		)
+		(instances
+			(project "corne-inidan-hotswap"
+				(path "/c90c0725-f1d3-4c5d-9757-c1f2f2a5449f/f4940f7d-bc6d-4495-a44d-e8b9a3eadf42"
+					(reference "#PWR0206")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Connector:Conn_01x03_Pin")
 		(at 204.47 31.75 0)
 		(unit 1)
@@ -22247,6 +23509,73 @@
 	)
 	(symbol
 		(lib_id "power:GND")
+		(at 260.35 123.19 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e6189cf3-441c-4421-9d6a-ec697c4f0290")
+		(property "Reference" "#PWR0208"
+			(at 260.35 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 260.35 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 260.35 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 260.35 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 260.35 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c364dbe6-7c43-4f59-9fbd-0382d4b1df84")
+		)
+		(instances
+			(project "corne-inidan-hotswap"
+				(path "/c90c0725-f1d3-4c5d-9757-c1f2f2a5449f/f4940f7d-bc6d-4495-a44d-e8b9a3eadf42"
+					(reference "#PWR0208")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
 		(at 83.82 153.67 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -22374,6 +23703,73 @@
 			(project "corne-inidan-hotswap"
 				(path "/c90c0725-f1d3-4c5d-9757-c1f2f2a5449f/f4940f7d-bc6d-4495-a44d-e8b9a3eadf42"
 					(reference "#PWR056")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 294.64 187.96 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ee715fb9-423a-4d2a-9cd7-8b577b293b44")
+		(property "Reference" "#PWR0215"
+			(at 294.64 194.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 294.64 193.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 294.64 187.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 294.64 187.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 294.64 187.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "1ab4789d-8c1c-44f6-abb1-2823df489b16")
+		)
+		(instances
+			(project "corne-inidan-hotswap"
+				(path "/c90c0725-f1d3-4c5d-9757-c1f2f2a5449f/f4940f7d-bc6d-4495-a44d-e8b9a3eadf42"
+					(reference "#PWR0215")
 					(unit 1)
 				)
 			)
