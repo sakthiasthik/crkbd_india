@@ -4871,6 +4871,16 @@
 	)
 	(wire
 		(pts
+			(xy 368.3 64.77) (xy 377.19 64.77)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "07eedc6b-bddb-45b3-a0a7-0e9ba277fc71")
+	)
+	(wire
+		(pts
 			(xy 119.38 31.75) (xy 119.38 34.29)
 		)
 		(stroke
@@ -4888,6 +4898,16 @@
 			(type default)
 		)
 		(uuid "089d0e0c-fbeb-45ce-8a89-d848a8bc2212")
+	)
+	(wire
+		(pts
+			(xy 368.3 69.85) (xy 377.19 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "09369c27-9ec4-4698-8aa7-8dc91090a5d9")
 	)
 	(wire
 		(pts
@@ -5831,6 +5851,16 @@
 	)
 	(wire
 		(pts
+			(xy 368.3 67.31) (xy 377.19 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "52dde1fc-2d54-4331-bb2c-ff799d00c8e7")
+	)
+	(wire
+		(pts
 			(xy 46.99 254) (xy 50.8 254)
 		)
 		(stroke
@@ -5938,6 +5968,16 @@
 			(type default)
 		)
 		(uuid "56c8d530-7ac6-4713-b0a3-d95be7fb25e1")
+	)
+	(wire
+		(pts
+			(xy 368.3 72.39) (xy 377.19 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "56ca54ca-a4eb-437f-964a-0f584c69cd4f")
 	)
 	(wire
 		(pts
@@ -6088,6 +6128,16 @@
 			(type default)
 		)
 		(uuid "63a110b4-0227-4e2b-b1f8-9d8318200df5")
+	)
+	(wire
+		(pts
+			(xy 368.3 74.93) (xy 377.19 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "63efd573-7f33-4b86-bb85-c4d184acaf70")
 	)
 	(wire
 		(pts
@@ -8079,7 +8129,7 @@
 		)
 		(uuid "0793efd5-ccaa-461f-bc4a-750dc10a28fe")
 	)
-	(label "KEY_9"
+	(label "KEY_17"
 		(at 377.19 90.17 180)
 		(effects
 			(font
@@ -8139,7 +8189,7 @@
 		)
 		(uuid "0d98df4b-a900-4abb-a384-6add438a5463")
 	)
-	(label "KEY_5"
+	(label "KEY_10"
 		(at 377.19 130.81 180)
 		(effects
 			(font
@@ -8179,13 +8229,13 @@
 		)
 		(uuid "119b4efe-95e6-40db-9fcf-256c2bac6885")
 	)
-	(label "KEYEX1"
-		(at 381 64.77 0)
+	(label "KEY_14"
+		(at 377.19 64.77 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left bottom)
+			(justify right bottom)
 		)
 		(uuid "138d986a-abac-45d9-a655-ff1646c030ef")
 	)
@@ -8199,7 +8249,7 @@
 		)
 		(uuid "1a79a47c-8565-453d-997d-d1c86b337324")
 	)
-	(label "KEY_13"
+	(label "KEY_EX2"
 		(at 377.19 113.03 180)
 		(effects
 			(font
@@ -8249,7 +8299,7 @@
 		)
 		(uuid "25f76622-9246-4483-afe3-7d24be7b0cdd")
 	)
-	(label "KEY_12"
+	(label "KEY_3"
 		(at 377.19 123.19 180)
 		(effects
 			(font
@@ -8269,17 +8319,17 @@
 		)
 		(uuid "2b45cb2a-e04d-4e2c-a691-8ee6ac2799af")
 	)
-	(label "RE0A"
-		(at 381 67.31 0)
+	(label "KEY_15"
+		(at 377.19 67.31 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left bottom)
+			(justify right bottom)
 		)
 		(uuid "2b7c0e04-84f7-423b-b49c-bf8bda00aa97")
 	)
-	(label "KEY_4"
+	(label "KEY_11"
 		(at 377.19 54.61 180)
 		(effects
 			(font
@@ -8319,7 +8369,7 @@
 		)
 		(uuid "322d83d4-71bb-471d-9fd2-719a35ca79d6")
 	)
-	(label "KEY_14"
+	(label "RE0A"
 		(at 377.19 115.57 180)
 		(effects
 			(font
@@ -8379,7 +8429,7 @@
 		)
 		(uuid "3e1f1254-e2c3-4c4b-8336-3eb852389f6e")
 	)
-	(label "KEY_16"
+	(label "KEY_9"
 		(at 377.19 95.25 180)
 		(effects
 			(font
@@ -8399,7 +8449,7 @@
 		)
 		(uuid "40ee0763-c529-4a9b-83b4-4c6e5aa38e9b")
 	)
-	(label "KEY_15"
+	(label "KEY_EX1"
 		(at 377.19 118.11 180)
 		(effects
 			(font
@@ -8459,7 +8509,7 @@
 		)
 		(uuid "48c4bf70-440d-447d-b806-4ed32096cdbf")
 	)
-	(label "KEY_2"
+	(label "KEY_18"
 		(at 377.19 77.47 180)
 		(effects
 			(font
@@ -8479,7 +8529,7 @@
 		)
 		(uuid "4a9c2b69-7f1c-449e-91ff-67dc5b24b275")
 	)
-	(label "KEY_8"
+	(label "KEY_21"
 		(at 377.19 92.71 180)
 		(effects
 			(font
@@ -8489,7 +8539,7 @@
 		)
 		(uuid "4aa73898-63a2-4229-878e-62eede7ad0a7")
 	)
-	(label "KEY_11"
+	(label "KEY_4"
 		(at 377.19 125.73 180)
 		(effects
 			(font
@@ -8530,12 +8580,12 @@
 		(uuid "512e3d58-09d3-439a-b0db-3506f2e6f7f5")
 	)
 	(label "SCL"
-		(at 387.985 69.85 0)
+		(at 382.27 72.39 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left bottom)
+			(justify right bottom)
 		)
 		(uuid "52af075d-c19d-4dfd-add1-fbf12d774851")
 	)
@@ -8569,13 +8619,13 @@
 		)
 		(uuid "5bc35eaf-1a00-4e0f-99e2-96986417c84c")
 	)
-	(label "KEYEX2"
-		(at 381 74.93 0)
+	(label "KEY_19"
+		(at 377.19 74.93 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left bottom)
+			(justify right bottom)
 		)
 		(uuid "5ca393ff-4aa8-46ca-9d53-0eaa572c6a1e")
 	)
@@ -8679,7 +8729,7 @@
 		)
 		(uuid "70af8474-67b2-410b-a607-6970a6f53a40")
 	)
-	(label "KEY_10"
+	(label "KEY_6"
 		(at 377.19 128.27 180)
 		(effects
 			(font
@@ -8739,7 +8789,7 @@
 		)
 		(uuid "799a90e8-98e8-49a0-ac3e-406d77880baf")
 	)
-	(label "KEY_3"
+	(label "KEY_12"
 		(at 377.19 59.69 180)
 		(effects
 			(font
@@ -8769,7 +8819,7 @@
 		)
 		(uuid "7cddf3dd-10c2-42bb-ba1f-6b40f5a5517f")
 	)
-	(label "KEY_18"
+	(label "KEY_7"
 		(at 377.19 105.41 180)
 		(effects
 			(font
@@ -8900,16 +8950,16 @@
 		(uuid "910e51af-9592-413e-b4da-5faa0c4bc7dc")
 	)
 	(label "REB"
-		(at 381 72.39 0)
+		(at 377.19 72.39 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left bottom)
+			(justify right bottom)
 		)
 		(uuid "94141d80-7d85-477a-8976-a45f3fb65595")
 	)
-	(label "KEY_6"
+	(label "KEY_5"
 		(at 377.19 57.15 180)
 		(effects
 			(font
@@ -8929,7 +8979,7 @@
 		)
 		(uuid "954bf7d2-de0a-4917-840a-71bf474baa38")
 	)
-	(label "KEY_20"
+	(label "KEY_1"
 		(at 377.19 102.87 180)
 		(effects
 			(font
@@ -8939,7 +8989,7 @@
 		)
 		(uuid "98959ba3-eabe-4fef-978f-6a16cc50e51d")
 	)
-	(label "KEY_7"
+	(label "KEY_13"
 		(at 377.19 62.23 180)
 		(effects
 			(font
@@ -8980,12 +9030,12 @@
 		(uuid "9ecdfd0f-c2f3-4ddd-9a12-251cfaeb1fc8")
 	)
 	(label "SDA"
-		(at 387.985 67.31 0)
+		(at 382.27 69.85 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left bottom)
+			(justify right bottom)
 		)
 		(uuid "a1c66f0d-974b-4bd5-9f8e-340a12200b81")
 	)
@@ -9239,7 +9289,7 @@
 		)
 		(uuid "ccda7168-5464-441f-9b10-fe350e19c73a")
 	)
-	(label "KEY_1"
+	(label "KEY_20"
 		(at 377.19 82.55 180)
 		(effects
 			(font
@@ -9259,7 +9309,7 @@
 		)
 		(uuid "ce57a63b-b6fb-49b4-8576-42bbf6e4eeb2")
 	)
-	(label "KEY_17"
+	(label "KEY_16"
 		(at 377.19 100.33 180)
 		(effects
 			(font
@@ -9329,7 +9379,7 @@
 		)
 		(uuid "d7a52525-4b43-4182-ac93-2a71eb1f523b")
 	)
-	(label "LED"
+	(label "L_KEY"
 		(at 377.19 80.01 180)
 		(effects
 			(font
@@ -9379,7 +9429,7 @@
 		)
 		(uuid "dda444e5-d3cf-416e-b284-9260f38e529d")
 	)
-	(label "KEY_19"
+	(label "KEY_2"
 		(at 377.19 110.49 180)
 		(effects
 			(font
@@ -9449,7 +9499,7 @@
 		)
 		(uuid "ec513bce-4272-4fa2-b427-422844c107d8")
 	)
-	(label "KEY_21"
+	(label "KEY_8"
 		(at 377.19 97.79 180)
 		(effects
 			(font
@@ -9460,12 +9510,12 @@
 		(uuid "eff19561-eeb7-463c-bc9d-c6bcda169e33")
 	)
 	(label "RE1A"
-		(at 381 69.85 0)
+		(at 377.19 69.85 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left bottom)
+			(justify right bottom)
 		)
 		(uuid "f1368489-1289-4df4-8721-0980876716a9")
 	)

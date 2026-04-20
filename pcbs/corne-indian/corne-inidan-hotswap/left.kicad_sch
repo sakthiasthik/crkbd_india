@@ -561,330 +561,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Connector:USB_A"
-			(pin_names
-				(offset 1.016)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "J"
-				(at -5.08 11.43 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Value" "USB_A"
-				(at -5.08 8.89 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Footprint" ""
-				(at 3.81 -1.27 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 3.81 -1.27 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "USB Type A connector"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "connector USB"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "USB*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "USB_A_0_1"
-				(rectangle
-					(start -5.08 -7.62)
-					(end 5.08 7.62)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-				(circle
-					(center -3.81 2.159)
-					(radius 0.635)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(polyline
-					(pts
-						(xy -3.175 2.159) (xy -2.54 2.159) (xy -1.27 3.429) (xy -0.635 3.429)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -2.54 2.159) (xy -1.905 2.159) (xy -1.27 0.889) (xy 0 0.889)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(rectangle
-					(start -1.524 4.826)
-					(end -4.318 5.334)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(rectangle
-					(start -1.27 4.572)
-					(end -4.572 5.842)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center -0.635 3.429)
-					(radius 0.381)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(rectangle
-					(start -0.127 -7.62)
-					(end 0.127 -6.858)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(rectangle
-					(start 0.254 1.27)
-					(end -0.508 0.508)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.635 2.794) (xy 0.635 1.524) (xy 1.905 2.159) (xy 0.635 2.794)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(rectangle
-					(start 5.08 4.953)
-					(end 4.318 5.207)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(rectangle
-					(start 5.08 -0.127)
-					(end 4.318 0.127)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(rectangle
-					(start 5.08 -2.667)
-					(end 4.318 -2.413)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "USB_A_1_1"
-				(polyline
-					(pts
-						(xy -1.905 2.159) (xy 0.635 2.159)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(pin passive line
-					(at -2.54 -10.16 90)
-					(length 2.54)
-					(name "Shield"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 0 -10.16 90)
-					(length 2.54)
-					(name "GND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 7.62 5.08 180)
-					(length 2.54)
-					(name "VBUS"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at 7.62 0 180)
-					(length 2.54)
-					(name "D+"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at 7.62 -2.54 180)
-					(length 2.54)
-					(name "D-"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "Connector:USB_C_Receptacle_USB2.0_16P"
 			(pin_names
 				(offset 1.016)
@@ -2427,544 +2103,6 @@
 						)
 					)
 					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "Interface_USB:CH334F"
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "U"
-				(at -7.62 27.94 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify right)
-				)
-			)
-			(property "Value" "CH334F"
-				(at 2.54 27.94 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Footprint" "Package_DFN_QFN:QFN-24-1EP_4x4mm_P0.5mm_EP2.7x2.7mm"
-				(at -30.48 -27.94 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "https://www.wch-ic.com/downloads/file/327.html"
-				(at 0 33.02 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "USB HUB controller, QFN-24"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "USB HUB Controller Interface"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "QFN*4x4mm*P0.5mm*EP2.7x2.7mm*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "CH334F_0_1"
-				(rectangle
-					(start -10.16 25.4)
-					(end 10.16 -25.4)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-			)
-			(symbol "CH334F_1_1"
-				(pin bidirectional line
-					(at -12.7 15.24 0)
-					(length 2.54)
-					(name "DPU+"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "15"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at -12.7 12.7 0)
-					(length 2.54)
-					(name "DMU-"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "14"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at -12.7 7.62 0)
-					(length 2.54)
-					(name "LED4/SDA"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "21"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at -12.7 5.08 0)
-					(length 2.54)
-					(name "LED3/SCL"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "13"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at -12.7 2.54 0)
-					(length 2.54)
-					(name "LED2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "23"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at -12.7 0 0)
-					(length 2.54)
-					(name "LED1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "22"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at -12.7 -5.08 0)
-					(length 2.54)
-					(name "~{RESET}/CDP"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "16"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at -12.7 -7.62 0)
-					(length 2.54)
-					(name "~{OVCUR}"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin output line
-					(at -12.7 -10.16 0)
-					(length 2.54)
-					(name "~{PWREN}"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "24"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at -12.7 -12.7 0)
-					(length 2.54)
-					(name "PSELF"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "18"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -12.7 -17.78 0)
-					(length 2.54)
-					(name "XO"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -12.7 -22.86 0)
-					(length 2.54)
-					(name "XI"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_out line
-					(at -2.54 27.94 270)
-					(length 2.54)
-					(name "VDD33_{LDO}"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "20"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(alternate "VDD33" power_in line)
-				)
-				(pin power_in line
-					(at 0 -27.94 90)
-					(length 2.54)
-					(name "GND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "25"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 2.54 27.94 270)
-					(length 2.54)
-					(name "V5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "19"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin no_connect line
-					(at 10.16 -20.32 180)
-					(length 2.54)
-					(hide yes)
-					(name "NC"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin no_connect line
-					(at 10.16 -22.86 180)
-					(length 2.54)
-					(hide yes)
-					(name "NC"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "17"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at 12.7 12.7 180)
-					(length 2.54)
-					(name "DM4-"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at 12.7 10.16 180)
-					(length 2.54)
-					(name "DP4+"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "6"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at 12.7 5.08 180)
-					(length 2.54)
-					(name "DM3-"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "7"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at 12.7 2.54 180)
-					(length 2.54)
-					(name "DP3+"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "8"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at 12.7 -2.54 180)
-					(length 2.54)
-					(name "DM2-"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "9"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at 12.7 -5.08 180)
-					(length 2.54)
-					(name "DP2+"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "10"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at 12.7 -10.16 180)
-					(length 2.54)
-					(name "DM1-"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "11"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at 12.7 -12.7 180)
-					(length 2.54)
-					(name "DP1+"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "12"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -6303,6 +5441,16 @@
 	)
 	(wire
 		(pts
+			(xy 368.3 67.31) (xy 377.19 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3995441f-8c3e-4d39-a6ad-af9d9192f42e")
+	)
+	(wire
+		(pts
 			(xy 55.88 44.45) (xy 53.34 44.45)
 		)
 		(stroke
@@ -6350,6 +5498,16 @@
 			(type default)
 		)
 		(uuid "3dcb68e8-691a-4673-9c43-e4b142f9b9bf")
+	)
+	(wire
+		(pts
+			(xy 368.3 64.77) (xy 377.19 64.77)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3dd7f345-4977-457b-9c7d-cf8376af8275")
 	)
 	(wire
 		(pts
@@ -7543,6 +6701,16 @@
 	)
 	(wire
 		(pts
+			(xy 368.3 69.85) (xy 377.19 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "98a82e28-9f5f-44db-81fc-ac20bc543b55")
+	)
+	(wire
+		(pts
 			(xy 160.02 152.4) (xy 160.02 153.67)
 		)
 		(stroke
@@ -7660,6 +6828,16 @@
 			(type default)
 		)
 		(uuid "a4493301-c1f0-44d0-b603-e719c8de5032")
+	)
+	(wire
+		(pts
+			(xy 368.3 74.93) (xy 377.19 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a59a9523-9b99-447b-873f-b512532803b5")
 	)
 	(wire
 		(pts
@@ -7930,6 +7108,16 @@
 			(type default)
 		)
 		(uuid "bac1803b-65c2-4182-9185-03c6dd4db242")
+	)
+	(wire
+		(pts
+			(xy 368.3 72.39) (xy 377.19 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bb217b17-2100-467d-a9e9-08cf231c4096")
 	)
 	(wire
 		(pts
@@ -9201,13 +8389,13 @@
 		)
 		(uuid "23e436f4-bcd0-40df-8298-11d9aeec521d")
 	)
-	(label "KEYEX2"
-		(at 381 74.93 0)
+	(label "KEY_EX2"
+		(at 377.19 74.93 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left bottom)
+			(justify right bottom)
 		)
 		(uuid "25ef05b1-3cdc-4239-b807-894ef722da7d")
 	)
@@ -9312,12 +8500,12 @@
 		(uuid "36a44197-7d15-47b5-8cdd-fd0b18b9ff0a")
 	)
 	(label "SCL"
-		(at 387.985 69.85 0)
+		(at 382.27 72.39 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left bottom)
+			(justify right bottom)
 		)
 		(uuid "38ebc128-ffda-452c-8701-52a666d1a32c")
 	)
@@ -9391,13 +8579,13 @@
 		)
 		(uuid "46b095ce-c4d8-48df-9b26-901a5bcffcfe")
 	)
-	(label "KEYEX1"
-		(at 381 64.77 0)
+	(label "KEY_EX1"
+		(at 377.19 64.77 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left bottom)
+			(justify right bottom)
 		)
 		(uuid "47d1ce63-cd01-4104-af6d-6e25da0ee301")
 	)
@@ -9712,12 +8900,12 @@
 		(uuid "8771681a-bb2d-4ea4-b837-013f012c94d5")
 	)
 	(label "RE1A"
-		(at 381 69.85 0)
+		(at 377.19 69.85 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left bottom)
+			(justify right bottom)
 		)
 		(uuid "87bd3eda-f898-474b-a8e0-8e748373b7d9")
 	)
@@ -9982,12 +9170,12 @@
 		(uuid "b507d168-50df-4258-8321-30c1c0b8b2d4")
 	)
 	(label "RE0A"
-		(at 381 67.31 0)
+		(at 377.19 67.31 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left bottom)
+			(justify right bottom)
 		)
 		(uuid "b55e84cb-aeea-46d5-afb8-f8f376ad2d05")
 	)
@@ -10022,12 +9210,12 @@
 		(uuid "bd70f7ae-86d1-4fa9-9d5b-6730b545e557")
 	)
 	(label "REB"
-		(at 381 72.39 0)
+		(at 377.19 72.39 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left bottom)
+			(justify right bottom)
 		)
 		(uuid "bed21e2c-7197-4839-83fb-25aff2ee08f6")
 	)
@@ -10182,12 +9370,12 @@
 		(uuid "d01f3578-708a-4ad6-a239-a893f13a8e4d")
 	)
 	(label "SDA"
-		(at 387.985 67.31 0)
+		(at 382.27 69.85 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left bottom)
+			(justify right bottom)
 		)
 		(uuid "d0ebf3c0-4a25-4ad6-b127-5e79b73d7bf1")
 	)
@@ -10251,7 +9439,7 @@
 		)
 		(uuid "dc223ef5-1457-4c3b-a8ad-05c8a7dd773b")
 	)
-	(label "LED"
+	(label "L_KEY"
 		(at 377.19 80.01 180)
 		(effects
 			(font
@@ -15972,146 +15160,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Interface_USB:CH334F")
-		(at 292.1 175.26 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "6bb80d6e-5354-4620-bf1b-3b248601a037")
-		(property "Reference" "U5"
-			(at 294.2433 203.2 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "CH334F"
-			(at 294.2433 205.74 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_DFN_QFN:QFN-24-1EP_4x4mm_P0.5mm_EP2.7x2.7mm"
-			(at 261.62 203.2 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.wch-ic.com/downloads/file/327.html"
-			(at 292.1 142.24 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "USB HUB controller, QFN-24"
-			(at 292.1 175.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "4"
-			(uuid "db8c3cd5-f8a9-4d41-8dd3-a5cdfec5677b")
-		)
-		(pin "8"
-			(uuid "48ceb6d5-08d3-4b2a-806f-b86160e9efe1")
-		)
-		(pin "12"
-			(uuid "b5071a78-4782-4130-a247-a464cbec2bfd")
-		)
-		(pin "9"
-			(uuid "7b623fda-4ceb-4040-ab4d-79dd3ba30a27")
-		)
-		(pin "5"
-			(uuid "008860ef-866d-43f8-a80b-069214bf8b63")
-		)
-		(pin "19"
-			(uuid "ab782ffb-c335-4e7e-ba04-f6d6bc7e6517")
-		)
-		(pin "22"
-			(uuid "f520845d-8aae-4abf-b766-23c6f5490e08")
-		)
-		(pin "6"
-			(uuid "cf8ecbb6-696d-4550-ab92-b5db80e69c58")
-		)
-		(pin "23"
-			(uuid "4ab49ea3-5e01-4ebf-9dd3-1658e27e48b3")
-		)
-		(pin "18"
-			(uuid "9658dc53-5f4b-45d6-9993-bcf6022a6de5")
-		)
-		(pin "25"
-			(uuid "d7cea9dd-96ee-42df-98bb-b13a3790abd9")
-		)
-		(pin "17"
-			(uuid "e84d946b-73e4-4023-9aac-14a350d0c5df")
-		)
-		(pin "21"
-			(uuid "11336a2b-e062-41a5-88ff-99d7ef8a0d8f")
-		)
-		(pin "15"
-			(uuid "1c2432e1-8197-4e6f-a93f-766d931acdaa")
-		)
-		(pin "14"
-			(uuid "048f615c-1c1a-4ecb-96e4-8b66cf41432b")
-		)
-		(pin "20"
-			(uuid "1be22bb2-1bf6-4c08-92bb-6012e7ef74ac")
-		)
-		(pin "24"
-			(uuid "d219ecae-9ad9-4074-80c5-698e144cec56")
-		)
-		(pin "1"
-			(uuid "bfaf071f-60c6-4f66-a52a-872b825514d5")
-		)
-		(pin "7"
-			(uuid "528c0dd0-c690-4ab9-b179-7a52dfb9689b")
-		)
-		(pin "3"
-			(uuid "79e4148c-1b35-4945-9d79-e8a75c3247fb")
-		)
-		(pin "16"
-			(uuid "bbf78f12-144e-4e6f-b4e1-8349506ff003")
-		)
-		(pin "11"
-			(uuid "ea1e4ac2-fade-4eb3-8041-f43a2a382efc")
-		)
-		(pin "13"
-			(uuid "c1774069-0c15-42ac-a668-124421a16181")
-		)
-		(pin "2"
-			(uuid "7a0030c4-fe4b-48ba-8f03-26d92461c02d")
-		)
-		(pin "10"
-			(uuid "d223c86d-fb7f-4468-b1ca-85adb405a6ff")
-		)
-		(instances
-			(project "corne-inidan-hotswap"
-				(path "/c90c0725-f1d3-4c5d-9757-c1f2f2a5449f/f4940f7d-bc6d-4495-a44d-e8b9a3eadf42"
-					(reference "U5")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 364.49 30.48 180)
 		(unit 1)
@@ -20797,83 +19845,6 @@
 			(project "corne-inidan-hotswap"
 				(path "/c90c0725-f1d3-4c5d-9757-c1f2f2a5449f/f4940f7d-bc6d-4495-a44d-e8b9a3eadf42"
 					(reference "MCU1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:USB_A")
-		(at 311.15 233.68 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "ba659e1f-b0f3-47b8-a7bb-82fb98741ce3")
-		(property "Reference" "J4"
-			(at 311.15 220.98 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "USB_A"
-			(at 311.15 223.52 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Connector_USB:USB_A_Molex_67643_Horizontal"
-			(at 314.96 234.95 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 314.96 234.95 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "USB Type A connector"
-			(at 311.15 233.68 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "5"
-			(uuid "4ffef33c-9a09-49b0-932b-8fcd92dbab33")
-		)
-		(pin "2"
-			(uuid "86977161-febc-4926-982e-4ba9849554bb")
-		)
-		(pin "3"
-			(uuid "ec45bd20-6da1-4bdb-91c7-0bd8253fbeb5")
-		)
-		(pin "4"
-			(uuid "28a6ea63-381a-43ef-861d-160ea49986f3")
-		)
-		(pin "1"
-			(uuid "7cced395-ca38-4e9b-beb6-3766ca663a70")
-		)
-		(instances
-			(project "corne-inidan-hotswap"
-				(path "/c90c0725-f1d3-4c5d-9757-c1f2f2a5449f/f4940f7d-bc6d-4495-a44d-e8b9a3eadf42"
-					(reference "J4")
 					(unit 1)
 				)
 			)
