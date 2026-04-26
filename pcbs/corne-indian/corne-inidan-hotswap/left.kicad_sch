@@ -15943,7 +15943,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "User_Button_Switch_Keyboard:keyswitch_cherrymx_hotswap_1u_rotary_encoder_ec12"
+		(property "Footprint" "User_Button_Switch_Keyboard:SW_Cherry_MX_1.00u_Hotswap_Rotary-Encoder"
 			(at 264.414 129.54 0)
 			(effects
 				(font
@@ -18783,7 +18783,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "User_Button_Switch_Keyboard:keyswitch_cherrymx_hotswap_1u_rotary_encoder_ec12"
+		(property "Footprint" "User_Button_Switch_Keyboard:SW_Cherry_MX_1.00u_Hotswap_Rotary-Encoder"
 			(at 264.414 180.34 0)
 			(effects
 				(font
