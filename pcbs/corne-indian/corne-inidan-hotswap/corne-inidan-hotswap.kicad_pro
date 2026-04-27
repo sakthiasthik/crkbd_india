@@ -640,7 +640,7 @@
       "plot": "",
       "pos_files": "",
       "specctra_dsn": "",
-      "step": "corne-inidan-hotswap.stl",
+      "step": "corne-inidan-hotswap.step",
       "svg": "",
       "vrml": "corne-inidan-hotswap.wrl"
     },
