@@ -48,48 +48,6 @@
 		)
 	)
 	(sheet
-		(at 114.3 152.4)
-		(size 25.4 25.4)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(fill
-			(color 0 0 0 0.0000)
-		)
-		(uuid "ed600089-137d-46bb-86ca-90dd463cb5ca")
-		(property "Sheetname" "USB_HUB"
-			(at 114.3 151.6884 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Sheetfile" "USB_HUB.kicad_sch"
-			(at 114.3 178.3846 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(instances
-			(project "corne-inidan-hotswap"
-				(path "/c90c0725-f1d3-4c5d-9757-c1f2f2a5449f"
-					(page "4")
-				)
-			)
-		)
-	)
-	(sheet
 		(at 38.1 63.5)
 		(size 63.5 63.5)
 		(exclude_from_sim no)
