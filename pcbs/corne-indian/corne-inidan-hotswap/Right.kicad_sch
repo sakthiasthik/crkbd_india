@@ -6363,6 +6363,16 @@
 	)
 	(wire
 		(pts
+			(xy 99.06 96.52) (xy 106.68 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "538ecd14-fdb6-4264-a2c6-b56d9ff54f83")
+	)
+	(wire
+		(pts
 			(xy 317.5 110.49) (xy 312.42 110.49)
 		)
 		(stroke
@@ -6670,6 +6680,16 @@
 			(type default)
 		)
 		(uuid "654c27d1-8130-4da1-b811-17978784c4e4")
+	)
+	(wire
+		(pts
+			(xy 83.82 96.52) (xy 91.44 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "65c577b9-db0a-4efd-91ff-5c4208cd2218")
 	)
 	(wire
 		(pts
@@ -9011,6 +9031,16 @@
 		)
 		(uuid "36ea32f6-4188-41f4-94c7-63cda73fa906")
 	)
+	(label "L_KEY22"
+		(at 106.68 96.52 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "37f1e9bf-f6fb-4717-81b9-3a537c26c894")
+	)
 	(label "L_KEY13"
 		(at 139.7 144.78 0)
 		(effects
@@ -9520,6 +9550,16 @@
 			(justify left bottom)
 		)
 		(uuid "83f05944-730f-4d73-8ba5-e65b497d27bb")
+	)
+	(label "KEY_18"
+		(at 83.82 96.52 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "8678e593-c1d1-4704-9c15-27d01b4cad34")
 	)
 	(label "L_KEY16"
 		(at 177.8 220.98 0)
@@ -13624,9 +13664,9 @@
 		(at 139.7 31.75 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "3c8955bd-b444-41c1-9849-d35ace4db0d5")
 		(property "Reference" "rU4"
@@ -14565,6 +14605,137 @@
 			(project "corne-inidan-hotswap"
 				(path "/c90c0725-f1d3-4c5d-9757-c1f2f2a5449f/c662f5df-c1ad-47b5-b30e-5a138a045676"
 					(reference "#PWR0173")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 95.25 96.52 270)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp yes)
+		(uuid "4a172b00-2230-41d9-b861-7f9ca24b8275")
+		(property "Reference" "rR19"
+			(at 95.25 93.98 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "0R"
+			(at 95.25 99.06 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 95.25 98.298 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 95.25 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 95.25 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC_Part" "C25804"
+			(at 95.25 96.52 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "MULTICOMP PRO"
+			(at 95.25 96.52 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name_1" ""
+			(at 95.25 96.52 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name_2" "UNI-ROYAL(Uniroyal Elec)"
+			(at 95.25 96.52 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "MCWR06X1002FTL"
+			(at 95.25 96.52 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number_1" ""
+			(at 95.25 96.52 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number_2" "0603WAF1002T5E"
+			(at 95.25 96.52 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "854bf710-c6fb-49d9-b847-a46e43eeb846")
+		)
+		(pin "2"
+			(uuid "3a1fcc12-209c-41ab-9738-ec96d65c36b3")
+		)
+		(instances
+			(project "corne-inidan-hotswap"
+				(path "/c90c0725-f1d3-4c5d-9757-c1f2f2a5449f/c662f5df-c1ad-47b5-b30e-5a138a045676"
+					(reference "rR19")
 					(unit 1)
 				)
 			)
@@ -17666,9 +17837,9 @@
 		(at 204.47 33.02 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "8a0d4180-d6d8-45ab-9550-eca54fcb4c75")
 		(property "Reference" "rJ1"

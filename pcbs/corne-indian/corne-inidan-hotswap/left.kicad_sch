@@ -7013,6 +7013,16 @@
 	)
 	(wire
 		(pts
+			(xy 58.42 95.25) (xy 66.04 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8928c933-b70a-4e59-810f-f306759149af")
+	)
+	(wire
+		(pts
 			(xy 27.94 190.5) (xy 34.29 190.5)
 		)
 		(stroke
@@ -7180,6 +7190,16 @@
 			(type default)
 		)
 		(uuid "9525b0d7-06e8-44db-9ca3-7b29028a74fe")
+	)
+	(wire
+		(pts
+			(xy 73.66 95.25) (xy 81.28 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "95aea6c2-9511-4f3e-ab5d-31afdcb62c80")
 	)
 	(wire
 		(pts
@@ -10171,6 +10191,16 @@
 		)
 		(uuid "deb4fae0-509e-4fe6-8d6e-6cd8c447c600")
 	)
+	(label "KEY_18"
+		(at 58.42 95.25 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "df7e05e7-70bc-4c01-bcb1-30a558a081cb")
+	)
 	(label "L_KEY13"
 		(at 101.6 127 0)
 		(effects
@@ -10210,6 +10240,16 @@
 			(justify right bottom)
 		)
 		(uuid "ebb76c68-2ebd-427b-b06b-e59f5c3bb53a")
+	)
+	(label "L_KEY22"
+		(at 81.28 95.25 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "f4236a48-c87b-4ea4-9b34-e96bb1c7fdee")
 	)
 	(label "L_KEY4"
 		(at 215.9 127 0)
@@ -15143,9 +15183,9 @@
 		(at 139.7 30.48 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "55c1bb70-d0b1-4624-9186-721ef4ea0192")
 		(property "Reference" "U4"
@@ -15495,7 +15535,7 @@
 				)
 			)
 		)
-		(property "Value" "DSK34"
+		(property "Value" "1N4148WT"
 			(at 82.55 78.74 0)
 			(effects
 				(font
@@ -22773,9 +22813,9 @@
 		(at 204.47 31.75 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "d60e42a5-5ac5-4f07-9fd7-bcdb69694f0f")
 		(property "Reference" "J1"
@@ -22834,6 +22874,137 @@
 			(project "corne-inidan-hotswap"
 				(path "/c90c0725-f1d3-4c5d-9757-c1f2f2a5449f/f4940f7d-bc6d-4495-a44d-e8b9a3eadf42"
 					(reference "J1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 69.85 95.25 270)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp yes)
+		(uuid "d81b38bf-1aa8-4d8b-9ab4-87d99ad2dfc4")
+		(property "Reference" "R12"
+			(at 69.85 92.71 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "0R"
+			(at 69.85 97.79 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 69.85 97.028 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 69.85 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 69.85 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC_Part" "C25804"
+			(at 69.85 95.25 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "MULTICOMP PRO"
+			(at 69.85 95.25 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name_1" ""
+			(at 69.85 95.25 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name_2" "UNI-ROYAL(Uniroyal Elec)"
+			(at 69.85 95.25 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "MCWR06X1002FTL"
+			(at 69.85 95.25 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number_1" ""
+			(at 69.85 95.25 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number_2" "0603WAF1002T5E"
+			(at 69.85 95.25 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ca9c8ac4-14c6-4bde-b93a-64b7511b25ea")
+		)
+		(pin "2"
+			(uuid "06475975-b377-4089-8d2c-65f01b200609")
+		)
+		(instances
+			(project "corne-inidan-hotswap"
+				(path "/c90c0725-f1d3-4c5d-9757-c1f2f2a5449f/f4940f7d-bc6d-4495-a44d-e8b9a3eadf42"
+					(reference "R12")
 					(unit 1)
 				)
 			)
