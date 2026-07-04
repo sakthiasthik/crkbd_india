@@ -1,51 +1,86 @@
-# Corne keyboard
+# Corne Indian ⌨️
 
-The Corne keyboard is a split keyboard with 3x6 column staggered keys
-and 3 thumb keys, based on [Helix](https://github.com/MakotoKurauchi/helix).
-Crkbd stands for Corne Keyboard.
+A split mechanical keyboard **inspired by the original [CRKBD (Corne)](https://github.com/foostan/crkbd)** by [foostan](https://github.com/foostan). While the overall keyboard layout, key positions, and form factor follow the Corne design, the **entire schematic and PCB layout have been redesigned from scratch**.
 
-![v4](https://github.com/foostan/crkbd/assets/736191/bc32e4e8-f737-4516-b92b-55a7cb93a336)
+The hardware has been engineered with a focus on the **Indian maker ecosystem**, using components that are readily available from Indian suppliers. The PCB has been designed to simplify manufacturing, assembly, troubleshooting, and long-term maintenance. If a component fails, it can be replaced easily without requiring hard-to-source imported parts — making the keyboard highly repairable and practical for everyday use.
 
-## Latest versions
-- corne-cherry: for Cherry MX compatible switches
+---
 
-  - v4 Hotswappable ([JP](docs/corne-cherry/v4/buildguide_jp.md)/[EN](docs/corne-cherry/v4/buildguide_en.md))
-  - v4 Soldering (will be released)
-- corne-chocolate: for Kailh choc v1 and v2 switches
-  - v4 Hotswappable ([JP](docs/corne-chocolate/v4/buildguide_jp.md)/[EN](docs/corne-chocolate/v4/buildguide_en.md)):
-  - v4 Soldering (will be released)
+## Highlights
 
-## Old versions
+- **Inspired by the CRKBD (Corne) split keyboard design**
+- **Complete schematic designed from scratch**
+- **Complete PCB layout designed from scratch**
+- **Powered by RP2040** — affordable, powerful, and widely available in India (replaces the Pro Micro / ATmega32U4)
+- **Hot-swappable switches** — no soldering required for switches
+- Optimized for components that are **easily available from Indian suppliers**
+- Designed for **easy manufacturing and assembly**
+- Simplified **rework and repair** with accessible component placement
+- **Fully open-source hardware** — anyone can build, modify, and maintain
 
-- corne-classic: for Cherry MX compatible switches 
-  - v1 Soldering: ([JP](docs/corne-classic/buildguide_jp.md)/[EN](docs/corne-classic/buildguide_en.md))
-- corne-cherry: for Cherry MX compatible switches
-  - v2 Hotswappable: ([JP](docs/corne-cherry/v2/buildguide_jp.md)/[EN](docs/corne-cherry/v2/buildguide_en.md))
-  - v2 Hotswappable tilting version: ([tilting, JP](docs/corne-cherry/v2/buildguide_tilting_tenting_plate_jp.md)/[tilting, EN](docs/corne-cherry/v2/buildguide_tilting_tenting_plate_en.md)):
-  - v3 Hotswappable: ([JP](docs/corne-cherry/v3/buildguide_jp.md)/[EN](docs/corne-cherry/v3/buildguide_en.md))
-- corne-chocolate: for Kailh choc v1 switches
-  - v2 Hotswappable: ([JP](docs/corne-chocolate/v2/buildguide_jp.md)/[EN](docs/corne-chocolate/v2/buildguide_en.md)):
-- corne-light: for easy build with a simple PCB
-  - v1 Soldering: ([JP](docs/corne-light/v1/buildguide_jp.md)/[EN](docs/corne-light/v1/buildguide_en.md)):
-  - v2 Soldering: ([JP](docs/corne-light/v2/buildguide_low_edition_jp.md)/[EN](docs/corne-light/v2/buildguide_low_edition_en.md)):
+---
 
-## Notice
-There are currently reports of a bug in v4.* caused by electromagnetic interference. Depending on the environment, one or both of the left and right keyboards may stop working. It is known that this is often caused by EMI emitted by mobile phones. If you experience this kind of problem, reconnect the USB, move the EMI-generating device (probably a mobile phone) more than 30 cm away from the keyboard, and observe the situation.
+## Design Files
 
-For more details, please see this issue. We look forward to receiving any new information.
-https://github.com/foostan/crkbd/issues/265
+All design files are in [`pcbs/corne-indian/`](pcbs/corne-indian/):
+
+```
+pcbs/corne-indian/corne-inidan-hotswap/
+├── corne-inidan-hotswap.kicad_pro    # KiCad project
+├── corne-inidan-hotswap.kicad_sch    # Main schematic
+├── corne-inidan-hotswap.kicad_pcb    # PCB layout
+├── left.kicad_sch                    # Left half schematic
+├── right.kicad_sch                   # Right half schematic
+├── corne-inidan-hotswap.step         # 3D model
+└── corne_ibom.html                   # Interactive BOM
+```
+
+> Designed in **KiCad**. Open the `.kicad_pro` file to get started.
+
+---
 
 ## Images
 
-### Cherry
-![corne-cherry](https://github.com/foostan/crkbd/assets/736191/f954ba89-a711-4866-a535-bad0bed937d1)
-![image](https://github.com/foostan/crkbd/assets/736191/6a6705d2-40fb-4463-8006-6b7ca97dc0ff)
-![image](https://github.com/foostan/crkbd/assets/736191/20407f6c-0f2e-41ea-8cd6-17d46d9be0a2)
+### Original CRKBD (Corne) — The Inspiration
 
-### Chocolate
-![corne-chocolate](https://github.com/foostan/crkbd/assets/736191/fb0e6962-76b3-4bd5-8093-83ccc1a17029)
-![image](https://github.com/foostan/crkbd/assets/736191/610f9964-3adf-459b-88ad-9e9f29d5f659)
-![image](https://github.com/foostan/crkbd/assets/736191/134db4dd-0c48-4a5f-bf75-97b8e652be22)
+![crkbd-cherry](https://github.com/foostan/crkbd/assets/736191/f954ba89-a711-4866-a535-bad0bed937d1)
+![crkbd-chocolate](https://github.com/foostan/crkbd/assets/736191/fb0e6962-76b3-4bd5-8093-83ccc1a17029)
 
-### Drawing
-![sketche](https://github.com/foostan/crkbd/assets/736191/87ebea53-3c5c-42a1-97b3-f9292e4dacae)
+### Corne Indian — Our Design
+
+<!-- TODO: Add Corne Indian PCB render (top view) -->
+![Corne Indian PCB Top](https://via.placeholder.com/800x600/1a1a2e/e0e0e0?text=Corne+Indian+-+PCB+Top+View)
+
+<!-- TODO: Add Corne Indian PCB render (bottom view) -->
+![Corne Indian PCB Bottom](https://via.placeholder.com/800x600/1a1a2e/e0e0e0?text=Corne+Indian+-+PCB+Bottom+View)
+
+<!-- TODO: Add assembled Corne Indian keyboard photo -->
+![Corne Indian Assembled](https://via.placeholder.com/800x600/16213e/e0e0e0?text=Corne+Indian+-+Assembled+Keyboard)
+
+<!-- TODO: Add Corne Indian 3D render -->
+![Corne Indian 3D Render](https://via.placeholder.com/800x600/0f3460/e0e0e0?text=Corne+Indian+-+3D+Render)
+
+---
+
+## Comparison: Original CRKBD vs Corne Indian
+
+| Feature | Original CRKBD | Corne Indian |
+|---|---|---|
+| **Microcontroller** | Pro Micro (ATmega32U4) | RP2040 |
+| **Switch mounting** | Soldered / Hotswap | Hot-swappable |
+| **Component sourcing** | International | India-focused |
+| **Schematic** | Original by foostan | Redesigned from scratch |
+| **PCB Layout** | Original by foostan | Redesigned from scratch |
+| **License** | MIT | MIT |
+
+---
+
+## Credits
+
+This project stands on the shoulders of the excellent **[CRKBD (Corne)](https://github.com/foostan/crkbd)** by **foostan**. The Corne Indian retains the same split-keyboard layout and form factor that makes the Corne great, while re-engineering the hardware for the Indian maker community.
+
+---
+
+## License
+
+This project is licensed under the **MIT License** — see [LICENSE](LICENSE) for details.
