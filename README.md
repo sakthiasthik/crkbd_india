@@ -49,16 +49,16 @@ pcbs/corne-indian/corne-inidan-hotswap/
 ### Corne Indian — Our Design
 
 <!-- TODO: Add Corne Indian PCB render (top view) -->
-![Corne Indian PCB Top](https://via.placeholder.com/800x600/1a1a2e/e0e0e0?text=Corne+Indian+-+PCB+Top+View)
+![Corne Indian PCB Top](pcbs/corne-indian/corne-inidan-hotswap/corne-inidan-hotswap_TOP.png)
 
 <!-- TODO: Add Corne Indian PCB render (bottom view) -->
-![Corne Indian PCB Bottom](https://via.placeholder.com/800x600/1a1a2e/e0e0e0?text=Corne+Indian+-+PCB+Bottom+View)
+![Corne Indian PCB Bottom](pcbs/corne-indian/corne-inidan-hotswap/corne-inidan-hotswap_BOT.png)
 
 <!-- TODO: Add assembled Corne Indian keyboard photo -->
-![Corne Indian Assembled](https://via.placeholder.com/800x600/16213e/e0e0e0?text=Corne+Indian+-+Assembled+Keyboard)
+![Corne Indian Assembled](pcbs/corne-indian/corne-inidan-hotswap/Fullworking.jpg)
 
 <!-- TODO: Add Corne Indian 3D render -->
-![Corne Indian 3D Render](https://via.placeholder.com/800x600/0f3460/e0e0e0?text=Corne+Indian+-+3D+Render)
+<!-- [Corne Indian 3D Render](https://via.placeholder.com/800x600/0f3460/e0e0e0?text=Corne+Indian+-+3D+Render) -->
 
 ---
 
